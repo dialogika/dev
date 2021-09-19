@@ -193,7 +193,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo img {
-  max-height: 40px;
+  max-height: 30px;
 }
 
 /**
@@ -209,6 +209,9 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
   font-size: 14px;
   display: inline-block;
+  box-shadow: 0px 0px 12px 5px rgba(127,184,255,0.75);
+  -webkit-box-shadow: 0px 0px 12px 5px rgba(127,184,255,0.75);
+  -moz-box-shadow: 0px 0px 12px 5px rgba(127,184,255,0.75);
 }
 
 .appointment-btn:hover {
@@ -644,7 +647,11 @@ section {
   padding: 30px;
   background: #1977cc;
   border-radius: 4px;
+  border: 0.59 px inset #0f61a8;
   color: #fff;
+  box-shadow: 0px 0px 12px 5px rgba(127,184,255,0.75);
+  -webkit-box-shadow: 0px 0px 12px 5px rgba(127,184,255,0.75);
+  -moz-box-shadow: 0px 0px 12px 5px rgba(127,184,255,0.75);
 }
 
 .why-us .content h3 {
@@ -679,9 +686,12 @@ section {
   text-align: center;
   border-radius: 10px;
   background: #fff;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding: 40px 30px;
   width: 100%;
+  border: 0.37 px outset #dcf2fe;
+  box-shadow: 4px 4px 21px 6px rgba(104, 173, 226,0.58);
+  -webkit-box-shadow: 4px 4px 21px 6px rgba(104, 173, 226,0.58);
+  -moz-box-shadow: 4px 4px 21px 6px rgba(104, 173, 226,0.58);
 }
 
 .why-us .icon-boxes .icon-box i {
@@ -1592,6 +1602,7 @@ section {
   box-shadow: 0px 2px 15px rgba(25, 119, 204, 0.1);
 }
 
+
 #footer .footer-top .footer-contact {
   margin-bottom: 30px;
 }
@@ -1603,6 +1614,7 @@ section {
   line-height: 1;
   font-weight: 700;
 }
+
 
 #footer .footer-top .footer-contact p {
   font-size: 14px;
