@@ -27,6 +27,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -688,9 +689,9 @@ section {
   overflow: hidden;
   transition: all 0.3s;
   top: 0;
-  box-shadow: 4px 2px 6px 1px rgba(32,191,240,0.75);
-  -webkit-box-shadow: 4px 2px 6px 1px rgba(32,191,240,0.75);
-  -moz-box-shadow: 4px 2px 6px 1px rgba(32,191,240,0.75);
+  box-shadow: 0px 9px 16px -6px rgba(114,4,207,1);
+  -webkit-box-shadow: 0px 9px 16px -6px rgba(114,4,207,1);
+  -moz-box-shadow: 0px 9px 16px -6px rgba(114,4,207,1);
 }
 .category-box img{
   width: 100%;
@@ -1547,9 +1548,9 @@ section {
   text-align: center;
   min-height: 350px;
   background: #fff;
-  box-shadow: 4px 2px 6px 1px rgba(32,191,240,0.75);
-  -webkit-box-shadow: 4px 2px 6px 1px rgba(32,191,240,0.75);
-  -moz-box-shadow: 4px 2px 6px 1px rgba(32,191,240,0.75);
+  box-shadow: 0px 9px 16px -6px rgba(114,4,207,1);
+  -webkit-box-shadow: 0px 9px 16px -6px rgba(114,4,207,1);
+  -moz-box-shadow: 0px 9px 16px -6px rgba(114,4,207,1);
 }
 
 .mentors .testimonial-item .testimonial-img {
@@ -1640,13 +1641,29 @@ section {
   justify-content: center;
 }
 .mentors .testimonial-item .member .social button{
-  background: #0B2B6A;
-  border: 0;
-  padding: 10px 35px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 50px;
+  box-shadow:inset 0px 0px 15px 3px #23395e;
+  background:linear-gradient(to bottom, #2e466e 5%, #415989 100%);
+  background-color:#2e466e;
+  border-radius:17px;
+  border:1px solid #1f2f47;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:15px;
+  padding:6px 13px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #263666;
 }
+.mentors .testimonial-item .member .social button:hover {
+  background:linear-gradient(to bottom, #415989 5%, #2e466e 100%);
+  background-color:#415989;
+}
+.mentors .testimonial-item .member .social button:active {
+  position:relative;
+  top:1px;
+}
+
 .mentors .testimonial-item .member .social a {
   transition: ease-in-out 0.3s;
   display: flex;
@@ -2898,3 +2915,8 @@ section {
     padding: 0;
   }
 }
+
+/*--------------------------------------------------------------
+Offcanvas
+--------------------------------------------------------------*/
+
