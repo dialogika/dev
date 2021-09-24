@@ -127,15 +127,15 @@
                     <span>Custom</span> <i class="bi bi-chevron-right"></i>
                   </a>
                   <ul>
-                    <li><a href="#">Private Class</a></li>
-                    <li><a href="#">Private Group</a></li>
+                    <li><a href="request/private-class.html">Private Class</a></li>
+                    <li><a href="request/private-group.html">Private Group</a></li>
                     <li class="dropdown-divider"></li>
-                    <li><a href="#">For Company</a></li>
+                    <li><a href="request/for-company.html">For Company</a></li>
                   </ul>
                 </li>
                 <li class="dropdown-divider"></li>
                 <li class="align-items-center">
-                  <a href="#">Discover</a>
+                  <a href="program/index.html">Discover</a>
                 </li>
               </ul>
             </li>
@@ -491,7 +491,7 @@
             </div>
             <div class="row">
               <div class="col form-group mt-3">
-                <input type="tel" class="form-control" name="Whatsapp" pattern="\+?([ -]?\d+)+|\(\d+\)([ -]\d+)" id="whatsapps" placeholder="Whatsapp" data-rule="minlen:2" data-msg="Please enter a correct phone number" required>
+                <input type="tel" class="form-control" name="Whatsapp" pattern="[0-9]{10,15}" id="whatsapps" placeholder="Whatsapp" data-rule="minlen:2" data-msg="Please enter a correct phone number" required>
                 <div class="validate"></div>
               </div>
               <div class="col form-group mt-3">
@@ -545,8 +545,7 @@
           <div class="row">
             <div class="col-lg-12 d-flex justify-content-center">
               <ul id="portfolio-flters">
-                <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-online">Online</li>
+                <li data-filter=".filter-online" class="filter-active">Online</li>
                 <li data-filter=".filter-offline">Offline</li>
                 <li data-filter=".filter-private">Private</li>
                 <li data-filter=".filter-company">Company</li>
