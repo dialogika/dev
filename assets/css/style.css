@@ -2114,6 +2114,12 @@ section {
   top: 0;
 }
 
+.portfolio .portfolio-item iframe {
+  position: relative;
+  top: 0;
+  
+}
+
 .portfolio .portfolio-item .portfolio-info {
   opacity: 0;
   position: absolute;
@@ -2170,6 +2176,10 @@ section {
 .portfolio-details .portfolio-details-slider video {
   width: 100%;
 }
+
+.portfolio-details .portfolio-details-slider iframe {
+  width: 100%;
+  }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination {
   margin-top: 20px;
