@@ -1,5 +1,6 @@
 /**
-* Template Name: Medilab - v4.3.0
+* Template Name: Medilab
+* Updated: Sep 18 2023 with Bootstrap v5.3.2
 * Template URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
@@ -186,9 +187,46 @@
   });
 
   /**
+   * Clients Slider
+   */
+  new Swiper('.clients-slider', {
+    speed: 400,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 40
+      },
+      480: {
+        slidesPerView: 3,
+        spaceBetween: 60
+      },
+      640: {
+        slidesPerView: 4,
+        spaceBetween: 80
+      },
+      992: {
+        slidesPerView: 6,
+        spaceBetween: 120
+      }
+    }
+  });
+
+
+  /**
    * Testimonials slider
    */
-  new Swiper('.testimonials-slider', {
+  new Swiper('.testimonials-slider',  {
     speed: 600,
     loop: true,
     autoplay: {
@@ -214,70 +252,168 @@
     }
   });
 
-  /**
-   * Porfolio isotope and filter
-   */
-  window.addEventListener('load', () => {
-    let portfolioContainer = select('.portfolio-container');
-    if (portfolioContainer) {
-      let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: '.portfolio-item'
-      });
+  /* end 8*/
 
-      let portfolioFilters = select('#portfolio-flters li', true);
+    new Swiper('.mentor-doctor', {
+    direction: 'vertical',
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 1000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
 
-      on('click', '#portfolio-flters li', function(e) {
-        e.preventDefault();
-        portfolioFilters.forEach(function(el) {
-          el.classList.remove('filter-active');
-        });
-        this.classList.add('filter-active');
-
-        portfolioIsotope.arrange({
-          filter: this.getAttribute('data-filter')
-        });
-        portfolioIsotope.on('arrangeComplete', function() {
-          AOS.refresh()
-        });
-      }, true);
+      1200: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      }
     }
-
   });
-
+  
   /**
-   * Initiate portfolio lightbox 
+   * Team slider
    */
-  const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
-  });
-
-  /**
-   * Portfolio details slider
-   */
-  new Swiper('.portfolio-details-slider', {
-    speed: 400,
+  new Swiper('.in-team-slider-area', {
+    speed: 600,
     loop: true,
     autoplay: {
       delay: 5000,
       disableOnInteraction: false
     },
+    slidesPerView: 'auto',
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
       clickable: true
+    },
+    navigation: {
+    nextEl: '.team_right_arrow',
+    prevEl: '.team_left_arrow',
+  }
+  });
+
+  /**
+   * Team slider
+   */
+  new Swiper('.testi', {
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    navigation: {
+    nextEl: '.testi_right_arrow',
+    prevEl: '.testi_left_arrow',
+  }
+
+  });
+
+  /**
+   * Portofolio slider
+   */
+  new Swiper('.in-portfolio-content-2', {
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    navigation: {
+    nextEl: '.testi_right_arrow',
+    prevEl: '.testi_left_arrow',
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 30
+      },
+      640: {
+        slidesPerView: 3,
+        spaceBetween: 40
+      },
+      992: {
+        slidesPerView: 4,
+        spaceBetween: 50
+      }
     }
   });
 
   /**
-   * Animation on scroll
+   * Blog Post
    */
-  window.addEventListener('load', () => {
-    AOS.init({
-      duration: 1000,
-      easing: 'ease-in-out',
-      once: true,
-      mirror: false
-    })
+  new Swiper('.blog-post', {
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    navigation: {
+    nextEl: '.testi_right_arrow',
+    prevEl: '.testi_left_arrow',
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 30
+      },
+      640: {
+        slidesPerView: 3,
+        spaceBetween: 40
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 50
+      }
+    }
+
   });
+
+
+  
+
+
+  /**
+   * Initiate Pure Counter 
+   */
+  new PureCounter();
 
 })()

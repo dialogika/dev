@@ -5,393 +5,597 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>TESTING</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Kelas Public Speaking Jogja | Dialogika</title>
+  <meta content="Pelatihan kelas public speaking jogja, selama 1 bulan hingga 3 bulan dan bergaransi bersama Dialogika"
+    name="description">
+  <meta content="public speaking" name="keywords">
 
   <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-  <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"/>
-
   <!-- Vendor CSS Files -->
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet"/>
-    <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet"/>
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"/>
-    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet"/>
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"/>
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.css" rel="stylesheet">
+  
+
+  <!-- Part CSS Files -->
+  <link href="assets/part/pricing/pricing.css" rel="stylesheet">
+  <link href="assets/part/category/category.css" rel="stylesheet">
+  <link href="assets/part/course/course.css" rel="stylesheet">
+  <link href="assets/part/theme-counter/theme-counter.css" rel="stylesheet">
+  <link href="assets/part/features-small/features-small.css" rel="stylesheet">
+  <link href="assets/part/testimoni-insurin/testi.css" rel="stylesheet">
+  <link href="assets/part/portfolio-insurin/portfolio.css" rel="stylesheet">
+  <link href="assets/part/services-insurin/service.css" rel="stylesheet">
+  <link href="assets/part/recent-append/recent-post.css" rel="stylesheet">
+  <link href="assets/part/cta-append/cta.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet"/>
+  <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- Spreadsheet API Form Pendaftaran -->
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.js"      
-      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-      crossorigin="anonymous"></script>
-    <script>
-      function SubForm (){
-        $.ajax({
-          url:"https://api.apispreadsheets.com/data/14030/",
-          type:"post",
-          data:$("#myForm").serializeArray(),
-          success: function(){ 
-            // alert("Form Data Submitted :)")
-            $('#notifications').modal('show');
-          },
-          error: function(){
-            alert("There was an error :(")
+  <!--  ========================================================  -->
+        <!-- Spreadsheet API Form Pendaftaran -->
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+          crossorigin="anonymous"></script>
+        <script>
+          function HeroForm() {
+            $.ajax({
+              url: "https://api.apispreadsheets.com/data/JYfPTNSLW4GoVohc/",
+              type: "post",
+              data: $("#hero-form").serializeArray(),
+              headers: {
+                accessKey: "b5216464a11be561ae0b40f9ed98ee90",
+                secretKey: "038c9369d3b221f2387c9d8f3f3e488d"
+              },
+              success: function () {
+                window.location.href = "https://api.whatsapp.com/send?phone=6285162992597&text=Haloo%20kak%20saya%20tertarik%20dengan%20program%20public%20speaking%20dialogika%0A%0A%60%60%60dari%20halaman%20home%20dialogika%60%60%60";
+              },
+              error: function () {
+                alert("There was an error :(")
+              }
+            });
           }
-        });
-      }
 
-      function Subcription (){
-        $.ajax({
-          url:"https://api.apispreadsheets.com/data/18511/",
-          type:"post",
-          data:$("#subcriptions").serializeArray(),
-          success: function(){
-            $('#subcription-modal').modal('show');
-          },
-          error: function(){
-            alert("There was an error :(")
+          function SubForm() {
+            $.ajax({
+              url: "https://api.apispreadsheets.com/data/JYfPTNSLW4GoVohc/",
+              type: "post",
+              data: $("#myForm").serializeArray(),
+              headers: {
+                accessKey: "b5216464a11be561ae0b40f9ed98ee90",
+                secretKey: "038c9369d3b221f2387c9d8f3f3e488d"
+              },
+              success: function () {
+                alert("Form Data Submitted :)")
+                // $('#notifications').modal('show');
+              },
+              error: function () {
+                alert("There was an error :(")
+              }
+            });
           }
-        });
-      }
-    </script>
-  <!-- End Spreadsheet API Form Pendaftaran -->
 
+          function Subcription() {
+            $.ajax({
+              url: "https://api.apispreadsheets.com/data/18511/",
+              type: "post",
+              data: $("#subcriptions").serializeArray(),
+              success: function () {
+                // $('#subcription-modal').modal('show');
+                // open("https://link.dialogika.co/open-whatsapp-group");
+                window.location.href = "https://link.dialogika.co/open-whatsapp-group";
+              },
+              error: function () {
+                alert("There was an error :(")
+              }
+            });
+          }
+        </script>
+        <!-- End Spreadsheet API Form Pendaftaran -->
+
+        <!-- Meta Pixel Code -->
+        <script>
+          !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+              n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+          }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+          fbq('init', '916674555903437');
+          fbq('track', 'PageView');
+        </script>
+        <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=916674555903437&ev=PageView&noscript=1" /></noscript>
+        <!-- End Meta Pixel Code -->
+
+        <!-- Pixel Quora -->
+        <!-- DO NOT MODIFY -->
+        <!-- Quora Pixel Code (JS Helper) -->
+        <script>
+          !function (q, e, v, n, t, s) { if (q.qp) return; n = q.qp = function () { n.qp ? n.qp.apply(n, arguments) : n.queue.push(arguments); }; n.queue = []; t = document.createElement(e); t.async = !0; t.src = v; s = document.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s); }(window, 'script', 'https://a.quora.com/qevents.js');
+          qp('init', 'cae6711903da464ab62f03df5f66aedc');
+          qp('track', 'ViewContent');
+        </script>
+        <noscript><img height="1" width="1" style="display:none"
+            src="https://q.quora.com/_/ad/cae6711903da464ab62f03df5f66aedc/pixel?tag=ViewContent&noscript=1" /></noscript>
+        <!-- End of Quora Pixel Code -->
+        <script>qp('track', 'GenerateLead');</script>
+        <!-- End Pixel Quora -->
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HV60XT856G"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { dataLayer.push(arguments); }
+          gtag('js', new Date());
+
+          gtag('config', 'UA-148836422-2');
+          gtag('config', 'G-HV60XT856G');
+        </script>
+        <!-- End Global site tag (gtag.js) - Google Analytics -->
+
+        <!-- Google Tag Manager -->
+        <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+              'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+              j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+          })(window, document, 'script', 'dataLayer', 'GTM-KGK9D6H');</script>
+        <!-- End Google Tag Manager -->
+
+        <!-- Hotjar Tracking Code for https://dialogika.co -->
+        <script>
+          (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 2828594, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+          })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+        </script>
+        <!-- End Hotjar -->
+  <!--  ========================================================  -->
 </head>
 
 <body>
 
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KGK9D6H" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
   <!-- ======= Top Bar ======= -->
-    <div id="topbar" class="d-flex align-items-center fixed-top">
-      <div class="container d-flex justify-content-between">
-        <div class="contact-info d-flex align-items-center">
-          <i class="bi bi-envelope"></i> <a href="mailto:admin@dialogika.co">admin@dialogika.co</a>
-          <i class="bi bi-phone"></i> +62 821 377 60 699
-        </div>
-        <div class="d-none d-lg-flex social-links align-items-center">
-          <a href="https://link.dialogika.co/twitter" class="twitter"><i class="bi bi-twitter"></i></a>
-          <a href="https://link.dialogika.co/facebook" class="facebook"><i class="bi bi-facebook"></i></a>
-          <a href="https://link.dialogika.co/instagram" class="instagram"><i class="bi bi-instagram"></i></a>
-          <a href="https://link.dialogika.co/linkedin" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
-        </div>
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope"></i> <a href="mailto:admin@dialogika.co">admin@dialogika.co</a>
+        <i class="bi bi-phone"></i> +62 851 6299 2597
+      </div>
+      <div class="d-none d-lg-flex social-links align-items-center">
+        <a href="https://link.dialogika.co/twitter" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="https://link.dialogika.co/facebook" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://link.dialogika.co/instagram" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://link.dialogika.co/linkedin" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
       </div>
     </div>
-  <!-- End Top Bar -->
+  </div>
 
   <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top">
-      <div class="container d-flex align-items-center">
-         <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
 
-        <nav id="navbar" class="navbar order-last order-lg-0">
-          <ul id="navbar-navlist">
-            <li><a class="nav-link scrollto active" data-scroll href="#hero">Home</a></li>
-            <li class="dropdown"><a href="#"><span>Program</span> <i class="bi bi-chevron-down"></i></a>
-              <ul>
-                <li class="dropdown">
-                  <a href="#">
-                    <span>Online</span> <i class="bi bi-chevron-right"></i>
-                  </a>
-                  <ul>
-                    <li><a href="program/basic-class.html">Basic Class</a></li>
-                    <li><a href="program/basic-plus.html">Basic Plus</a></li>
-                    <li><a href="program/basic-plus.html">Presentasi</a></li>
-                    <li class="dropdown-divider"></li>
-                    <li><a href="program/english-class.html">English Class</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown">
-                  <a href="#">
-                    <span>Offline</span> <i class="bi bi-chevron-right"></i>
-                  </a>
-                  <ul>
-                    <li><a href="program/first-class.html">First Class</a></li>
-                    <li><a href="program/master-class.html">Master Class</a></li>
-                    <li><a href="program/pro-class.html">Pro Class</a></li>
-                    <li class="dropdown-divider"></li>
-                    <li><a href="program/emce-class.html">Master of Ceremony</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown">
-                  <a href="#">
-                    <span>Custom</span> <i class="bi bi-chevron-right"></i>
-                  </a>
-                  <ul>
-                    <li><a href="request/private-class.html">Private Class</a></li>
-                    <li><a href="request/private-group.html">Private Group</a></li>
-                    <li class="dropdown-divider"></li>
-                    <li><a href="request/for-company.html">For Company</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown-divider"></li>
-                <li class="align-items-center">
-                  <a href="program/index.html">Discover</a>
-                </li>
-              </ul>
-            </li>
-            <li><a class="nav-link scrollto" data-scroll href="#mentors">Mentors</a></li>
-            <li><a class="nav-link scrollto" data-scroll href="#about">About</a></li>
-          </ul>
-          <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav><!-- .navbar -->
+       <a href="../index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
 
-        <a data-bs-toggle="offcanvas" href="#classes" class="appointment-btn"><span class="d-none d-md-inline">Check our</span> Class</a>
+       <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li class="dropdown"><a href="#"><span>Program</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li class="dropdown"><a href="#"><span>Online</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Basic Plus</a></li>
+                  <li><a href="#">Kids Plus</a></li>
+                  <li><hr/></li>
+                  <li><a href="#">Basic Private</a></li>
+                  <li><a href="#">Kids Private</a></li>
+                  <li><hr/></li>
+                  <li><a href="#">Action Play</a></li>
+                  <li><a href="#">Kids Play</a></li>
+                  <li><a href="#">Teen Play</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>Offline</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">First Class</a></li>
+                  <li><a href="#">First Kids</a></li>
+                  <li><a href="#">First Private</a></li>
+                </ul>
+              </li>
+              <li><hr/></li>
+              <li class="dropdown"><a href="#"><span>Area</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Yogyakarta</a></li>
+                  <li><a href="#">Bintaro</a></li>
+                  <li><a href="#"><span>Surabaya</span> <span class="badge rounded-pill text-bg-secondary">Coming Soon</span></a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="../corporate/">Corporate</a></li>
+          <li><a class="nav-link scrollto" href="../event/">Event</a></li>
+          <li><a class="nav-link scrollto" href="../service/">Services</a></li>
+          <li><a class="nav-link scrollto" href="../shop/">Shop</a></li>
+          <li><a class="nav-link scrollto" href="../blog/">Blog</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+       </nav><!-- .navbar -->
 
-      </div>
-    </header>
-  <!-- End Header -->
+      <a href="#appointment" class="appointment-btn">Promo <span class="d-none d-md-inline">Class</span></a>
+
+    </div>
+  </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex align-items-center" style="background: url('assets/img/hero.jpg') top center;">
-      <div class="container">
-        <h1>Hello Leader!</h1>
-        <h2>We help you to deliver your value and understanding each other by mastering art of public speaking</h2>
-        <a href="#favorite" class="btn-get-started scrollto">Get Started</a>
-      </div>
-    </section>
-  <!-- End Hero -->
+  <section id="hero" class="d-flex align-items-center" >
+    <div class="container text-center text-md-start">
+      <br><br><br><br><br><br>
+      <h1>Bangun Rasa Percaya Diri <br class="d-md-block d-none"> Mulai Dari Nol.</h1>
+      <h2>Unleash Your Full Potential<br>By Mastering Art of Public Speaking.</h2>
+      <a href="https://wa.link/dugu63" target="__blank" class="btn-get-started">
+        <i class='bx bxl-whatsapp bx-tada'></i><span> Daftar Sekarang</span>
+      </a> &nbsp;
+      <a href="https://youtu.be/-oeLrO7nHv0?si=radqfCGM0XywiA9K" class="glightbox btn-watch-video">
+        <i class='bx bx-play-circle '></i><span>Tentang Kami</span>
+      </a>
+    </div>
+  </section><!-- End Hero -->
 
   <main id="main">
 
     <!-- ======= Why Us Section ======= -->
-      <section id="why-us" class="why-us">
-        <div class="container">
+    <section id="why-us" class="why-us">
+      <div class="container">
 
-          <div class="row">
-            <div class="col-lg-4 d-flex align-items-stretch">
-              <div class="content">
-                <h3>Why Choose Dialogika?</h3>
-                <p>
-                  Anda mungkin seorang profesional/senior dengan seabreg pengalaman, tapi anda merasa selalu <b>kesulitan menyampaikan</b> maksud anda didepan orang lain bahkan sering meleset, lompat-lompat hingga ngeblank tiba-tiba didepan umum atau dihadapan orang tertentu
-                </p>
-                <p>
-                  Kami menyebut ini Gagal Paham Kepada Diri Sendiri. Di Dialogika kami membantu teman-teman yang sulit menyampaikan value untuk semua profesi dari <b>Profesional, Pengusaha & Mahasiswa</b>
-                </p>
-                <div class="text-center">
-                  <a href="#" class="more-btn">Our Value <i class="bx bx-chevron-right"></i></a>
-                </div>
+        <div class="row">
+          <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="content">
+              <h3>Sadari Bahwa Anda Unik!</h3>
+              <hr/>
+              <p>
+                Pelatihan public speaking sebenarnya tidak memakan waktu lama, tetapi membuat Anda sadar dengan kemampuan Anda, gaya bicara Anda membutuhkan waktu yang tidak sebentar. Dialogika merancang pelatihan yang stimulus Anda menemukan siapa diri Anda sebenarnya yang kami yakini akan membantu memboosting kepercayan diri, pola pikir, kepribadian hingga cara bicara yang lebih baik.
+              </p>
+              <div class="text-center">
+                <a href="#more-why" class="more-btn scrollto">Berikut Caranya <i class="bx bx-chevron-right desktop-arrow"></i> <i class="bx bx-chevron-down mobile-arrow"></i></a>
               </div>
             </div>
-            <div class="col-lg-8 d-flex align-items-stretch">
-              <div class="icon-boxes d-flex flex-column justify-content-center">
-                <div class="row">
-                  <div class="col-xl-4 d-flex align-items-stretch">
-                    <div class="icon-box mt-4 mt-xl-0">
-                      <i class='bx bxs-battery-charging'></i>
-                      <h4>Positive Process</h4>
-                      <p>Kami membantu anda untuk memahami proses pengembangan diri sendiri, mengenal lebih dalam pola pikir hingga susunan dan tahapan berbicara dihadapan orang lain.</p>
-                    </div>
-                  </div>
-                  <div class="col-xl-4 d-flex align-items-stretch">
-                    <div class="icon-box mt-4 mt-xl-0">
-                      <i class='bx bxl-slack'></i>
-                      <h4>Bongkar Mindset</h4>
-                      <p>Dialogika menyediakan wadah untuk Anda berlatih tanpa harus takut membuat resiko yang besar. Disini anda akan dipaksa mengeluarkan kemampuan terbaik anda dan terbiasa dengannya.</p>
-                    </div>
-                  </div>
-                  <div class="col-xl-4 d-flex align-items-stretch">
-                    <div class="icon-box mt-4 mt-xl-0">
-                      <i class='bx bx-message-check'></i>
-                      <h4>Mentor &amp; Vibes</h4>
-                      <p>Mentor akan membantu Anda dan membimbing Anda untuk terus bisa, dan mencoba lagi dan lagi. Mentor juga meng-analisis tata cara bicara anda selama pertemuan.</p>
-                    </div>
+          </div>
+          <div class="col-lg-8 d-flex align-items-stretch">
+            <div class="icon-boxes d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-xl-4 d-flex align-items-stretch" id="more-why">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <img src="assets/img/home/customize-before.png">
+                    <h4>Customize Method</h4>
+                    <p>Tidak ada 100% metode yang benar-benar cocok dengan Anda, untuk itu Anda perlu mengkombinasikan beragam metode dengan pengalaman dan kecocokan diri Anda.</p>
                   </div>
                 </div>
-              </div><!-- End .content-->
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <img src="assets/img/home/synergy.png">
+                    <h4>Synergy Community</h4>
+                    <p>Untuk bisa mengasah pikiran dan idea Anda, Anda perlu teman yang bisa Anda ajak komunikasi, adu pendapat, debat tanpa harus membuat diri Anda baper.</p>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <img src="assets/img/home/best.png">
+                    <h4>Best Mentor</h4>
+                    <p>Anda perlu mencari mentor yang mengantarkan diri Anda menyadari kelebihan diri Anda. Dan Di Dialogika kami memberikan 3 point diatas secara lengkap.</p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container-fluid">
+
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative">
+            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox play-btn mb-4"></a>
+          </div>
+
+          <div class="col-xl-6 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
+            <div class="d-none d-md-block">
+              <div class="section-title">
+                <h5>About Us</h5>
+                <h3>Unleash Your Full Potential <br class="d-md-block d-none"> by Mastering Art Public Speaking</h3>
+              </div>
+              <p>Dialogika adalah rumah perubahan untuk Anda yang ingin upgrade mindset, menambah jejaring dan meningkatkan skill komunikasi.</p>
+              <p>Saat ini juga Dialogika menyediakan pelatihan public speaking sebagai product utamanya. Selain itu juga Dialogika memberikan wadah sharing dan teman cerita untuk para member yang sekedar membutuhkan tempat untuk berbagi..</p>
+
+              <div class="text-end">
+                <a href="about/index.html" class="more-btn">Read More</a>
+              </div>
+            </div>
+            <div class="section-title" style="margin-top:30px;margin-bottom: -30px;">
+              <h5>Why Us</h5>
+              <h3>Alasan Memilih Dialogika</h3>
+            </div>
+
+            <div class="icon-box">
+              <div class="icon">
+                <img src="assets/img/home/explore-before.png" class="about-1">
+                <img src="assets/img/home/explore-after.png" class="about-2 ">
+              </div>
+              <h4 class="title"><a href="">Explore Diri</a></h4>
+              <p class="description">Kelas kami berfokus untuk Anda menemukan style terbaik anda saat berbicara di depan umum.</p>
+            </div>
+
+            <div class="icon-box">
+              <div class="icon">
+                <img src="assets/img/home/time-before.png" class="about-1 ">
+                <img src="assets/img/home/time-after.png" class="about-2 ">
+              </div>
+              <h4 class="title"><a href="">Durasi Panjang</a></h4>
+              <p class="description">Rata-rata program berjalan selama sebulan bukan satu atau dua hari, baik online ataupun offline</p>
+            </div>
+
+            <div class="icon-box">
+              <div class="icon">
+                <img src="assets/img/home/shield-before.png" class="about-1 ">
+                <img src="assets/img/home/shield-after.png" class="about-2 ">
+              </div>
+              <h4 class="title"><a href="">Garansi Mengulang</a></h4>
+              <p class="description">Hampir semua program kami memiliki garansi mengulang, jadi anda tidak perlu khawatir sekalipun Anda tertinggal kelas.</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Featured Services Section ======= -->
+    <section id="featured-services" class="featured-services d-none d-md-block">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h6>Our Offer</h6>
+          <h2>To Explore Yourself</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon">
+                <img src="assets/img/home/course-before.png" class="course-social-1 ">
+                <img src="assets/img/home/course-after.png" class="course-social-2 ">
+              </div>
+              <h4 class="title"><a href="#">Live Course</a></h4><hr/>
+              <p class="description">Pembelajaran interaktif baik online ataupun offline, harapan kami member bisa berinteraksi dengan para mentor/pakar yang kami miliki</p>
+              <div class="text-end"><a href="dialogika.co/program/" class="more-button" target="__blank">More</a></div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon">
+                <img src="assets/img/home/in-house-before.png" class="course-social-1 ">
+                <img src="assets/img/home/in-house-after.png" class="course-social-2 ">
+              </div>
+              <h4 class="title"><a href="">In House Training</a></h4><hr/>
+              <p class="description">Tidak hanya untuk masyarakat, kami juga menyediakan layanan khusus untuk korporasi, perusahaan dari mulai UMKM hingga perusahaan besar</p>
+              <div class="text-end"><a href="https://dialogika.co/corporate" class="more-button" target="__blank">More</a></div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon">
+                <img src="assets/img/home/excellence-before.png" class="course-social-1 ">
+                <img src="assets/img/home/excellence-after.png" class="course-social-2 ">
+              </div>
+              <h4 class="title"><a href="">Excellence Services</a></h4><hr/>
+              <p class="description">Layanan yang optimal mulai dari reminder, recording, hingga layanan konsultasi, curhat dan hingga program pendampingan khusus</p>
+              <div class="text-end"><a href="https://dialogika.co/service/" class="more-button" target="__blank">More</a></div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon">
+                <img src="assets/img/home/module-before.png" class="course-social-1 ">
+                <img src="assets/img/home/module-after.png" class="course-social-2 ">
+              </div>
+              <h4 class="title"><a href="">Book & Module</a></h4><hr/>
+              <p class="description">Dialogika men-support marketplace pengembangan diri, dari mulai ebook, audiobook, video-course, private module hingga data-data riset.</p>
+              <div class="text-end"><a href="https://dialogika.co/shop/" class="more-button" target="__blank">More</a></div>
             </div>
           </div>
 
         </div>
-      </section>
-    <!-- End Why Us Section -->
+
+      </div>
+    </section><!-- End Featured Services Section -->
 
     <!-- ======= Courses Category ======= -->
-      <div class="section-full bg-white content-inner" id="favorite">
-        <div class="container">
-          <div class="section-title">
-            <h2 class="kiri text-start">Favorite</h2>
-            <p class="kiri text-start">Recommended Class</p>
+    <section class="section-full content-inner section-bg" id="favorite">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-lg-8 col-md-8 col-12">
+            <div class="section-title">
+              <h5>Favorite</h5>
+              <h3>Classes</h3>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-4 col-md-4 col-6">
+            <div class="d-flex justify-content-md-end">
+              <a href="program/index.html" id="btn-explore" >Explore <span class="d-none d-md-inline">Class</span></a>
+            </div>
           </div>
           <div class="row gy-4">
-            <div class="col-lg-6 col-md-6 m-b30 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.3s">
-              <a href="program/pro-class.html" class="category-box dlab-box">
+            <div class="col-lg-6 col-md-6 m-b30">
+              <a href="program/first-class.html" class="category-box dlab-box">
                 <div class="dlab-media dlab-img-effect zoom">
-                  <img src="assets/img/program/pro-c/home.jpg" alt="">
-                  <div class="top-lefts"><span class="badge rounded-pill bg-danger">Hot</span></div>
+                  <img
+                    src="https://media.istockphoto.com/id/1049824818/id/foto/pembicara-berbicara-dalam-seminar-dengan-banyak-audiens-untuk-pertemuan-bisnis-untuk-kunci.jpg?s=612x612&w=0&k=20&c=AlOvx-5fF2IMCzPYUvmKrfvBgrG2iFlcLvMUpcNwSxg="
+                    alt="Kelas Public Speaking Jogja">
+                  <div class="top-lefts"><span class="badge text-bg-danger">Best Selling</span></div>
                 </div>
                 <div class="icon-content">
-                  <h2 class="dlab-tilte">Pro Class</h2>
-                  <span class="badge rounded-pill bg-light text-dark">Offline</span>
-                  <span class="badge rounded-pill bg-success">Discount</span>
-                  <span class="badge rounded-pill bg-danger">Garansi</span>
+                  <h2 class="dlab-tilte" style="color:#fff;">First Class</h2>
+                  <span class="badge rounded-pill text-bg-primary">Yogyakarta</span>
+                  <span class="badge rounded-pill text-bg-success">Tangerang</span>
+                  <span class="badge rounded-pill text-bg-secondary">Surabaya</span>
                 </div>
               </a>
             </div>
-            <div class="col-lg-3 col-md-6 m-b30 wow fadeInUp" >
+            <div class="col-lg-3 col-md-6 m-b30">
               <a href="program/basic-plus.html" class="category-box dlab-box">
                 <div class="dlab-media dlab-img-effect zoom">
-                  <img src="assets/img/program/basic-p/home.jpg" alt="">
-                  <div class="top-lefts"><span class="badge rounded-pill bg-success">Best Choice</span></div>
+                  <img
+                    src="https://g.foolcdn.com/editorial/images/702742/consumer-reviews-information-online.jpg?width=165"
+                    alt="Kelas Public Speaking Online">
+                  <div class="top-lefts"><span class="badge rounded-pill text-bg-primary">Best Choice</span></div>
                 </div>
                 <div class="icon-content">
-                  <h2 class="dlab-tilte">Basic Plus</h2>
-                  <span class="badge rounded-pill bg-dark">Online</span>
-                  <span class="badge rounded-pill bg-success">Discount</span>
-                  <span class="badge rounded-pill bg-danger">Garansi</span>
+                  <h2 class="dlab-tilte" style="color:#fff;">Basic Plus</h2>
+                  <span class="badge rounded-pill text-bg-warning">Online</span>
+                  <span class="badge rounded-pill text-bg-primary">Discount</span>
+                  <span class="badge rounded-pill text-bg-success">Garansi</span>
                 </div>
               </a>
             </div>
-            <div class="col-lg-3 col-md-6 m-b30 wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.2s">
-              <a href="program/presentation-class.html" class="category-box dlab-box">
+            <div class="col-lg-3 col-md-6 m-b30">
+              <a href="program/kids-plus.html" class="category-box dlab-box">
                 <div class="dlab-media dlab-img-effect zoom">
-                  <img src="assets/img/program/presentation-c/home.jpg" alt="">
-                  <div class="top-lefts"><span class="badge rounded-pill bg-success">Best Buy</span></div>
+                  <img
+                    src="https://media.istockphoto.com/id/1216865684/id/foto/gadis-asia-menggunakan-laptop-untuk-belajar-online-selama-homeschooling-di-rumah.jpg?s=612x612&w=0&k=20&c=ldbsJRgmL2tupMI1kngK1EUh1Ys4qQ__14TmhXt9ttc="
+                    alt="Kelas Public Speaking Anak">
+                  <div class="top-lefts"><span class="badge rounded-pill text-bg-warning">New Program</span></div>
                 </div>
                 <div class="icon-content">
-                  <h2 class="dlab-tilte">Presentasi</h2>
-                  <span class="badge rounded-pill bg-dark">Online</span>
-                  <span class="badge rounded-pill bg-success">Discount</span>
-                  <span class="badge rounded-pill bg-danger">Garansi</span>
+                  <h2 class="dlab-tilte" style="color:#fff;">Kids Plus</h2>
+                  <span class="badge rounded-pill text-bg-danger">Online</span>
+                  <span class="badge rounded-pill text-bg-primary">Promo</span>
+                  <span class="badge rounded-pill text-bg-success">Garansi</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="row gy-4">
+            <div class="col-lg-3 col-md-6 m-b30 d-none d-md-block">
+              <a href="page/kelas-public-speaking-tangsel/" class="category-box dlab-box">
+                <div class="dlab-media dlab-img-effect zoom">
+                  <img
+                    src="https://media.istockphoto.com/id/490673902/id/foto/bundaran-hi-jakarta-landmark-at-night.jpg?s=612x612&w=0&k=20&c=LDuTCDWPLowFO4SHd0cO_301PX3UQm857Jtf0LLBIB4="
+                    alt="Kelas Public Speaking Tangerang Selatan">
+                  <div class="top-lefts"><span class="badge rounded-pill rounded-green">New Program</span></div>
+                </div>
+                <div class="icon-content">
+                  <h2 class="dlab-tilte" style="color:#fff;">First Private</h2>
+                  <span class="badge rounded-pill text-bg-primary">Yogyakarta</span>
+                  <span class="badge rounded-pill text-bg-success">Tangerang</span>
+                  <span class="badge rounded-pill text-bg-secondary">Surabaya</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-6 m-b30 d-none d-md-block">
+              <a href="program/presentation-class.html" class="category-box dlab-box">
+                <div class="dlab-media dlab-img-effect zoom">
+                  <img
+                    src="https://media.istockphoto.com/id/1033720780/id/foto/konsep-presentasi-bisnis.jpg?s=612x612&w=0&k=20&c=oGibZO0950pCB06XRWKMGDr1kQh5IFuwbXA-ePEQElU="
+                    alt="Pelatihan Presentasi">
+                  <div class="top-lefts"><span class="badge rounded-pill rounded-green">Best Buy</span></div>
+                </div>
+                <div class="icon-content">
+                  <h2 class="dlab-tilte" style="color:#fff;">Presentasi</h2>
+                  <span class="badge rounded-pill text-bg-warning">Online</span>
+                  <span class="badge rounded-pill text-bg-primary">Discount</span>
+                  <span class="badge rounded-pill text-bg-success">Garansi</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-6 col-md-6 m-b30 d-none d-md-block">
+              <a href="subscribe/kids-play.html" class="category-box dlab-box">
+                <div class="dlab-media dlab-img-effect zoom">
+                  <img
+                    src="https://media.istockphoto.com/id/1216557214/id/foto/anak-laki-laki-menggunakan-laptop-untuk-pekerjaan-rumah-di-rumah.jpg?s=612x612&w=0&k=20&c=qAjLyHKNJw_t7GgRW4P1urOp8HrPzpLm3GVvRjTKbbw="
+                    alt="Pelatihan Public Speaking Anak">
+                  <div class="top-lefts"><span class="badge rounded-pill rounded-red">Hot Program</span></div>
+                </div>
+                <div class="icon-content">
+                  <h2 class="dlab-tilte" style="color:#fff;">Kids Play</h2>
+                  <span class="badge rounded-pill text-bg-warning">Online</span>
+                  <span class="badge rounded-pill text-bg-primary">Discount</span>
+                  <span class="badge rounded-pill text-bg-info">Subscribe</span>
                 </div>
               </a>
             </div>
           </div>
         </div>
       </div>
-    <!-- End Courses Category -->
-
-    <!-- ======= Mentors Section ======= -->
-      <section id="mentors" class="mentors section-bg">
-        <div class="container">
-
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="section-title">
-                <h2 class="kiri text-start">Mentor</h2>
-                <p class="kiri text-start">Dialogika</p>
-              </div>
-            </div>
-            <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
-
-              <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
-                <div class="swiper-wrapper">
-
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <div class="member" data-aos="zoom-in" data-aos-delay="100">
-                        <div class="pic"><img src="assets/img/mentor/fanny.jpg" class="img-fluid" alt=""></div>
-                        <div class="member-info">
-                          <h4>Fanny Carolina</h4>
-                          <span>Professional MC</span>
-                          <p>15 tahun berkecimpung di MC Professional dalam skala nasional.</p>
-                          <div class="social">
-                            <div class="text-center"><button class="myButton" type="submit">Learn From Her</button></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div><!-- End testimonial item -->
-
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <div class="member" data-aos="zoom-in" data-aos-delay="100">
-                        <div class="pic"><img src="assets/img/mentor/oka.jpg" class="img-fluid" alt=""></div>
-                        <div class="member-info">
-                          <h4>Oka Fahreza</h4>
-                          <span>Presenter Jogja TV</span>
-                          <p>Presenter aktif sekaligus berpegalaman sebagai tenaga pendidik.</p>
-                          <div class="social">
-                            <div class="text-center"><button type="submit">Learn From Him</button></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div><!-- End testimonial item -->
-
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <div class="member" data-aos="zoom-in" data-aos-delay="100">
-                        <div class="pic"><img src="assets/img/mentor/zuhrul.jpg" class="img-fluid" alt=""></div>
-                        <div class="member-info">
-                          <h4>Zuhrul Nofa</h4>
-                          <span>Radio Broadcasting</span>
-                          <p>Aktif sebagai penyiar radio plus aktif juga menjadi MC diacara-acara besar.</p>
-                          <div class="social">
-                            <div class="text-center"><button type="submit">Learn From Him</button></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div><!-- End testimonial item -->
-
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <div class="member" data-aos="zoom-in" data-aos-delay="100">
-                        <div class="pic"><img src="assets/img/mentor/andi.jpg" class="img-fluid" alt=""></div>
-                        <div class="member-info">
-                          <h4>Andi Laurentinus</h4>
-                          <span>Storyteller Specialist</span>
-                          <p>Professional Guide, bisa beberapa bahasa dan seorang pengajar handal!</p>
-                          <div class="social">
-                            <div class="text-center"><button type="submit">Learn From Him</button></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div><!-- End testimonial item -->
-
-                  <div class="swiper-slide">
-                    <div class="testimonial-item">
-                      <div class="member" data-aos="zoom-in" data-aos-delay="100">
-                        <div class="pic"><img src="assets/img/mentor/hayin.jpg" class="img-fluid" alt=""></div>
-                        <div class="member-info">
-                          <h4>Hayinah Ipmawati</h4>
-                          <span>Psikolog & Public Speaker</span>
-                          <p>Psikolog aktif. Cocok buat anda yang merasa punya trauma masa lalu</p>
-                          <div class="social">
-                            <div class="text-center"><button type="submit">Learn From Her</button></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div><!-- End testimonial item -->
-
-                </div>
-                <div class="swiper-pagination"></div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </section>
-    <!-- End Mentors Section -->    
+    </section><!-- End Courses Category -->
 
     <!-- ======= Testimonials Section ======= -->
-      <section id="testimonials" class="testimonials">
-        <div class="container">
+    <section id="testimonials" class="testimonials">
+      <div class="container">
 
-          <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+       <div class="row">
+        <div class="col-lg-3">
+          <div class="section-title" data-aos="fade-right">
+            <h5>Testimonials</h5>
+            <h3>Positive Feedback</h3>
+            <p class="text-start">Semua testimonial yang ada disini adalah member yang mengikuti kelas online, offline, anak dan juga program khusus koporasi, silahkan check real feedbacknya di google review kami</p>
+            <div class="text-center text-md-start" style="margin-top:20px;">
+              <a href="#">Google Review</a>
+            </div>
+          </div>
+        </div> 
+        <div class="col-lg-9"> 
+          <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
             <div class="swiper-wrapper">
 
               <div class="swiper-slide">
                 <div class="testimonial-wrap">
                   <div class="testimonial-item">
-                    <img src="assets/img/testimonials/gallang.jpg" class="testimonial-img" alt="">
-                    <h3>Rizky Gallang</h3>
-                    <h4>Mahasiswa S2</h4>
+                    <img src="https://lh3.googleusercontent.com/a-/ALV-UjUerRQXePjqRfQdV18KNpbPS4slNXhSflUWVgOTgV0ImQ=w72-h72-p-rp-mo-br100" class="testimonial-img" alt="">
+                    <h3>Maysarah</h3>
+                    <h4>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </h4>
                     <p>
                       <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                      Saya berterima kasih kepada Dialogika, berkat kelas online Dialogika saya memiliki kepercayaan lebih, hingga berani menjadi moderator dihadapan 700 orang disebuah <i>event</i> di Kalimantan Timur.
+                      Terima Kasih kepada dialogika dan juga mentor saya yakni Panji Arya, selama belajar di sini selalu di beri tantangan sehingga membuat saya juga makin banyak dapat pengalaman dan juga pembelajaran baru untuk public speaking terlebih kelasnya sangat enjoy, pokoknya keren
                       <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                     </p>
                   </div>
@@ -401,12 +605,18 @@
               <div class="swiper-slide">
                 <div class="testimonial-wrap">
                   <div class="testimonial-item">
-                    <img src="assets/img/testimonials/ayudia.jpg" class="testimonial-img" alt="">
-                    <h3>Ayudia Indrawati</h3>
-                    <h4>Psikolog Industri dan Organisasi</h4>
+                    <img src="https://lh3.googleusercontent.com/a-/ALV-UjUEw8d2W9pLUIDTodoFHwwIjhoLrxtkUA0LqFKfnrAmSLBV=w72-h72-p-rp-mo-br100" class="testimonial-img" alt="">
+                    <h3>Ahda Syifa</h3>
+                    <h4>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </h4>
                     <p>
                       <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                      Dari owner, mentor yang mengajar dan menemani serta mengajar bahkan sampai teman-teman yang join orangnya asyik-asyik. Pokoknya selalu di support dan diberikan feedback yang positif dan membangun. Gak ada tandingannya lah!
+                      seneng banget bisa ikut kelas disini, kelasnya seru dan menarik serta mentornya juga asik kebetulan dapet mentor kak fany dan mentor lain juga pasti ga kalah serunya. dapet banyak ilmu yang sangat membantu meningkatkan public speaking dan bikin makin pede, jadwal kelasnya juga fleksibel. sangat sangat worth it ikut kelas disini
                       <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                     </p>
                   </div>
@@ -416,12 +626,18 @@
               <div class="swiper-slide">
                 <div class="testimonial-wrap">
                   <div class="testimonial-item">
-                    <img src="assets/img/testimonials/deszlaria.jpg" class="testimonial-img" alt="">
-                    <h3>Deszlaria Putri</h3>
-                    <h4>Business Development at Shopee</h4>
+                    <img src="https://lh3.googleusercontent.com/a-/ALV-UjVWtE3XWUT0y6FKpyaEvaz1WPqV1BDCntbM2TcUo270vlvH=w72-h72-p-rp-mo-br100" class="testimonial-img" alt="">
+                    <h3>Tascha Sabrie</h3>
+                    <h4>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </h4>
                     <p>
                       <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                      Seru banget kelasnya, bisa dapat temen baru, dengerin cerita banyak hal plus nambah ilmu. Kepingin ikut lagi!
+                      Mentor Ms Fany orangnya sangat menyenangkan sehingga materi yang disampaikan jadi mudah diterima oleh peserta. Yang paling saya suka selalu ada praktek setelah materi disampaikan jadi tidak hanya teori saja. Banyak sekali perkembangan yang saya rasakan selama bergabung di Dialogika. Sukses selalu untuk Mentor dan Dialogika!! 💛 …
                       <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                     </p>
                   </div>
@@ -431,12 +647,18 @@
               <div class="swiper-slide">
                 <div class="testimonial-wrap">
                   <div class="testimonial-item">
-                    <img src="assets/img/testimonials/anjan.jpg" class="testimonial-img" alt="">
-                    <h3>N. Anjan</h3>
-                    <h4>Trainer</h4>
+                    <img src="https://lh3.googleusercontent.com/a-/ALV-UjWRAop2NAYOnPSO-FF8T6ubTHKs4F2JrUoMA3qZ1CqKcw=w72-h72-p-rp-mo-br100" class="testimonial-img" alt="">
+                    <h3>Qistina Arifadini</h3>
+                    <h4>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </h4>
                     <p>
                       <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                      Hasil didikan dari Dialogika pelan-pelan lebih berani melangkah menuju impian thank you ka Fanny (mentor) dan mas Ron (Owner) serta tim dan semua teman-teman seangkatan yang selalu saling support!
+                      Setelah mengikuti kelas public speaking di dialogika ini saya dapat banyak hal baru, mulai dari cara self branding, presentasi, dan berlatih menjadi mc. Mentor saya yaitu kak aditya sangat baik dan selalu menyebarkan positive vibes. Jadwalnya juga sangat fleksibel mengikuti dengan jadwal pesertanya. sangat worth it mengikuti kursus public speaking di dialogika!
                       <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                     </p>
                   </div>
@@ -446,12 +668,18 @@
               <div class="swiper-slide">
                 <div class="testimonial-wrap">
                   <div class="testimonial-item">
-                    <img src="assets/img/testimonials/zulaichan.jpg" class="testimonial-img" alt="">
-                    <h3>Zulaichan</h3>
-                    <h4>Law Enthusiast</h4>
+                    <img src="https://lh3.googleusercontent.com/a-/ALV-UjVKsGynC7YR1LttqNOp1kT7KiE7j3u5qDE79oy7bZzgJls=w72-h72-p-rp-mo-br100" class="testimonial-img" alt="">
+                    <h3>Annissa Ibtisamah</h3>
+                    <h4>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </h4>
                     <p>
                       <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                      Seneng sekali bisa upgrade softskill bersama Dialogika, seru kelasnya! Ilmunya dapat banget karena learning by doing! Dan ketemu kakak-kakak baru yang luar biasa serta meningkatkan kesadaran diri untuk selflove banget. Pokoknya nggak ada kata terlambat untuk belajar! Hajar sis! Join ke Dialogika!
+                      tempat yang cocok belajar public speaking bagi pemula, mentornya ramah dan tidak membosankan. sangat recommended!! sukses selalu dialogika
                       <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                     </p>
                   </div>
@@ -461,691 +689,854 @@
             </div>
             <div class="swiper-pagination"></div>
           </div>
+       </div>
+      </div>
 
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-title">
+          <h6>Dipercaya oleh</h6>
+        </header>
+
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/corporate/uad.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/corporate/amikom.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/corporate/mercu.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/corporate/polita.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/corporate/uin-suka.png" class="img-fluid" alt=""></div>
+            
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
-      </section>
-    <!-- End Testimonials Section -->
+      </div>
+    </section><!-- End Clients Section -->
 
-    <!-- ======= Appointment Section ======= -->
-      <section id="appointment" class="appointment section-bg " novalidate>
-        <div class="container">
-
+    <!-- ======= Theme-Counter Section ======= -->
+    <div class="theme-counter section-bg">
+      <div class="container">
+        <div class="bg">
           <div class="section-title">
-            <h2 class="tengah">Form Pendaftaran</h2>
-            <p></p>
+            <h6>Our Achivement</h6>
+            <h2>Some fun facts about our company</h2>
+          </div>
+          <div class="cunter-wrapper">
+            <div class="row">
+              <div class="col-md-3 col-6">
+                <div class="single-counter-box">  
+                  <div class="number"><b><span data-purecounter-start="0" data-purecounter-end="468" data-purecounter-duration="1" class="purecounter">0</span></b>+</div>
+                  <p class="text-nowrap">Total Classes</p>
+                </div> <!-- /.single-counter-box -->
+              </div>  <!-- /.col- -->
+              <div class="col-md-3 col-6">
+                <div class="single-counter-box">
+                  <div class="number"><span data-purecounter-start="0" data-purecounter-end="97" data-purecounter-duration="1" class="purecounter">0</span>%</div>
+                  <p class="text-nowrap">Client Satisfaction</p>
+                </div> <!-- /.single-counter-box -->
+              </div>  <!-- /.col- -->
+              <div class="col-md-3 col-6">
+                <div class="single-counter-box">
+                  <div class="number"><span data-purecounter-start="0" data-purecounter-end="1105" data-purecounter-duration="1" class="purecounter">0</span>+</div>
+                  <p class="text-nowrap">Total Member</p>
+                </div> <!-- /.single-counter-box -->
+              </div>  <!-- /.col- -->
+              <div class="col-md-3 col-6">
+                <div class="single-counter-box">
+                  <div class="number"><span data-purecounter-start="0" data-purecounter-end="11" data-purecounter-duration="1" class="purecounter">0</span></div>
+                  <p class="text-nowrap">Mentor</p>
+                </div> <!-- /.single-counter-box -->
+              </div>  <!-- /.col- -->
+            </div> <!-- /.row -->
+          </div> <!-- /.cunter-wrapper -->
+          <a href="#" class="theme-button-one">Check Google Review</a>
+        </div> <!-- /.bg -->
+      </div> <!-- /.container -->
+    </div> <!-- /.theme-counter -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+          <p></p>
+        </div>
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Bagaimana sistem pengajaran Public Speaking di Dialogika? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Sistem pembelajaran yang baik adalah disaat Anda diberikan ruang untuk berlatih dan ruang explorasi diri. Dialogika memberikan akses dan keleluasaan untuk berlatih sepanjang berjalannya kelas. Bahkan setelah selesai kelas (untuk beberapa program), Dialogika juga memberikan kesempatan untuk Anda bertanya dengan mentor-mentor yang ada di Dialogika.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Bagaimana cara Saya tahu bahwa ada peningkatan didalam public speaking Saya? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Disetiap kali Anda berlatih, mentor akan memberikan Anda Feedback secara langsung mengenai penampilan Anda. Dari sana Anda akan mengerti peningkatan yang Anda dapatkan setiap kali pertemuannya.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Apakah ada Garansi untuk hasilnya? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Kami menyediakan Garansi untuk beragam program pembelajaran yang kami miliki, mulai dari Basic Public Speaking, Presentasi, MC, hingga Pitching. Apabila Anda tidak merasa mendapatkan perubahan bersama kami. Anda GRATIS mengulang kelas TANPA DIPUNGUT BIAYA sepeser pun.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Apakah Anda (Dialogika) pernah menangani semua jenis profesi client? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Jika Anda serius ingin meningkatkan kemampuan Public Speaking Anda, dan butuh bantuan kami? Kami bisa membantu Anda.
+                </p>
+                <p>Anda seorang introvert dan Anda ingin berani berbicara, dan butuh bantuan kami? Kami bisa membantu Anda.</p>
+                <p>Trauma buruk menghantui Anda, tampil dihadapan banyak orang bukanlah diri Anda yang sebenarnya. Tetapi Anda tahu bahwa Anda perlu menyelesaikan masalah tersebut, Dan Anda butuh bantuan kami? Kami bisa membantu Anda.</p>
+                <p>Umur Anda tidak lagi muda, jabatan Anda diperusahaan atau instansi pemerintah cukup tinggi. Gugup bukan masalah Anda namun Anda tidak bisa memotivasi bawahan Anda, bicara Anda cenderung melompat-lompat membuat karyawan Anda tidak bisa berkerja sesuai ekspektasi Anda. Kami bisa membantu Anda.</p>
+                <p>Anda seorang pengusaha sukses, Anda sering diminta berbicara dihadapan banyak orang. Tetapi Anda merasa bahwa apa yang didalam pikiran Anda tidak sesuai apa yang mulut Anda ingin katakan, Anda butuh kami? Kami Bisa membantu Anda.</p>
+                <p>Saat ini Anda hampir lulus kuliah di Jurusan Kedokteran tetapi karena lidah Anda Jawa, Anda cenderung Medhok dalam berbicara dan itu terdengar kurang profesional. Anda butuh bantuan? Kami bisa membantu Anda.</p>
+                <p>Tidak peduli apapun profesi Anda saat ini, pelajar, mahasiswa, freshgraduate, karyawan, profesional, freelancer, pimpinan, pengusaha hingga kader partai. Jika Anda ingin meningkatkan kemampuan Public Speaking, punya masalah di dalam berkomunikasi ataupun sedikit terkait masalah diri Anda. Kami siap membantu mengatasi masalah Anda.</p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Mengapa Dialogika merupakan lembaga pengajaran Public Speaking terbaik? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Benar ada beragam pelatihan Public Speaking dan tentunya banyak sekali bukan? Ketimbang harus kami paparkan alasannya lebih baik kami berikan saja Angka. Karena Angka tidak pernah berbohong.
+                </p>
+                <p>
+                  <i class="bi bi-check"></i> Total Client 1000 lebih dan terus bertambah setiap harinya.<br/>
+                  <i class="bi bi-check"></i> Review Positif 4.9 dari 5 Stars di Google dan mayoritas kelas online<br/>
+                  <i class="bi bi-check"></i> Umur perusahaan 3 tahun
+                </p>
+                <p>Jika Anda memiliki visi yang sama dengan Dialogika silahkan perhitungkan Dialogika sebagai teman untuk mengisi sejarah hidup Anda yang luar biasa.</p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Doctors Section ======= -->
+    <section id="doctors" class="doctors">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-4">
+            <div class="section-title" data-aos="fade-right">
+              <h5>Mentor</h5>
+              <h3>Public Speaker</h3>
+              <p class="text-start">Berikut ini adalah list mentor aktif di Dialogika baik mentor kelas online dan offline</p>
+              <div class="text-start" style="margin-top:20px;">
+                <a href="mentor/">List Mentor</a>
+              </div>
+            </div>
           </div>
 
-          <form action="javascript:void" method="post" id="myForm" role="form" class="php-email-form needs-validation" onsubmit="SubForm()">
-            <div class="row">
-              <div class="col-md-4 form-group">
-                <input type="text" name="Name" class="form-control" id="names" placeholder="Nama Lengkap" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
-                <div class="validate"></div>
-              </div>
-              <div class="col-md-4 form-group mt-3 mt-md-0">
-                <input type="text" class="form-control" name="Work" id="works" placeholder="Perkerjaan" data-rule="minlen:2" data-msg="Please enter at least 2 chars" required>
-                <div class="validate"></div>
-              </div>
-              <div class="col-md-4 form-group mt-3 mt-md-0">
-                <input type="text" class="form-control" name="Location" id="locations" placeholder="Domisili" data-rule="minlen:2" data-msg="Please enter a correct place" required>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col form-group mt-3">
-                <input type="tel" class="form-control" name="Whatsapp" pattern="[0-9]{10,15}" id="whatsapps" placeholder="Whatsapp" data-rule="minlen:2" data-msg="Please enter a correct phone number" required>
-                <div class="validate"></div>
-              </div>
-              <div class="col form-group mt-3">
-                <select name="Program" id="programs" class="form-select" required>
-                  <option value="" selected disabled value="">Pilih Program</option>
-                  <optgroup label="New Program">
-                    <option value="English Class">English Class: IDR 269K (SUPER PROMO)</option>
-                  </optgroup>
-                  <optgroup label="Online Class">
-                    <option value="Basic Class">Basic Level: IDR 399K</option>                
-                    <option value="Basic Plus">Basic Plus: IDR 499K (PROMO)</option>
-                    <option value="Presentation">Kelas Presentasi: IDR 699K</option>
-                  </optgroup>
-                  <optgroup label="Offline Class">
-                    <option value="First Class">First Class: IDR 999K</option>
-                    <option value="Master Class">Master Class: IDR 1.499K (PROMO)</option>
-                    <option value="MC Class">Master of Ceremony: IDR 2.500K</option>
-                  </optgroup>
-                  <optgroup label="-----------">
-                    <option value="Private Class">Private Class</option>
-                    <option value="Program Khusus Perusahaan">Khusus Perusahaan</option>  
-                  </optgroup>
-                </select>
-                <div class="validate"></div>
-              </div>
-            </div>
+          <div class="col-lg-8">
+            <div class="align-items-center mentor-doctor swiper">
+              <div class="mentor-swiper swiper-wrapper">
 
-            <div class="form-group mt-3">
-              <textarea class="form-control" name="Ket" id="messages" rows="5" placeholder="Kesulitan yang dirasakan" required></textarea>
-              <div class="validate"></div>
+                <div class="swiper-slide">
+                  <div class="member d-flex align-items-start">
+                    <div class="pic"><img src="assets/img/mentor/fanny.jpg" class="img-fluid" alt=""></div>
+                    <div class="member-info">
+                      <h4>Fanny Carolina</h4>
+                      <span>Mentor Yogyakarta</span>
+                      <p>15 tahun berkecimpung di dunia MC Professional dan skala nasional</p>
+                      <div class="more-btn" style="margin-top:20px;">
+                        <a href="mentor/fanny.html">More About Her</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="member d-flex align-items-start ">
+                    <div class="pic"><img src="assets/img/mentor/tiya.jpg" class="img-fluid" alt=""></div>
+                    <div class="member-info">
+                      <h4>Husnul Fatiya</h4>
+                      <span>Mentor Online</span>
+                      <p>Salah satu mentor online terbaik di Dialogika</p>
+                      <div class="more-btn" style="margin-top:20px;">
+                        <a href="mentor/tiya.html">More About Her</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="member d-flex align-items-start ">
+                    <div class="pic"><img src="assets/img/mentor/pitta.jpg" class="img-fluid" alt=""></div>
+                    <div class="member-info">
+                      <h4>Pitta Sekar</h4>
+                      <span>Mentor Bintaro</span>
+                      <p>Berpengalaman lebih dari 15 tahun di dunia public relation dan MC</p>
+                      <div class="more-btn" style="margin-top:20px;">
+                        <a href="mentor/pitta.html">More About Her</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="member d-flex align-items-start ">
+                    <div class="pic"><img src="assets/img/mentor/fajar.jpg" class="img-fluid" alt=""></div>
+                    <div class="member-info">
+                      <h4>Fajar Daniel</h4>
+                      <span>Mentor Online</span>
+                      <p>Salah satu mentor dengan background medis dan cukup pakar tentang komunikasi terapeutik</p>
+                      <div class="more-btn" style="margin-top:20px;">
+                        <a href="mentor/fajar.html">More About Him</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="swiper-scrollbar"></div> -->
+              <div class="swiper-pagination"></div>
             </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Doctors Section -->  
+
+    <!-- ======= Mentor Team Section ======= -->
+    <section id="in-testimonial-team" class="in-testimonial-team-section">
+      <div class="container">
+        <div class="in-testimonial-team-content">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="in-testimonial-2">
+                <div class="section-title">
+                  <h5>Basic Rules</h5>
+                  <h3>Our Commitment</h3>
+                </div>
+                <div class="in-testimonial-slider-area-2">
+                  <div class="in-testimonial-slider-2">
+                    <div class="testi swiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="in-testimonial-item-2 position-relative swiper-slide">
+                            <div class="inner-author-quote d-flex justify-content-between align-items-center">
+                              <div class="inner-author d-flex align-items-center">
+                                <div class="inner-img">
+                                  <img class="img-fluid rounded-circle" src="assets/img/mentor/panji.jpg" alt="">
+                                </div>
+                                <div class="author-meta headline">
+                                  <h3>Keep Fast Response</h3>
+                                  <span>Selalu Cepat Tanggap</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="inner-text">
+                              Sebisa mungkin di Dialogika kami mengupayakan untuk tetap fast response dengan kebutuhan para member kami yang ada di Dialogika.
+                            </div>
+                            <div class="inner-author-quote d-flex justify-content-end align-items-center">
+                              <div class="inner-quote d-flex align-items-center justify-content-center">
+                                <i class="fas fa-thumbs-up"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="in-testimonial-item-2 position-relative">
+                            <div class="inner-author-quote d-flex justify-content-between align-items-center">
+                              <div class="inner-author d-flex align-items-center">
+                                <div class="inner-img">
+                                  <img class="img-fluid rounded-circle" src="assets/img/mentor/pitta.jpg" alt="">
+                                </div>
+                                <div class="author-meta headline">
+                                  <h3>Keep Learning</h3>
+                                  <span>Selalu Mengembangkan Materi</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="inner-text">
+                              Setiap 3 - 6 bulan sekali kami selalu melakukan update latihan, materi hingga mindset kepada para mentor kami agar materi public speaking kami tetap bisa digunakan seiring berkembangnya zaman.
+                            </div>
+                            <div class="inner-author-quote d-flex justify-content-end align-items-center">
+                              <div class="inner-quote d-flex align-items-center justify-content-center">
+                                <i class="fas fa-thumbs-up"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="in-testimonial-item-2 position-relative">
+                            <div class="inner-author-quote d-flex justify-content-between align-items-center">
+                              <div class="inner-author d-flex align-items-center">
+                                <div class="inner-img">
+                                  <img class="img-fluid rounded-circle" src="assets/img/mentor/fanny.jpg" alt="">
+                                </div>
+                                <div class="author-meta headline">
+                                  <h3>No Excuses</h3>
+                                  <span>Tidak Bikin Alasan</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="inner-text">
+                              Di Dialogika kami berkomitmen sebisa mungkin untuk tidak membuat alasan apapun memberikan layanan yang terbaik untuk member kami selama proses pelatihan terjadi
+                            </div>
+                            <div class="inner-author-quote d-flex justify-content-end align-items-center">
+                              <div class="inner-quote d-flex align-items-center justify-content-center">
+                                <i class="fas fa-thumbs-up"></i>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel_nav text-center position-relative">
+                    <button type="button" class="testi_left_arrow text-uppercase"><i class="far fa-long-arrow-left"></i></button>
+                    <button type="button" class="testi_right_arrow text-uppercase"><i class="far fa-long-arrow-right"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="in-team-area">
+                <div class="section-title">
+                  <h5>Best Team</h5>
+                  <h3>No Excuses Team</h3>
+                </div>
+                <div class="in-team-slider-area swiper">
+                  <div class="in-team-slider swiper-wrapper">
+                    <div class="in-team-item position-relative swiper-slide">
+                      <div class="in-team-img-text d-flex align-items-center">
+                        <div class="in-team-img">
+                          <img src="assets/img/team/ron.jpg" alt="" class="rounded img-fluid">
+                        </div> 
+                        <div class="in-team-text headline">
+                          <h3><a href="team-single.html">Ron Ashrovy</a></h3>
+                          <span>Chief Executive Officer</span>
+                          <div class="in-team-social d-flex">
+                            <a target="__blank" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a target="__blank" href="#"><i class="fab fa-instagram"></i></a>
+                            <a target="__blank" href="#"><i class="fab fa-linkedin"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="in-team-item position-relative swiper-slide">
+                      <div class="in-team-img-text d-flex align-items-center">
+                        <div class="in-team-img">
+                          <img src="assets/img/team/elsa.jpg" alt="" class="rounded img-fluid">
+                        </div> 
+                        <div class="in-team-text headline">
+                          <h3><a href="team-single.html">Dwiya Elsa</a></h3>
+                          <span>Human Resources</span>
+                          <div class="in-team-social d-flex">
+                            <a target="__blank" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a target="__blank" href="#"><i class="fab fa-instagram"></i></a>
+                            <a target="__blank" href="#"><i class="fab fa-linkedin"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="in-team-item position-relative swiper-slide">
+                      <div class="in-team-img-text d-flex align-items-center">
+                        <div class="in-team-img">
+                          <img src="assets/img/team/rindi.jpg" alt="" class="rounded img-fluid">
+                        </div> 
+                        <div class="in-team-text headline">
+                          <h3><a href="team-single.html">Rindi Rianti</a></h3>
+                          <span>Marketing Manager</span>
+                          <div class="in-team-social d-flex">
+                            <a target="__blank" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a target="__blank" href="#"><i class="fab fa-instagram"></i></a>
+                            <a target="__blank" href="#"><i class="fab fa-linkedin"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="in-team-item position-relative swiper-slide">
+                      <div class="in-team-img-text d-flex align-items-center">
+                        <div class="in-team-img">
+                          <img src="assets/img/team/nina.jpg" alt="" class="rounded img-fluid">
+                        </div> 
+                        <div class="in-team-text headline">
+                          <h3><a href="team-single.html">Nursyahdina</a></h3>
+                          <span>Client Manager</span>
+                          <div class="in-team-social d-flex">
+                            <a target="__blank" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a target="__blank" href="#"><i class="fab fa-instagram"></i></a>
+                            <a target="__blank" href="#"><i class="fab fa-linkedin"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="in-team-item position-relative swiper-slide">
+                      <div class="in-team-img-text d-flex align-items-center">
+                        <div class="in-team-img">
+                          <img src="assets/img/team/elfa.jpg" alt="" class="rounded img-fluid">
+                        </div> 
+                        <div class="in-team-text headline">
+                          <h3><a href="team-single.html">Elfa Nuzila</a></h3>
+                          <span>Content Creator</span>
+                          <div class="in-team-social d-flex">
+                            <a target="__blank" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a target="__blank" href="#"><i class="fab fa-instagram"></i></a>
+                            <a target="__blank" href="#"><i class="fab fa-linkedin"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="in-team-item position-relative swiper-slide">
+                      <div class="in-team-img-text d-flex align-items-center">
+                        <div class="in-team-img">
+                          <img src="assets/img/team/zai.jpg" alt="" class="rounded img-fluid">
+                        </div> 
+                        <div class="in-team-text headline">
+                          <h3><a href="team-single.html">Olivia Zaitun</a></h3>
+                          <span>Mentor Assistant</span>
+                          <div class="in-team-social d-flex">
+                            <a target="__blank" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a target="__blank" href="#"><i class="fab fa-instagram"></i></a>
+                            <a target="__blank" href="#"><i class="fab fa-linkedin"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel_nav d-flex justify-content-end position-relative">
+                    <button type="button" class="team_left_arrow text-uppercase"><i class="far fa-long-arrow-left"></i></button>
+                    <button type="button" class="team_right_arrow text-uppercase"><i class="far fa-long-arrow-right"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Mentor Team Section -->
+
+    <!-- ======= Gallery Team Section ======= -->
+    <section id="in-portfolio-2" class="in-portfolio-section-2 position-relative">
+      <div class="container">
+        <div class="in-portfolio-top-content-2 d-flex flex-wrap align-items-center justify-content-between">
+          <div class="in-section-title-2 headline  wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1000ms">
+            <div class="section-title">
+              <h5>Gallery</h5>
+              <h3>Kegiatan Kelas Dialogika Offline dan Online</h3>
+            </div>
+          </div>
+          <div class="in-portfolio-title-text  wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1000ms">
+            Berikut ini adalah beberapa kegiatan kelas Dialogika, mulai dari kelas offline, online, corporate dan bahkan kegiatan internship kami, silahkan explore lebih lanjut
+          </div>
+        </div>
+        <div class="in-portfolio-content-2 swiper">
+          <div class="justify-content-end">
+            <div class="carousel_nav text-end position-relative">
+              <button type="button" class="testi_left_arrow text-uppercase"><i class="far fa-long-arrow-left"></i></button>
+              <button type="button" class="testi_right_arrow text-uppercase"><i class="far fa-long-arrow-right"></i></button>
+            </div>
+          </div>
+          <div class="in-portfolio-slider-2 swiper-wrapper">
+            <div class="in-slider-item swiper-slide">
+              <div class="in-portfolio-item ">
+                <div class="inner-img">
+                  <img src="assets/img/gallery/potrait/1.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="inner-text headline position-absolute">
+                  <span class="port-category"><a href="#">Offline Private</a></span>
+                  <h3><a href="program/first-class.html">Kelas Offline Di Yogyakarta</a></h3>
+                  <div class="more-btn position-absolute">
+                    <a class="d-flex justify-content-center align-items-center" href="portfolio-single.html"><i class="bi bi-images"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="in-slider-item swiper-slide">
+              <div class="in-portfolio-item ">
+                <div class="inner-img">
+                  <img src="assets/img/gallery/potrait/2.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="inner-text headline position-absolute">
+                  <span class="port-category"><a href="#">Online Class</a></span>
+                  <h3><a href="program/basic-plus.html">Kelas Online via Zoom</a></h3>
+                  <div class="more-btn position-absolute">
+                    <a class="d-flex justify-content-center align-items-center" href="portfolio-single.html"><i class="bi bi-images"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="in-slider-item swiper-slide">
+              <div class="in-portfolio-item position-relative">
+                <div class="inner-img">
+                  <img src="assets/img/gallery/potrait/3.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="inner-text headline position-absolute">
+                  <span class="port-category"><a href="#">Online Private</a></span>
+                  <h3><a href="program/basic-plus.html">Kelas Online secara Private via Zoom</a></h3>
+                  <div class="more-btn position-absolute">
+                    <a class="d-flex justify-content-center align-items-center" href="portfolio-single.html"><i class="bi bi-images"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="in-slider-item swiper-slide">
+              <div class="in-portfolio-item position-relative">
+                <div class="inner-img">
+                  <img src="assets/img/gallery/potrait/4.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="inner-text headline position-absolute">
+                  <span class="port-category"><a href="#">Offline Regular</a></span>
+                  <h3><a href="portfolio-single.html">Kelas Offline Umum di Yogyakarta</a></h3>
+                  <div class="more-btn position-absolute">
+                    <a class="d-flex justify-content-center align-items-center" href="portfolio-single.html"><i class="bi bi-images"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="in-slider-item swiper-slide">
+              <div class="in-portfolio-item position-relative">
+                <div class="inner-img">
+                  <img src="assets/img/gallery/potrait/5.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="inner-text headline position-absolute">
+                  <span class="port-category"><a href="#">Online </a></span>
+                  <h3><a href="portfolio-single.html">Total Family Health
+                  Insurence</a></h3>
+                  <div class="more-btn position-absolute">
+                    <a class="d-flex justify-content-center align-items-center" href="portfolio-single.html"><i class="bi bi-images"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End Gallery Section -->
+
+    <!-- Call-to-action Section - Home Page -->
+    <section id="call-to-action" class="call-to-action">
+      <img src="https://michaelhyatt.com/wp-content/uploads/2013/08/iStock_000022230045Medium.jpg" alt="">
+
+      <div class="container">
+        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-10">
             <div class="text-center">
-              <button type="submit" id="submits" class="send_contact">Daftar Sekarang</button>
+              <h3>Free Consultation</h3>
+              <p>Masih bingung dengan materi yang ingin Anda ambil? Kontak Admin Dialogika sekarang! Anda bisa curhat ngobrol dan menentukan program yang sesuai dengan kebutuhan Anda</p>
+              <a class="cta-btn" href="https://wa.me/6285162992597" target="__blank">Whatsapp Admin</a>
             </div>
-          </form>
-
+          </div>
         </div>
-      </section>
-    <!-- End Appointment Section -->
+      </div>
 
-    <!-- ======= Portfolio Section ======= -->
-      <section id="portfolio" class="portfolio">
-        <div class="container">
+    </section><!-- End Call-to-action Section -->
 
-          <div class="section-title">
-            <h2 class="dumpil">Gallery</h2>
-            <h2 class="tengah">Kegiatan Dialogika</h2>
-            <p></p>
+    <!-- Recent-posts Section - Home Page -->
+    <section id="recent-posts" class="recent-posts">
+      <!--  Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Our Blogs</h2>
+      </div><!-- End Section Title -->
+      <div class="container">
+
+        <div class="row gy-4 justify-content-center">
+
+          <div class="blog-post swiper">
+            <div class="swiper-wrapper">
+              
+              <div class="swiper-slide">
+                <div class=" " data-aos="fade-up" data-aos-delay="100">
+                  <article>
+                    <div class="post-img">
+                      <img src="https://www.dialogika.co/blog/assets/img/blog/test24/banner.jpg" alt="" class="img-fluid">
+                    </div>
+                    <p class="post-category">Presentation</p>
+
+                    <h2 class="title">
+                      <a href="https://www.dialogika.co/blog/menjawab-pertanyaan-saat-presentasi-dengan-profesional.html">Cara Menjawab Pertanyaan Saat Presentasi dengan Profesional dan Efektif</a>
+                    </h2>
+
+                    <div class="d-flex align-items-center">
+                      <img src="https://www.dialogika.co/blog/assets/img/intern/yusuf.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
+                      <div class="post-meta">
+                        <p class="post-author">Yusup Nurohman</p>
+                        <p class="post-date">
+                          <time datetime="2022-01-01">Intern Writer</time>
+                        </p>
+                      </div>
+                    </div>
+
+                  </article>
+                </div><!-- End post list item -->
+              </div>
+              <div class="swiper-slide">
+                <div class=" " data-aos="fade-up" data-aos-delay="200">
+                  <article>
+
+                    <div class="post-img">
+                      <img src="https://www.dialogika.co/blog/assets/img/blog/test16/Banner.jpg" alt="" class="img-fluid">
+                    </div>
+
+                    <p class="post-category">Confidence</p>
+
+                    <h2 class="title">
+                      <a href="https://www.dialogika.co/blog/meningkatkan-self-confidence.html">5 Cara Meningkatkan Self-Confidence di Tempat Kerja</a>
+                    </h2>
+
+                    <div class="d-flex align-items-center">
+                      <img src="https://www.dialogika.co/blog/assets/img/intern/seli.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
+                      <div class="post-meta">
+                        <p class="post-author">Seli Amelia</p>
+                        <p class="post-date">
+                          <time datetime="2022-01-01">Intern Writer</time>
+                        </p>
+                      </div>
+                    </div>
+
+                  </article>
+                </div><!-- End post list item -->
+              </div>
+              <div class="swiper-slide">
+                <div class=" " data-aos="fade-up" data-aos-delay="300">
+                  <article>
+
+                    <div class="post-img">
+                      <img src="https://www.dialogika.co/blog/assets/img/blog/Bagaimana%20Menghadapi%20Kegagalan/Banner%20Blog%20(6).jpg" alt="" class="img-fluid">
+                    </div>
+
+                    <p class="post-category">Self Improvement</p>
+
+                    <h2 class="title">
+                      <a href="https://www.dialogika.co/blog/bagaimana-menyikapi-kegagalan.html">Bagaimana Menyikapi Kegagalan: The Right Way To Get Over It</a>
+                    </h2>
+
+                    <div class="d-flex align-items-center">
+                      <img src="https://www.dialogika.co/blog/assets/img/intern/aida.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
+                      <div class="post-meta">
+                        <p class="post-author">Habibah Nureniati</p>
+                        <p class="post-date">
+                          <time datetime="2022-01-01">Intern Writer</time>
+                        </p>
+                      </div>
+                    </div>
+
+                  </article>
+                </div><!-- End post list item -->
+              </div>
+              <div class="swiper-slide">
+                <div class="" data-aos="fade-up" data-aos-delay="400">
+                  <article>
+
+                    <div class="post-img">
+                      <img src="https://www.dialogika.co/blog/assets/img/blog/test12/1.jpg" class="img-fluid">
+                    </div>
+
+                    <p class="post-category">Parenting</p>
+
+                    <h2 class="title">
+                      <a href="https://www.dialogika.co/blog/cara-meredakan-tantrum-anak.html">Cara Meredakan Tantrum Anak: Berbicara untuk Memahami, Mengatasi, dan Mendukung Anak</a>
+                    </h2>
+
+                    <div class="d-flex align-items-center">
+                      <img src="https://www.dialogika.co/blog/assets/img/intern/rendi.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
+                      <div class="post-meta">
+                        <p class="post-author">Rendi Chia</p>
+                        <p class="post-date">
+                          <time datetime="2022-01-01">Intern Writer</time>
+                        </p>
+                      </div>
+                    </div>
+
+                  </article>
+                </div><!-- End post list item -->
+              </div>
+              <div class="swiper-slide">
+                <div class="" data-aos="fade-up" data-aos-delay="500">
+                  <article>
+
+                    <div class="post-img">
+                      <img src="https://media.istockphoto.com/id/1328631201/id/foto/blok-kayu-wajah-marah-dan-tersenyum-pada-latar-belakang-berwarna.jpg?s=612x612&w=0&k=20&c=m9VaPJd5CgNG0ollH0GaTNuVoXKwCuCc-m2vi3yaWFw=" class="img-fluid">
+                    </div>
+
+                    <p class="post-category">Confidence</p>
+
+                    <h2 class="title">
+                      <a href="https://www.dialogika.co/blog/cara-percaya-diri-walau-jelek.html">9 Cara Percaya Diri Walau Jelek － (Primacy Effect)</a>
+                    </h2>
+
+                    <div class="d-flex align-items-center">
+                      <img src="https://www.dialogika.co/blog/assets/img/team/ron.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
+                      <div class="post-meta">
+                        <p class="post-author">Ron Ashrovy</p>
+                        <p class="post-date">
+                          <time datetime="2022-01-01">Team Dialogika</time>
+                        </p>
+                      </div>
+                    </div>
+
+                  </article>
+                </div><!-- End post list item -->
+              </div>
+            </div>
           </div>
+        </div><!-- End recent posts list -->
+      </div>
+    </section><!-- End Recent-posts Section -->
 
-          <div class="row">
-            <div class="col-lg-12 d-flex justify-content-center">
-              <ul id="portfolio-flters">
-                <li data-filter=".filter-online" class="filter-active">Online</li>
-                <li data-filter=".filter-offline">Offline</li>
-                <li data-filter=".filter-private">Private</li>
-                <li data-filter=".filter-company">Company</li>
-              </ul>
-            </div>
-          </div>
+    <!-- ======= Features-Small Section ======= -->
+    <section id="features-small" class="features-small">
+      <div class="container">
 
-          <div class="row portfolio-container">
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-offline">
-              <img src="assets/img/gallery/master-c/1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Master Class</h4>
-                <p>Offline Class</p>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-offline">
-              <img src="assets/img/gallery/master-c/2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Pro Class</h4>
-                <p>Offline Class</p>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-online">
-              <img src="assets/img/gallery/basic-c/1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Basic Class</h4>
-                <p>Online Class</p>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-online">
-              <img src="assets/img/gallery/basic-c/3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Basic Class</h4>
-                <p>Online Class</p>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-online">
-              <img src="assets/img/gallery/basic-p/1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Basic Plus</h4>
-                <p>Online Class</p>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-online">
-              <img src="assets/img/gallery/basic-p/2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Basic Plus</h4>
-                <p>Online Class</p>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-offline filter-company">
-              <img src="assets/img/gallery/presentation-c/1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Presentation Class</h4>
-                <p>Corporate</p>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-offline filter-company">
-              <img src="assets/img/gallery/presentation-c/3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Presentation Class</h4>
-                <p>Corporate</p>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-online filter-private">
-              <img src="assets/img/gallery/basic-p/4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Private Class</h4>
-                <p>Online Class</p>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-video filter-online">
-              <iframe width="100%" height="268" src="https://www.youtube.com/embed/l4MPvjCkUPw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-video filter-online">
-              <iframe width="100%" height="268" src="https://www.youtube.com/embed/d6ZIJ8Ilu3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-video filter-online">
-              <iframe width="100%" height="268" src="https://www.youtube.com/embed/gVq-OyirtYg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-video filter-online">
-              <iframe width="100%" height="268" src="https://www.youtube.com/embed/kGPgfOno7jo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-video filter-offline">
-              <iframe width="100%" height="268" src="https://www.youtube.com/embed/MDT6COMxKC8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-video filter-offline">
-              <iframe width="100%" height="268" src="https://www.youtube.com/embed/P3zEkDr1zXo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-video filter-offline">
-              <iframe width="100%" height="268" src="https://www.youtube.com/embed/Q2ZGMIM2-Wc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-offline filter-company">
-              <iframe width="100%" height="268" src="https://www.youtube.com/embed/I6oPwmKLB2k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-offline filter-company">
-              <iframe width="100%" height="268" src="https://www.youtube.com/embed/KB3pZEDSyR0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-offline filter-company">
-              <iframe width="100%" height="268" src="https://www.youtube.com/embed/iJFkZSsQ5Z0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-offline filter-company">
-              <iframe width="100%" height="268" src="https://www.youtube.com/embed/MfZ8iHpHLgc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-
-
-          </div>
-
+        <div class="section-title">
+          <h6>Follow Us</h6>
         </div>
-      </section>
-    <!-- End Portfolio Section -->
 
-    <!-- ======= About Section ======= -->
-      <section id="about" class="about">
-        <div class="container-fluid">
-
-          <div class="row">
-            <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative" style="background: url('assets/img/about.jpg') center center no-repeat;">
-              <a href="https://youtu.be/Kgqq0iwtGus" class="glightbox play-btn mb-4"></a>
-            </div>
-
-            <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
-              <h3>Why We Start This</h3>
-                <p><i>Miss communication, insecure, post graduate syndrome, quarter life cryisi, bullying,</i> takut mencoba hal baru, belakangan ini semakin melekat dengan masyarakat kita.</p>
-                <p>Tekanan kerja yang tinggi, cepatnya arus informasi hingga toxic-nya <i>timeline</i> aplikasi <i>social media</i> membuat kita semakin resah dengan diri sendiri dan tidak pede untuk mencoba hal-hal yang baru</p>
-                <p>Dialogika didirikan oleh Ron Ashrovy membantu masyarakat visi "Understanding" mengenali diri sendiri lebih baik, percaya dengan proses, lingkungan yang membangun dan skill yang terasah.</p>
-                <p>Berawal dari pelatihan public speaking kini Dialogika sudah memiliki beragam pelatihan pengembangan diri diantaranya <b>Growth mindset, Building Habit bahkan hingga Pelatihan Bahasa Inggris</b></p>
-
-                <div class="icon-box">
-                  <div class="icon"><i class="bx bx-microphone"></i></div>
-                  <h4 class="title"><a href="" onclick="return false;">Public Speaking</a></h4>
-                  <p class="description">Salah satu skill yang penting untuk dikuasai, namun banyak yang terhambat untuk menguasainya karena merasa insecure, takut salah dan lingkungan toxic.</p>
-                </div>
-
-                <div class="icon-box">
-                  <div class="icon"><i class="bx bx-gift"></i></div>
-                  <h4 class="title"><a href="" onclick="return false;">Positive Vibes</a></h4>
-                  <p class="description">Saling dukung, No Blaming, Tidak membenarkan diri sendiri, lebih banyak mendengar dan beragam poin positif lainnya merupakan culture Dialogika.</p>
-                </div>
-
-                <div class="icon-box">
-                  <div class="icon"><i class="bx bx-atom"></i></div>
-                  <h4 class="title"><a href="" onclick="return false;">Understanding</a></h4>
-                  <p class="description">Mengerti diri sendiri membantu kita untuk membuat orang lain mengerti apa yang kita maksud. Ini adalah core sekaligus misi Dialogika kepada seluruh anggotanya.</p>
-                </div>
-
+        <div class="row justify-content-center">
+          
+          <div class="col-lg-2 col-md-4 col-6 mt-4">
+            <div class="icon-box">
+              <i class="bi bi-linkedin" style="color: #0072b1;"></i>
+              <h3><a target="__blank" href="https://link.dialogika.co/linkedin">Linkedin</a></h3>
             </div>
           </div>
-
-        </div>
-      </section>
-    <!-- End About Section -->
-
-    <!-- ======= FAQ Section ======= -->
-      <section id="faq" class="faq section-bg">
-        <div class="container">
-
-          <div class="section-title">
-            <h2 class="tengah">Frequently Asked Questions</h2>
+          <div class="col-lg-2 col-md-4 col-6 mt-4">
+            <div class="icon-box">
+              <i class="bi bi-instagram" style="color: #E1306C;"></i>
+              <h3><a target="__blank" href="https://link.dialogika.co/instagram">Instagram</a></h3>
+            </div>
           </div>
-
-          <div class="faq-list">
-            <ul>
-              <p class="text-start" style="margin:10px;">
-                <span class="badge rounded-pill bg-primary">Our Mindset</span>
-              </p>
-              <li data-aos="fade-up">
-                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Apa itu Dialogika? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                <div id="faq-list-1" class="collapse" data-bs-parent=".faq-list">
-                  <p>
-                    <p>Lembaga pengembangan diri dengan visi "Helping People to Understand Each Other".</p> 
-                    <p>Untuk mencapai visi ini Dialogika menyediakan beragam pelatihan dari Public Speaking, Growth Mindset, Pelatihan Bahasa Inggris, Building Habit bahkan menyediakan platform berlatih untuk "Berani Salah" untuk para Member Dialogika.</p>
-                    <p>Dan kami percaya dengan bercerita, berdialog dan berbagi "Understanding" antar sesama bisa tercapai.
-                  </p>
-                </div>
-              </li>
-
-              <li data-aos="fade-up" data-aos-delay="100">
-                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Woow Menarik Banget! Apa sih kelebihan Dialogika?  <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
-                  <p>Sekali bergabung di Dialogika maka Anda sudah dapat menikmati beragam program pengembangan diri.
-                  </p>
-                  <p>Plus disini Anda juga mendapatkan pelatihan dalam jangka waktu yang panjang.
-                  </p>
-                </div>
-              </li>
-
-              <li data-aos="fade-up" data-aos-delay="200">
-                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Dimana lokasi Headquarter Dialogika? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
-                  <p>
-                    Lokasinya di Yogyakarta. Saat ini Dialogika masih bersifat moving office.
-                  </p>
-                </div>
-              </li>
-
-              <li data-aos="fade-up" data-aos-delay="300">
-                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Apakah Dialogika menyediakan pelatihan untuk instansi? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
-                  <p>
-                    Menyediakan, bisa langsung kontak ke admin untuk lebih lanjut.
-                  </p>
-                </div>
-              </li>
-
-              <p class="text-start" style="margin:10px;">
-                <span class="badge rounded-pill bg-primary">Skema Kelas</span>
-              </p>
-
-              <li data-aos="fade-up" data-aos-delay="400">
-                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Konsep kelasnya gimana ka? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
-                  <p>
-                    Dari setiap pertemuan mayoritas praktek dan praktek, teori hanyalah penunjang dan teman-teman akan lebih dilatih untuk praktikal.
-                  </p>
-                </div>
-              </li>
-
-              <li data-aos="fade-up" data-aos-delay="1000">
-                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-6" class="collapsed">Oke kalau jadwalnya gimana ka? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                <div id="faq-list-6" class="collapse" data-bs-parent=".faq-list">
-                  <p>
-                    Baik untuk kelas online dan offline, waktunya akan lebih fleksibel alias ditentukan bersama.
-                  </p>
-                </div>
-              </li>
-
-              <li data-aos="fade-up" data-aos-delay="1400">
-                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-7" class="collapsed">Apakah bisa membayar dengan cicilan <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                <div id="faq-list-7" class="collapse" data-bs-parent=".faq-list">
-                  <p>
-                    Tentu bisa, dan apabila sampai waktu yang ditentukan belum bisa selesai, kabari tim kami saja nanti bisa kita beri keringanan. Yang penting <b>semangat belajar dulu.</b>
-                  </p>
-                </div>
-              </li>
-
-              <li data-aos="fade-up" data-aos-delay="1700">
-                <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-8" class="collapsed">Waah gila ini asyik banget!? Sok lah Join!<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                <div id="faq-list-8" class="collapse" data-bs-parent=".faq-list">
-                  <p>
-                    Sama-sama kakak, Bisa langsung melakukan payment dan selamat datang di Dialogika.
-                  </p>
-                </div>
-              </li>
-
-            </ul>
+          <div class="col-lg-2 col-md-4 col-6 mt-4">
+            <div class="icon-box">
+              <i class="bi bi-youtube" style="color: #FF0000;"></i>
+              <h3><a target="__blank" href="">Youtube</a></h3>
+            </div>
           </div>
-
+          <div class="col-lg-2 col-md-4 col-6 mt-4">
+            <div class="icon-box">
+              <i class="bi bi-twitter" style="color: #1DA1F2;"></i>
+              <h3><a target="__blank" href="https://link.dialogika.co/twitter">Twitter</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-6 mt-4">
+            <div class="icon-box">
+              <i class="bi bi-tiktok" style="color: #000000;"></i>
+              <h3><a target="__blank" href="">Tiktok</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-6 mt-4">
+            <div class="icon-box">
+              <i class="bi bi-whatsapp" style="color: #128C7E;"></i>
+              <h3><a target="__blank" href="https://wa.me/6285162992597">Whatsapp</a></h3>
+            </div>
+          </div>
+          
         </div>
-      </section>
-    <!-- End FAQ Section -->
+
+      </div>
+    </section><!-- End Features-Small Section -->
 
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-    <footer id="footer">
+  <footer id="footer">
 
-      <div class="footer-top">
-        <div class="container">
-          <div class="row">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
 
-            <div class="col-lg-3 col-md-6 footer-contact">
-              <h3><img src="assets/img/logo.png" class="footer-logo" alt="Dialogika" style="max-height: 20px;" /></h3>
-              <p>
-                Kami membantu Anda untuk mampu menyampaikan "value diri anda", dengan cara membantu anda menguasai Public Speaking, Growth Mindset, Building Habit hingga Bahasa Inggris.<br><br>
-                <strong>Phone:</strong> +62 821 377 60 669<br>
-                <strong>Email:</strong> admin@dialogika.co<br>
-              </p>
-            </div>
-
-            <div class="col-lg-2 col-md-6 footer-links">
-              <h4>Useful Links</h4>
-              <ul>
-                <li><i class="bx bx-chevron-right"></i> 
-                  <a href="https://talent.dialogika.co" onclick="return false;">Dialogika Intern</a>
-                </li>
-                <li><i class="bx bx-chevron-right"></i> 
-                  <a href="https://club.dialogika.co" onclick="return false;">Dialogika Club</a>
-                </li>
-                <li><i class="bx bx-chevron-right"></i> 
-                  <a href="https://blog.dialogika.co" onclick="return false;">Dialogika Blog</a>
-                </li>
-                <li><i class="bx bx-chevron-right"></i> 
-                  <a href="https://event.dialogika.co" onclick="return false;">Dialogika Event</a>
-                </li>
-                <li><i class="bx bx-chevron-right"></i> 
-                  <a href="https://course.dialogika.co" onclick="return false;">Dialogika eCourse</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="col-lg-3 col-md-6 footer-links">
-              <h4>Our Services</h4>
-              <ul>
-                <li><i class="bx bx-chevron-right"></i> 
-                  <a href="program/basic-plus.html">Basic Plus</a>
-                </li>
-                <li><i class="bx bx-chevron-right"></i> 
-                  <a href="program/presentation-class.html">Presentation</a>
-                </li>
-                <li><i class="bx bx-chevron-right"></i> 
-                  <a href="program/pro-class.html">Pro Class</a>
-                </li>
-                <li><i class="bx bx-chevron-right"></i> 
-                  <a href="program/english-class.html">English Class</a>
-                </li>
-                <li><i class="bx bx-chevron-right"></i> 
-                  <a href="custom/private-class.html">Private Class</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="col-lg-4 col-md-6 footer-newsletter">
-              <h4>Join Our Newsletter</h4>
-              <p>Silahkan tinggalkan email dibawah ini kemudian klik tombol subscribe</p>
-              <form action="javascript:void" role="form" id="subcriptions" method="post">
-                <input type="email" name="Surel" placeholder="Email"><input type="submit" value="Subscribe" onclick="Subcription()">
-              </form>
-            </div>
-
+          <div class="col-lg-3 col-md-6 footer-contact">
+            
+            <h3><img class="img-fluid" src="assets/img/logo.png"/></h3>
+            <p>Wadah pengembangan diri membangun aura positif sekaligus meningkatkan kualitas skill, karir hingga level kehidupan Anda.</p>
+            <p>Kami memberikan pelatihan Kelas Public Speaking karena dengan menguasai Public Speaking, mental, perilaku, penampilan hingga sikap Anda terbentuk.</p>
+            <p>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
           </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+
         </div>
       </div>
+    </div>    
 
-      <div class="container d-md-flex py-4">
+    <div class="container d-md-flex py-4">
 
-        <div class="me-md-auto text-center text-md-start">
-          <div class="copyright">
-            &copy; Copyright <strong><span>Dialogika</span></strong>. All Rights Reserved
-          </div>
-          
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Dialogika</span></strong>. All Rights Reserved
         </div>
-        <div class="social-links text-center text-md-right pt-3 pt-md-0">
-          <a href="https://link.dialogika.co/twitter" class="twitter"><i class="bi bi-twitter"></i></a>
-          <a href="https://link.dialogika.co/facebook" class="facebook"><i class="bi bi-facebook"></i></a>
-          <a href="https://link.dialogika.co/instagram" class="instagram"><i class="bi bi-instagram"></i></a>
-          <a href="https://wa.me/6282137760669" class="google-plus"><i class="bx bxl-whatsapp"></i></a>
-          <a href="https://link.dialogika.co/linkedin" class="linkedin"><i class="bx bxl-linkedin"></i></i></a>
-        </div>
+        
       </div>
-    </footer>
-  <!-- End Footer -->
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="https://link.dialogika.co/twitter" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="https://link.dialogika.co/facebook" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://link.dialogika.co/instagram" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://link.dialogika.co/linkedin" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
 
   <!-- <div id="preloader"></div> -->
-    <a href="#appointment" class="back-to-top d-flex align-items-center justify-content-center">
-      <i class="bx bx-tada bxl-whatsapp"></i>
-    </a>
-
-  <!-- ======= Offcanvas ======= -->
-    <div class="offcanvas offcanvas-start section-bg" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="classes" >
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
-          <a href="program/english-class.html" role="button" class="btn btn-primary position-relative" style="border-radius: 7px;background: #0F61A8;">
-            English Class
-            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-              NEW
-              <span class="visually-hidden">unread messages</span>
-            </span>
-          </a>
-        </h5>
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body doctors" style="background:none;">
-        <div class="section-title"><h2 class="dumpil">Class List</h2></div>
-        <div class="col" style="margin-bottom: 20px;  background: #fff;">
-          <div class="member d-flex align-items-start" >
-            <div class="pic"><img src="assets/img/program/basic-c/small.jpg" class="img-fluid" alt=""></div>
-            <div class="member-info">
-              <h4>Basic Class</h4>
-              <span class="subtitle">Bisa Bicara Tanpa Persiapan.</span>
-              <p>
-                <span class="badge rounded-pill bg-dark">a month</span>
-                <span class="badge rounded-pill bg-warning">4x</span>
-                <span class="badge rounded-pill bg-primary">online</span>
-                <span class="badge rounded-pill bg-info">indonesia</span>
-              </p>
-              <div class="social">
-                <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
-                <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
-                <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
-                <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
-                <a href="" onclick="return false;"><i class="bi bi-star-half"></i></a>
-              </div>
-              <a href="program/basic-class.html" class="bikini-btn" style="">Check Class</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col" style="margin-bottom: 20px;  background: #fff;">
-          <div class="member d-flex align-items-start">
-            <div class="pic"><img src="assets/img/program/basic-p/small.jpg" class="img-fluid" alt=""></div>
-            <div class="member-info">
-              <h4>Basic Plus</h4>
-              <span class="subtitle">Teknik Mengatur Tutur Kata.</span>
-              <p>
-                <span class="badge rounded-pill bg-success">recommended</span>
-                <span class="badge rounded-pill bg-danger">discount</span>
-                <span class="badge rounded-pill bg-warning">7x</span>
-                <span class="badge rounded-pill bg-dark">a month</span>
-                <span class="badge rounded-pill bg-primary">online</span>
-                <span class="badge rounded-pill bg-info">indonesia</span>
-              </p>
-              <div class="social">
-                <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
-                <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
-                <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
-                <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
-                <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
-              </div>
-              <a href="program/basic-plus.html" class="bikini-btn" style="">Claim Discount</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col" style="margin-bottom: 20px;  background: #fff;">
-          <div class="member d-flex align-items-start">
-            <div class="pic"><img src="assets/img/program/presentation-c/small.jpg" class="img-fluid" alt=""></div>
-            <div class="member-info">
-              <h4>Presentasi Class</h4>
-              <span class="subtitle">Teknik Mengemukakan Value</span>
-              <p>
-                <span class="badge rounded-pill bg-secondary">next level</span>
-                <span class="badge rounded-pill bg-danger">special price</span>
-                <span class="badge rounded-pill bg-warning">7x</span>
-                <span class="badge rounded-pill bg-dark">a month</span>
-                <span class="badge rounded-pill bg-primary">online</span>
-                <span class="badge rounded-pill bg-info">indonesia</span>
-              </p>
-              <div class="social">
-                <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
-                <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
-                <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
-                <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
-                <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
-              </div>
-              <a href="program/presentation-class.html" class="bikini-btn" style="">Claim Price</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col" style="margin-bottom: 20px;  background: #fff;">
-          <div class="member d-flex align-items-start">
-            <div class="pic"><img src="assets/img/program/first-c/small.jpg" class="img-fluid" alt=""></div>
-            <div class="member-info">
-              <h4>First Class</h4>
-              <span class="subtitle">Atasi Rasa Kaku dan Suara Yang Kurang Keras.</span>
-              <p>
-                <span class="badge rounded-pill bg-warning">5x</span>
-                <span class="badge rounded-pill bg-dark">a month</span>
-                <span class="badge rounded-pill bg-primary">offline</span>
-                <span class="badge rounded-pill bg-info">indonesia</span>
-              </p>
-              <div class="social">
-                <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
-                <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
-                <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
-                <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
-                <a href="" onclick="return false;"><i class="bi bi-star"></i></a>
-              </div>
-              <a href="program/first-class.html" class="bikini-btn" style="">Check Class</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col" style="margin-bottom: 20px;  background: #fff;">
-          <div class="member d-flex align-items-start">
-            <div class="pic"><img src="assets/img/program/master-c/small.jpg" class="img-fluid" alt=""></div>
-            <div class="member-info">
-              <h4>Master Class</h4>
-              <span class="subtitle">Atasi Rasa Kurang Pede Hingga Logat Daerah Yang Kental.</span>
-              <p>
-                <span class="badge rounded-pill bg-warning">7x</span>
-                <span class="badge rounded-pill bg-danger">discount</span>
-                <span class="badge rounded-pill bg-dark">a month</span>
-                <span class="badge rounded-pill bg-primary">offline</span>
-                <span class="badge rounded-pill bg-info">indonesia</span>
-              </p>
-              <div class="social">
-                <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
-                <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
-                <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
-                <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
-                <a href="" onclick="return false;"><i class="bi bi-star-half"></i></a>
-              </div>
-              <a href="program/master-class.html" class="bikini-btn" style="">Claim Discount</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col" style="margin-bottom: 20px;  background: #fff;">
-          <div class="member d-flex align-items-start">
-            <div class="pic"><img src="assets/img/program/pro-c/small.jpg" class="img-fluid" alt=""></div>
-            <div class="member-info">
-              <h4>Pro Class</h4>
-              <span class="subtitle">Mampu Untuk Bicara Percaya Diri Dan Mengatasi Trauma.</span>
-              <p>
-                <span class="badge rounded-pill bg-success">recommended</span>
-                <span class="badge rounded-pill bg-danger">special price</span>
-                <span class="badge rounded-pill bg-warning">10x</span>
-                <span class="badge rounded-pill bg-dark">a month</span>
-                <span class="badge rounded-pill bg-primary">offline</span>
-                <span class="badge rounded-pill bg-info">indonesia</span>
-              </p>
-              <div class="social">
-                <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
-                <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
-                <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
-                <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
-                <a href="" onclick="return false;"><i class="bi bi-star-fill"></i></a>
-              </div>
-              <a href="program/pro-class.html" class="bikini-btn" style="">Claim Price</a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  <!-- End Offcanvas -->
-
-  <!-- ======= Modal Nofication ======= -->
-    <div class="modal fade" id="notifications" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p>Pesan telah dikirimkan, apabila <b>anda tidak langsung ter-redirect</b> ke Aplikasi Whatsapp atau Whatsapp Web silahkan pencet tombol Redirect dibawah ini</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="border-radius:25px;background: #cccccc;">Close</button>
-            <a role="button" href="javascript:void" class="btn btn-primary send_contact" style="border-radius:25px;background: #0B2B6A;">Redirect</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  <!-- End Modal -->
-
-  <!-- ======= Modal Subcription ======= -->
-    <div class="modal fade" id="subcription-modal" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-body">
-            <p>Terima kasih sudah melakukan subcription dengan email anda, nantikan update blog,berita,diskonan dari Dialogika</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="border-radius:25px;background: #cccccc;">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  <!-- End Modal -->
-
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <a href="https://wa.link/dugu63" target="__blank" class="back-to-top d-flex align-items-center justify-content-center"><i class="bx bxl-whatsapp bx-tada"></i></a>
 
   <!-- Vendor JS Files -->
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-    <script src="assets/vendor/purecounter/purecounter.js"></script>
-    <script src="assets/vendor/smooth-scroll/smooth-scroll.polyfills.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Part JS Files -->
+  <!-- <script src="assets/part/testimoni-insurin/script.js"></script>
+  <script src="assets/part/testimoni-insurin/slick.js"></script>
+  <script src="assets/part/testimoni-insurin/roundslider.js"></script> -->
 
   <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/whatsapp.js"></script>
-    <script type="text/javascript">
-      $(function () {
-        $('#submits').attr('disabled', true);
-        $('#myForm').change(function () {
-            if ($('#names').val() != '' && $('#works').val() != '' && $('#locations').val() != '' && $('#whatsapps').val() != '') {
-                $('#submits').attr('disabled', false);
-            } else {
-                $('#submits').attr('disabled', true);
-            }
-        });
-      });
-    </script>
+  <script src="assets/js/timestamp.js"></script>
+  <script src="assets/js/whatsapp.js"></script>
+  <script src="assets/js/main.js"></script>
+
 
 </body>
 

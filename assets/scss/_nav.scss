@@ -184,7 +184,7 @@
     padding: 0;
   }
 
-  a {
+  a, a:focus {
     padding: 10px 20px;
     font-size: 15px; 
     color: $secondary;
@@ -195,7 +195,7 @@
     color: $primary;
   }
 
-  .getstarted {
+  .getstarted, .getstarted:focus {
     margin: 15px;
   }
 
