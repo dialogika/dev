@@ -467,7 +467,6 @@ h6 {
 .navbar-mobile .dropdown>.dropdown-active {
   display: block;
 }
-
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -490,12 +489,16 @@ h6 {
   line-height: 56px;
   text-transform: uppercase;
   color: #0b2b6a;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+  text-shadow: #7204cf 1px 1px 1px;
 }
 
 #hero h2 {
-  color: #0b2b6a;
+  color: #fff;
   margin: 10px 0 0 0;
   font-size: 24px;
+  text-shadow: #7204cf 1px 1px 1px;
 }
 
 #hero .btn-get-started {
@@ -801,6 +804,10 @@ section {
   font-weight: 700;
   font-size: 34px;
   margin-bottom: 15px;
+}
+
+.why-us .content span {
+  color: #F9C72E;
 }
 
 .why-us .content p {
@@ -2128,6 +2135,33 @@ h4 {
   .faq .faq-list {
     padding: 0;
   }
+}
+
+.faq .video-bg {
+  border-radius: 20px;
+  background: #0B2B6A;
+  padding: 20px;
+  position: relative;
+}
+.faq .video-bg > img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.faq .video-bg .video-text .video-run-time {
+  position: absolute;
+  padding: 10px 23px 10px 37px;
+  background: var(--tp-common-white);
+  border-radius: 50px;
+}
+
+@media (max-width: 767px) {
+  .faq .video-bg {
+  }
+}
+
+.faq .videos-faq .swiper-slide {
+  border-radius: 10px;
 }
 
 /*--------------------------------------------------------------

@@ -407,6 +407,20 @@
 
   });
 
+  /**
+   * Testimonials slider
+   */
+  new Swiper('.videos-faq',  {
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 2750,
+      disableOnInteraction: false
+    },
+    effect: "cards",
+    grabCursor: true,
+  });
+
 
   
 
