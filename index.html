@@ -205,7 +205,7 @@
        <a href="../index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
 
        <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul class="">
+        <ul class="navbar-desktop-list">
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li class="dropdown"><a href="#"><span>Program</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -245,13 +245,102 @@
           <li><a class="nav-link scrollto" href="../shop/">Shop</a></li>
           <li><a class="nav-link scrollto" href="../blog/">Blog</a></li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
+        <i class="bi bi-list d-block d-md-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"></i>
        </nav><!-- .navbar -->
 
       <a href="#appointment" class="appointment-btn">Promo <span class="d-none d-md-inline">Class</span></a>
 
     </div>
   </header><!-- End Header -->
+
+  <!-- ======= Mobile Nav ======= -->
+  <nav class="navbar-canvas fixed-top">
+    <div class="container-fluid">
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <a href="../index.html">
+            <img src="assets/img/logo.png" class="offcanvas-title" id="offcanvasNavbarLabel"/>
+          </a>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <a href="#hero"><div class="card"><div class="card-body">Home</div></div></a>
+          <div class="card">
+            <a href="#program-collapse" data-bs-toggle="collapse">
+              <div class="card-body d-flex justify-content-between">
+                <span>Program</span>
+                <i class='bx bxs-chevron-down bx-tada'></i>
+              </div>
+            </a>
+            <div class="collapse" id="program-collapse">
+              <a href="#program-online" data-bs-toggle="collapse">
+                <div class="card">
+                  <div class="card-body d-flex justify-content-between">
+                    <span>Online</span>
+                    <i class='bx bxs-chevron-down bx-tada'></i>
+                  </div>
+                    <div class="collapse" id="program-online">
+                      <a href=""><div class="card card-body">Basic Plus</div></a>
+                      <a href=""><div class="card card-body">
+                        <div class="justify-content-between d-flex">
+                          <span>Kids Plus </span>
+                          <span class="badge bg-info rounded-pill">New</span>
+                        </div>
+                      </div></a>
+                      <hr/>
+                      <a href=""><div class="card card-body">Basic Private</div></a>
+                      <a href=""><div class="card card-body">Kids Private</div></a>
+                      <hr/>
+                      <a href=""><div class="card card-body">Action Play</div></a>
+                      <a href=""><div class="card card-body">Kids Play</div></a>
+                    </div>
+                </div>
+              </a>
+              <a href="#program-offline" data-bs-toggle="collapse">
+                <div class="card">
+                  <div class="card-body d-flex justify-content-between">
+                    <span>Offline</span>
+                    <i class='bx bxs-chevron-down bx-tada'></i>
+                  </div>
+                    <div class="collapse" id="program-offline">
+                      <a href=""><div class="card card-body">First Class</div></a>
+                      <a href=""><div class="card card-body">
+                        <div class="justify-content-between d-flex">
+                          <span>First Kids </span>
+                          <span class="badge bg-info rounded-pill">New</span>
+                        </div>
+                      </div></a>
+                      <hr/>
+                      <a href=""><div class="card card-body">First Private</div></a>
+                    </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <a href=""><div class="card card-body">Corporate</div></a>
+          <a href=""><div class="card card-body">
+            <div class="justify-content-between d-flex">
+              <span>Event </span>
+              <!-- <span class="badge bg-info rounded-pill">New</span> -->
+            </div>
+          </div></a>
+          <a href=""><div class="card card-body">
+            <div class="justify-content-between d-flex">
+              <span>Service </span>
+              <span class="badge bg-warning rounded-pill">Coming Soon</span>
+            </div>
+          </div></a>
+          <a href=""><div class="card card-body">
+            <div class="justify-content-between d-flex">
+              <span>Shop </span>
+              <span class="badge bg-warning rounded-pill">Coming Soon</span>
+            </div>
+          </div></a>
+          <a href=""><div class="card card-body">Blog</div></a>
+        </div>
+      </div>
+    </div>
+  </nav><!-- End Mobile Nav -->
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center" >
@@ -990,7 +1079,7 @@
                             </div>
                             <div class="inner-author-quote d-flex justify-content-end align-items-center">
                               <div class="inner-quote d-flex align-items-center justify-content-center">
-                                <i class="fas fa-thumbs-up"></i>
+                                <i class='bx bxs-alarm-exclamation bx-tada' ></i>
                               </div>
                             </div>
                           </div>
@@ -1013,7 +1102,7 @@
                             </div>
                             <div class="inner-author-quote d-flex justify-content-end align-items-center">
                               <div class="inner-quote d-flex align-items-center justify-content-center">
-                                <i class="fas fa-thumbs-up"></i>
+                                <i class='bx bxs-graduation bx-tada' ></i>
                               </div>
                             </div>
                           </div>
@@ -1036,7 +1125,7 @@
                             </div>
                             <div class="inner-author-quote d-flex justify-content-end align-items-center">
                               <div class="inner-quote d-flex align-items-center justify-content-center">
-                                <i class="fas fa-thumbs-up"></i>
+                                <i class='bx bxs-hot' ></i>
                               </div>
                             </div>
                           </div>
@@ -1044,11 +1133,11 @@
                       </div>
                     </div>
                   </div>
-                  <div class="carousel_nav text-center position-relative">
-                    <button type="button" class="testi_left_arrow text-uppercase">
+                  <div class="carousel_nav text-center position-relative ">
+                    <button type="button" class="testi_left_arrow text-uppercase justify-content-center">
                       <i class="bi bi-arrow-left"></i>
                     </button>
-                    <button type="button" class="testi_right_arrow text-uppercase">
+                    <button type="button" class="testi_right_arrow text-uppercase justify-content-center">
                       <i class="bi bi-arrow-right"></i>
                     </button>
                   </div>
@@ -1161,10 +1250,10 @@
                     </div>
                   </div>
                   <div class="carousel_nav d-flex justify-content-end position-relative">
-                    <button type="button" class="team_left_arrow text-uppercase">
+                    <button type="button" class="team_left_arrow text-uppercase justify-content-center">
                       <i class="bi bi-arrow-left"></i>
                     </button>
-                    <button type="button" class="team_right_arrow text-uppercase">
+                    <button type="button" class="team_right_arrow text-uppercase justify-content-center">
                       <i class="bi bi-arrow-right"></i>
                     </button>
                   </div>
@@ -1193,10 +1282,10 @@
         <div class="in-portfolio-content-2 swiper">
           <div class="justify-content-end">
             <div class="carousel_nav text-end position-relative">
-              <button type="button" class="testi_left_arrow text-uppercase">
+              <button type="button" class="testi_left_arrow text-uppercase justify-content-center">
                 <i class="bi bi-arrow-left"></i>
               </button>
-              <button type="button" class="testi_right_arrow text-uppercase">
+              <button type="button" class="testi_right_arrow text-uppercase justify-content-center">
                 <i class="bi bi-arrow-right"></i>
               </button>
             </div>
