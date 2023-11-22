@@ -390,7 +390,7 @@ class Footer extends HTMLElement {
                 class='bx bx-chevron-down d-md-none'></i></h4>
             <p>Secara Berkala Kami Akan Bagi-Bagi Tips & Trik Gratis, Dan Info Promo Lainnya</p>
             <form action="javascript:void" role="form" id="subcriptions" method="post">
-              <input type="tel" name="Surel" placeholder="Nomor Whatsapp"><input type="submit" value="Join Now" onclick="Subcription()">
+              <input type="tel" name="Surel" placeholder="Nomor Whatsapp"><input type="submit" value="Connect Now" onclick="Subcription()">
             </form>
             <br><br>
             <h4 class="d-flex justify-content-between">Payment Method<i class='bx bx-chevron-down d-md-none'></i></h4>
@@ -432,7 +432,7 @@ class Footer extends HTMLElement {
       </div>
     </div>
   </footer><!-- End Footer -->
-  
+
     `;
   }
 }
