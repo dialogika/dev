@@ -42,8 +42,8 @@ class Header extends HTMLElement {
                   <li><a href="../program/basic-private.html">Basic Private</a></li>
                   <li><a href="../program/basic-plus.html">Kids Private</a></li>
                   <li><hr/></li>
-                  <li><a href="../subscribe/action-play.html">Action Play</a></li>
-                  <li><a href="../subscribe/kids-play.html">Kids Play</a></li>
+                  <li><a href="../program/action-play.html">Action Play</a></li>
+                  <li><a href="../program/kids-play.html">Kids Play</a></li>
                 </ul>
               </li>
               <li class="dropdown"><a href="#"><span>Offline</span> <i class="bi bi-chevron-right"></i></a>
@@ -119,8 +119,8 @@ class Header extends HTMLElement {
                       <a href="../program/basic-private.html"><div class="card card-body">Basic Private</div></a>
                       <a href="../program/kids-plus.html"><div class="card card-body">Kids Private</div></a>
                       <hr/>
-                      <a href="../subscribe/action-play.html"><div class="card card-body">Action Play</div></a>
-                      <a href="../subscribe/kids-play.html"><div class="card card-body">Kids Play</div></a>
+                      <a href="../program/action-play.html"><div class="card card-body">Action Play</div></a>
+                      <a href="../program/kids-play.html"><div class="card card-body">Kids Play</div></a>
                     </div>
                 </div>
               </a>
@@ -190,7 +190,7 @@ class Footer extends HTMLElement {
         <div class="row justify-content-between">
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <h3><img src="assets/img/white-logo.webp" class="footer-logo" alt="Kelas Public Speaking Jogja" /></h3>
+            <h3><img src="../assets/img/white-logo.webp" class="footer-logo" alt="Kelas Public Speaking Jogja" /></h3>
             <p>
               Wadah pengembangan diri membangun aura positif sekaligus meningkatkan kualitas skill, karir hingga level
               kehidupan Anda.
@@ -350,7 +350,7 @@ class Footer extends HTMLElement {
                 <h4>Instagram Post <i class='bx bx-chevron-down d-md-none'></i></h4>
                 <ul>
                   <li class="clearfix">
-                    <img src="assets/img/ig/1.jpg" alt="" class="rounded ig-post float-left" style="margin-right: 10px;width: 70px;height: 70px; border-radius: 10px;">
+                    <img src="../assets/img/ig/1.jpg" alt="" class="rounded ig-post float-left" style="margin-right: 10px;width: 70px;height: 70px; border-radius: 10px;">
                     <div class="post float-left">
                       <a target="__blank" href="https://www.instagram.com/p/Claa6CPISTB/">Gambaran kelas praktek public speaking secara offline</a>
                       <div class="date"><i class="bx bx-calendar" aria-hidden="true"></i> Nov 26, 2022</div>
@@ -358,7 +358,7 @@ class Footer extends HTMLElement {
                   </li>
                   <hr/>
                   <li class="clearfix">
-                    <img src="assets/img/ig/2.jpg" alt="" class="rounded ig-post float-left" style="margin-right: 10px;width: 70px;height: 70px; border-radius: 10px;">
+                    <img src="../assets/img/ig/2.jpg" alt="" class="rounded ig-post float-left" style="margin-right: 10px;width: 70px;height: 70px; border-radius: 10px;">
                     <div class="post float-left">
                       <a target="__blank" href="https://www.instagram.com/p/CyXfjtkrJe7/">Tips-tips agar di notice dosen didalam kelas dan latihan membangun persona.</a>
                       <div class="date"><i class="bx bx-calendar" aria-hidden="true"></i> Oct 14, 2023</div>
@@ -366,7 +366,7 @@ class Footer extends HTMLElement {
                   </li>
                   <hr/>
                   <li class="clearfix">
-                    <img src="assets/img/ig/3.jpg" alt="" class="rounded ig-post float-left" style="margin-right: 10px;width: 70px;height: 70px; border-radius: 10px;">
+                    <img src="../assets/img/ig/3.jpg" alt="" class="rounded ig-post float-left" style="margin-right: 10px;width: 70px;height: 70px; border-radius: 10px;">
                     <div class="post float-left">
                       <a target="__blank" href="https://www.instagram.com/p/CzAf73qr2mj/">5 tips jitu atasi otak yang ngeblank saat berbicara di depan umum</a>
                       <div class="date"><i class="bx bx-calendar" aria-hidden="true"></i> Oct 30, 2023</div>
@@ -374,7 +374,7 @@ class Footer extends HTMLElement {
                   </li>
                   <hr/>
                   <li class="clearfix">
-                    <img src="assets/img/ig/4.jpg" alt="" class="rounded ig-post float-left" style="margin-right: 10px;width: 70px;height: 70px; border-radius: 10px;">
+                    <img src="../assets/img/ig/4.jpg" alt="" class="rounded ig-post float-left" style="margin-right: 10px;width: 70px;height: 70px; border-radius: 10px;">
                     <div class="post float-left">
                       <a target="__blank" href="blog-details.html">5 trik untuk para newbie agar viral di depan umum. (Cocok untuk konten creator)</a>
                       <div class="date"><i class="bx bx-calendar" aria-hidden="true"></i> Nov 2, 2023</div>
