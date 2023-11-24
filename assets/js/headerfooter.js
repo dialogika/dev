@@ -40,7 +40,7 @@ class Header extends HTMLElement {
                   <li><a href="../program/kids-plus.html">Kids Plus</a></li>
                   <li><hr/></li>
                   <li><a href="../program/basic-private.html">Basic Private</a></li>
-                  <li><a href="../program/basic-plus.html">Kids Private</a></li>
+                  <li><a href="../program/kids-private.html">Kids Private</a></li>
                   <li><hr/></li>
                   <li><a href="../program/action-play.html">Action Play</a></li>
                   <li><a href="../program/kids-play.html">Kids Play</a></li>
