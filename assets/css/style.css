@@ -642,6 +642,10 @@ section {
   text-transform: uppercase;
 }
 
+.section-title span {
+  color: #0163ea;
+}
+
 .section-title p {
   margin-bottom: 0;
 }
