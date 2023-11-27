@@ -57,10 +57,10 @@ class Header extends HTMLElement {
               <li><hr/></li>
               <li class="dropdown"><a href="#"><span>Area</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="../area/yogyakarta.html">Yogyakarta</a></li>
-                  <li><a href="../area/bintaro.html">Bintaro</a></li>
-                  <li><a href="../area/surabaya.html">
-                    <span>Surabaya</span> 
+                  <li><a href="../program/index-jogja.html">Yogyakarta</a></li>
+                  <li><a href="../program/index-tangsel.html">Bintaro</a></li>
+                  <li><a href="../program/index-surabaya.html" onclick="return false;">
+                    <span>Surabaya</span>
                     <span class="badge rounded-pill text-bg-secondary">Coming Soon</span></a>
                   </li>
                 </ul>
