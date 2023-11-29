@@ -36,22 +36,23 @@ class Header extends HTMLElement {
             <ul>
               <li class="dropdown"><a href="#"><span>Online</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
+                  <li><a href="#" onclick="return false;"><span class="badge text-bg-primary">Adult</span></a></li>
+                  <li><a href="../program/basic-play.html">Basic Play</a></li>
                   <li><a href="../program/basic-plus.html">Basic Plus</a></li>
-                  <li><a href="../program/kids-plus.html">Kids Plus</a></li>
-                  <li><hr/></li>
                   <li><a href="../program/basic-private.html">Basic Private</a></li>
-                  <li><a href="../program/kids-private.html">Kids Private</a></li>
                   <li><hr/></li>
-                  <li><a href="../program/action-play.html">Action Play</a></li>
+                  <li><a href="#" onclick="return false;"><span class="badge text-bg-warning">Kids</span></a></li>
                   <li><a href="../program/kids-play.html">Kids Play</a></li>
+                  <li><a href="../program/kids-plus.html">Kids Plus</a></li>
+                  <li><a href="../program/kids-private.html">Kids Private</a></li>
                 </ul>
               </li>
               <li class="dropdown"><a href="#"><span>Offline</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="../program/first-class.html">First Class</a></li>
-                  <li><a href="../program/first-kids.html">First Kids</a></li>
+                  <li><a href="../program/first-class.html">First Class <span class="badge text-bg-primary">Adult</span></a></li>
+                  <li><a href="../program/first-kids.html">First Kids <span class="badge text-bg-warning">Kids</span></a></li>
                   <li><hr/></li>
-                  <li><a href="../program/first-private.html">First Private</a></li>
+                  <li><a href="../program/first-private.html">First Private <span class="badge text-bg-info">Both</span></a></li>
                 </ul>
               </li>
               <li><hr/></li>
@@ -108,19 +109,18 @@ class Header extends HTMLElement {
                     <i class='bx bxs-chevron-down bx-tada'></i>
                   </div>
                     <div class="collapse" id="program-online">
+                      <a href="../program/basic-play.html"><div class="card card-body">Basic Play</div></a>
                       <a href="../program/basic-plus.html"><div class="card card-body">Basic Plus</div></a>
+                      <a href="../program/basic-private.html"><div class="card card-body">Basic Private</div></a>
+                      <hr/>
+                      <a href="../program/kids-play.html"><div class="card card-body">Kids Play</div></a>
                       <a href="../program/kids-plus.html"><div class="card card-body">
                         <div class="justify-content-between d-flex">
                           <span>Kids Plus </span>
                           <span class="badge bg-info rounded-pill">New</span>
                         </div>
                       </div></a>
-                      <hr/>
-                      <a href="../program/basic-private.html"><div class="card card-body">Basic Private</div></a>
                       <a href="../program/kids-plus.html"><div class="card card-body">Kids Private</div></a>
-                      <hr/>
-                      <a href="../program/action-play.html"><div class="card card-body">Action Play</div></a>
-                      <a href="../program/kids-play.html"><div class="card card-body">Kids Play</div></a>
                     </div>
                 </div>
               </a>
