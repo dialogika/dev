@@ -247,6 +247,7 @@ h6 {
   display: flex;
   list-style: none;
   align-items: center;
+  border-radius: 0px 0px 10px 10px;
 }
 
 .navbar li {
@@ -270,6 +271,7 @@ h6 {
   transition: 0.3s;
   border-bottom: 2px solid #fff;
   padding: 5px 2px;
+  
 }
 
 .navbar a i,
@@ -298,7 +300,8 @@ h6 {
   opacity: 0;
   visibility: hidden;
   background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  /*  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);*/
+  box-shadow: 0px 5px 16px -6px rgba(0, 0, 0, 0.8);
   transition: 0.3s;
 }
 
@@ -411,12 +414,84 @@ h6 {
   -moz-box-shadow: 0px 5px 16px -6px rgba(114, 4, 207, 1);
 }
 
+.navbar-canvas .card-body.zero {
+  border-radius: 10px;
+  color:#aaaaaa;
+  background: #fff;
+  text-align:center;
+  border-color:#aaaaaa;
+}
+
 .navbar-canvas .offcanvas-header img.offcanvas-title {
   font-size: 30px;
   max-height: 30px;
   margin-left: 17px;
 }
 
+/*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+.breadcrumbs {
+  padding: 20px 0;
+  background-color: #f1f7fd;
+  min-height: 40px;
+  margin-top: 140px;
+  color:#0B2B6A;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 992px) {
+  .breadcrumbs {
+    margin-top: 130px;
+  }
+}
+
+.breadcrumbs h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  .breadcrumbs h2 {
+    margin: 0 0 10px 0;
+  }
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+.breadcrumbs ol li+li {
+  padding-left: 10px;
+}
+
+.breadcrumbs ol li+li::before {
+  display: inline-block;
+  padding-right: 10px;
+  color: #6c757d;
+  content: "/";
+}
+
+@media (max-width: 768px) {
+  .breadcrumbs .d-flex {
+    display: block !important;
+  }
+
+  .breadcrumbs ol {
+    display: block;
+  }
+
+  .breadcrumbs ol li {
+    display: inline-block;
+  }
+}
 
 
 /*--------------------------------------------------------------
@@ -425,9 +500,10 @@ h6 {
 #hero {
   width: 100%;
   height: 90vh;
-  background: url('../img/hero.webp') top center;
+  background: url('https://criterionasia.com/wp-content/uploads/Recruiting-People-scaled.jpg') top center;
   background-size: cover;
-  margin-bottom: -200px;
+  margin-bottom: -70px;
+  z-index: 2;
 }
 
 #hero .container {
@@ -642,6 +718,10 @@ section {
   text-transform: uppercase;
 }
 
+.section-title span {
+  color: #0163ea;
+}
+
 .section-title p {
   margin-bottom: 0;
 }
@@ -677,69 +757,6 @@ section {
 }
 
 
-/*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
-.breadcrumbs {
-  padding: 20px 0;
-  background-color: #f1f7fd;
-  min-height: 40px;
-  margin-top: 140px;
-  color:#0B2B6A;
-  margin-bottom: -60px;
-}
-
-@media (max-width: 992px) {
-  .breadcrumbs {
-    margin-top: 130px;
-  }
-}
-
-.breadcrumbs h2 {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 0;
-}
-
-@media (max-width: 992px) {
-  .breadcrumbs h2 {
-    margin: 0 0 10px 0;
-  }
-}
-
-.breadcrumbs ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 14px;
-}
-
-.breadcrumbs ol li+li {
-  padding-left: 10px;
-}
-
-.breadcrumbs ol li+li::before {
-  display: inline-block;
-  padding-right: 10px;
-  color: #6c757d;
-  content: "/";
-}
-
-@media (max-width: 768px) {
-  .breadcrumbs .d-flex {
-    display: block !important;
-  }
-
-  .breadcrumbs ol {
-    display: block;
-  }
-
-  .breadcrumbs ol li {
-    display: inline-block;
-  }
-}
 
 /*--------------------------------------------------------------
 # Why Us
@@ -883,18 +900,14 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-.about {
-  height: 100vh;
-}
-
 .about .icon-boxes h4 {
-  font-size: 28px;
+  font-size: 18px;
   color: #4b7dab;
   margin-bottom: 15px;
 }
 
 .about .icon-boxes h3 {
-  font-size: 35px;
+  font-size: 28px;
   font-weight: 700;
   color: #0b2b6a;
   margin-bottom: 15px;
@@ -965,7 +978,7 @@ section {
 }
 
 .about .video-box {
-  background: url("https://www.dialogika.co/corporate/assets/img/bg/banner-bg-4.jpg") center center no-repeat;
+  background: url("../img/about.webp") center center no-repeat;
   background-size: cover;
   min-height: 500px;
 }
@@ -1356,6 +1369,11 @@ section {
   animation: fadeIn 0.5s ease-out;
 }
 
+.departments .tab-pane .details img {
+    width: 600px;
+    height: 525px;
+}
+
 .departments .details h3 {
   font-size: 26px;
   font-weight: 700;
@@ -1397,6 +1415,7 @@ section {
   -webkit-box-shadow: 0px 0px 4px 2px rgba(114, 4, 207, 0.75);
   -moz-box-shadow: 0px 0px 4px 2px rgba(114, 4, 207, 0.75);
 }
+
 
 @media (max-width: 992px) {
   .departments .nav-link {
