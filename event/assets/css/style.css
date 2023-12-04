@@ -2382,6 +2382,12 @@ section {
   border: 1px solid #bfdcf7;
 }
 
+#footer .footer-newsletter form input:active,
+#footer .footer-newsletter form input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 #footer .footer-newsletter form input[type=tel] {
   border: 0;
   padding: 4px 8px;

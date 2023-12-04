@@ -421,7 +421,46 @@
     grabCursor: true,
   });
 
+    /**
+     * Sevice slider
+     */
+    new Swiper('.service-slider', {
+      speed: 600,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
+      },
+      slidesPerView: 'auto',
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true
+      },
+      navigation: {
+      nextEl: '.testi_right_arrow',
+      prevEl: '.testi_left_arrow',
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 20
+        },
+        480: {
+          slidesPerView: 2,
+          spaceBetween: 30
+        },
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 40
+        },
+        992: {
+          slidesPerView: 3,
+          spaceBetween: 50
+        }
+      }
 
+    });
   
 
 

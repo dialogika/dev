@@ -82,7 +82,8 @@ h6 {
   z-index: 996;
   width: 40px;
   height: 40px;
-  border-radius: 50px;
+  padding: 8px 20px 10px 20px;
+  border-radius: 7px;
   transition: all 0.4s;
   box-shadow: inset 0px 1px 0px 0px #006a4e;
   background: linear-gradient(to bottom, #009961 5%, #006a4e 100%);
@@ -203,8 +204,8 @@ h6 {
 .appointment-btn {
   margin-left: 25px;
   color: #fff;
-  border-radius: 50px;
-  padding: 8px 25px;
+  padding: 8px 20px 10px 20px;
+  border-radius: 7px;
   white-space: nowrap;
   transition: 0.3s;
   font-size: 14px;
@@ -502,7 +503,6 @@ h6 {
   height: 90vh;
   background: url('https://criterionasia.com/wp-content/uploads/Recruiting-People-scaled.jpg') top center;
   background-size: cover;
-  margin-bottom: -70px;
   z-index: 2;
 }
 
@@ -591,6 +591,41 @@ h6 {
   color: #3b8af2;
 }
 
+#hero .sign-up-form {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 7px;
+  background: #fff;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
+}
+
+#hero .sign-up-form .form-control {
+  border: none;
+}
+
+#hero .sign-up-form .form-control:active,
+#hero .sign-up-form .form-control:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+#hero .sign-up-form input[type=submit] {
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #0f61a8 5%, #0b2b6a 100%);
+  background-color: #0b2b6a;
+  padding: 8px 20px 10px 20px;
+  border-radius: 7px;
+  color: #fff;
+  box-shadow: 0px 5px 16px -6px rgba(114, 4, 207, 1);
+}
+
+#hero .sign-up-form input[type=submit]:hover {
+  background: linear-gradient(to bottom, #0b2b6a 5%, #0f61a8 100%);
+  background-color: #0b2b6a;
+  box-shadow: 0px 0px 4px 2px rgba(114, 4, 207, 0.75);
+}
+
+
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
@@ -641,6 +676,8 @@ section {
   text-align: center;
   padding-bottom: 30px;
 }
+
+
 
 .section-title h2 {
   font-size: 32px;
@@ -728,8 +765,8 @@ section {
 
 .section-title a {
   color: #fff;
-  border-radius: 50px;
-  padding: 8px 25px;
+  padding: 8px 20px 10px 20px;
+  border-radius: 7px;
   white-space: nowrap;
   transition: 0.3s;
   font-size: 14px;
@@ -788,9 +825,9 @@ section {
 .why-us .content .more-btn {
   display: inline-block;
   background: rgba(255, 255, 255, 0.2);
-  padding: 6px 30px 8px 30px;
   color: #fff;
-  border-radius: 50px;
+  padding: 8px 20px 10px 20px;
+  border-radius: 7px;
   transition: all ease-in-out 0.4s;
   box-shadow: 0px 0px 27px -3px rgba(11, 43, 106, 1) inset;
   -webkit-box-shadow: 0px 0px 27px -3px rgba(11, 43, 106, 1) inset;
@@ -815,9 +852,7 @@ section {
   background: #fff;
   padding: 40px 30px;
   width: 100%;
-  box-shadow: 0px 2px 15px rgba(32, 191, 240, 0.7);
-  -webkit-box-shadow: 0px 2px 15px rgba(32, 191, 240, 0.7);
-  -moz-box-shadow: 0px 2px 15px rgba(32, 191, 240, 0.7);
+  box-shadow: 0px 9px 16px -6px rgba(11, 43, 106, 1);
 }
 
 .why-us .icon-boxes .icon-box i {
@@ -1142,6 +1177,18 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+.services {
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 50%, rgba(241,247,253,1) 100%);
+}
+
+.services img.title-img {
+    box-shadow: 0px 9px 16px -6px rgba(11, 43, 106, 1);
+    max-height: 200px;
+    margin-left: auto;
+    margin-right: 0px;
+}
+
 .services .icon-box {
   text-align: center;
   border: 1px solid #d5e1ed;
@@ -1205,9 +1252,10 @@ section {
 .services .icon-box:hover {
   background: #0b2b6a;
   border-color: #0b2b6a;
-  box-shadow: 0px 5px 16px -6px rgba(114, 4, 207, 1);
-  -webkit-box-shadow: 0px 5px 16px -6px rgba(114, 4, 207, 1);
-  -moz-box-shadow: 0px 5px 16px -6px rgba(114, 4, 207, 1);
+  box-shadow: 0px 9px 16px -6px rgba(114, 4, 207, 1);
+  -webkit-box-shadow: 0px 9px 16px -6px rgba(114, 4, 207, 1);
+  -moz-box-shadow: 0px 9px 16px -6px rgba(114, 4, 207, 1);
+  
 }
 
 .services .icon-box:hover .icon {
@@ -1712,7 +1760,7 @@ section {
 # Doctors
 --------------------------------------------------------------*/
 .doctors {
-  background: #fff;
+  
 }
 
 .doctors .mentor-swiper.swiper-wrapper {
@@ -1735,6 +1783,7 @@ section {
 }
 
 .doctors .member {
+    background: #fff;
   position: relative;
 /*  box-shadow: 0px 2px 15px rgba(44, 73, 100, 0.08);*/
   padding: 30px;
@@ -1873,6 +1922,7 @@ section {
 /*--------------------------------------------------------------
 # Frequently Asked Questions
 --------------------------------------------------------------*/
+
 .faq .faq-list {
   padding: 0 100px;
 }
@@ -1889,7 +1939,7 @@ section {
 .faq .faq-list li {
   padding: 20px;
   background: #fff;
-  border-radius: 4px;
+  border-radius: 10px;
   position: relative;
 }
 
@@ -1982,6 +2032,11 @@ section {
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
+.testimonials {
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(241,247,253,1) 100%);
+}
+
 .testimonials .testimonials-carousel,
 .testimonials .testimonials-slider {
   overflow: hidden;
@@ -2383,6 +2438,13 @@ section {
   text-align: left;
   border: 1px solid #bfdcf7;
 }
+
+#footer .footer-newsletter form input:active,
+#footer .footer-newsletter form input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 
 #footer .footer-newsletter form input[type=tel] {
   border: 0;
