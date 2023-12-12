@@ -66,7 +66,18 @@ class Header extends HTMLElement {
               </li>
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="../corporate/">Corporate</a></li>
+          <li class="dropdown"><a href="#"><span>Corporate</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="../training/basic-public.html">Basic Public Speaking</a></li>
+                <li><a href="../training/high-impact.html">High Impact Presentation</a></li>
+                <li><hr/></li>
+                <li><a href="../training/daily-briefing.html">Daily Briefing</a></li>
+                <li><a href="../training/sales-pitch.html">Sales Pitch</a></li>
+                <li><a href="../training/handling-complain.html">Handling Complain</a></li>
+                <li><a href="../training/hospitality.html">Hospitality</a></li>
+                <li><a href="../training/host-live.html">Host Live</a></li>
+              </ul>
+          </li>
           <li><a class="nav-link scrollto" href="../event/">Event</a></li>
           <li><a class="nav-link scrollto" href="../service/">Services</a></li>
           <li><a class="nav-link scrollto" href="../shop/">Shop</a></li>
@@ -75,112 +86,127 @@ class Header extends HTMLElement {
         <i class="bi bi-list d-block d-md-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"></i>
        </nav><!-- .navbar -->
 
-      <a href="#" class="appointment-btn"><span class="d-none d-md-inline">Request</span> Trial</a>
+      <a href="#trial-request" data-bs-toggle="modal" class="appointment-btn"><span class="d-none d-md-inline">Request</span> Trial</a>
 
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Mobile Nav ======= -->
-  <nav class="navbar-canvas fixed-top">
-    <div class="container-fluid">
-      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header">
-          <a href="../index.html">
-            <img src="assets/img/logo.webp" class="offcanvas-title" id="offcanvasNavbarLabel"/>
-          </a>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-        </div>
-        <div class="offcanvas-body">
-          <a href="#hero"><div class="card"><div class="card-body">Home</div></div></a>
-          <div class="card">
-            <a href="#program-collapse" data-bs-toggle="collapse">
-              <div class="card-body d-flex justify-content-between">
-                <span>Program</span>
-                <i class='bx bxs-chevron-down bx-tada'></i>
+    <!-- ======= Mobile Nav ======= -->
+      <nav class="navbar-canvas fixed-top">
+        <div class="container-fluid">
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <a href="../index.html">
+                <img src="../assets/img/logo.webp" class="offcanvas-title" id="offcanvasNavbarLabel"/>
+              </a>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+              <a href="#hero"><div class="card"><div class="card-body">Home</div></div></a>
+              <div class="card">
+                <a href="#program-collapse" data-bs-toggle="collapse">
+                  <div class="card-body d-flex justify-content-between">
+                    <span>Program</span><i class='bx bxs-chevron-down bx-tada'></i>
+                  </div>
+                </a>
+                <div class="collapse" id="program-collapse">
+                  <a href="#program-online" data-bs-toggle="collapse">
+                    <div class="card">
+                      <div class="card-body d-flex justify-content-between">
+                        <span>Online</span>
+                        <i class='bx bxs-chevron-down bx-tada'></i>
+                      </div>
+                        <div class="collapse" id="program-online">
+                          <a href="../program/basic-play.html"><div class="card card-body">Basic Play</div></a>
+                          <a href="../program/basic-plus.html">
+                            <div class="card card-body">
+                                <div class="justify-content-between d-flex">
+                                    <span>Basic Plus</span>
+                                    <span class="badge bg-warning rounded-pill text-dark">Best Buy</span>
+                                </div>
+                            </div>
+                          </a>
+                          <a href="../program/basic-private.html"><div class="card card-body">Basic Private</div></a>
+                          <hr/>
+                          <a href="../program/kids-play.html"><div class="card card-body">Kids Play</div></a>
+                          <a href="../program/kids-plus.html"><div class="card card-body">
+                            <div class="justify-content-between d-flex">
+                              <span>Kids Plus </span>
+                              <span class="badge bg-info rounded-pill">New</span>
+                            </div>
+                          </div></a>
+                          <a href="../program/kids-plus.html"><div class="card card-body">Kids Private</div></a>
+                        </div>
+                    </div>
+                  </a>
+                  <a href="#program-offline" data-bs-toggle="collapse">
+                    <div class="card">
+                      <div class="card-body d-flex justify-content-between">
+                        <span>Offline</span>
+                        <i class='bx bxs-chevron-down bx-tada'></i>
+                      </div>
+                        <div class="collapse" id="program-offline">
+                          <a href="../program/first-class.html">
+                            <div class="card card-body">
+                                <div class="justify-content-between d-flex">
+                                    <span>First Class</span>
+                                    <span class="badge bg-warning rounded-pill text-dark">Best Buy</span>
+                                </div>
+                            </div>
+                          </a>
+                          <a href="../program/first-kids.html"><div class="card card-body">
+                            <div class="justify-content-between d-flex">
+                              <span>First Kids </span>
+                              <span class="badge bg-info rounded-pill">New</span>
+                            </div>
+                          </div></a>
+                          <hr/>
+                          <a href="../program/first-private.html"><div class="card card-body">First Private</div></a>
+                        </div>
+                    </div>
+                  </a>
+                </div>
               </div>
-            </a>
-            <div class="collapse" id="program-collapse">
-              <a href="#program-online" data-bs-toggle="collapse">
-                <div class="card">
+              <div class="card">
+                <a href="#training-collapse" data-bs-toggle="collapse">
                   <div class="card-body d-flex justify-content-between">
-                    <span>Online</span>
-                    <i class='bx bxs-chevron-down bx-tada'></i>
+                    <span>Corporate</span><i class='bx bxs-chevron-down bx-tada'></i>
                   </div>
-                    <div class="collapse" id="program-online">
-                      <a href="../program/basic-play.html"><div class="card card-body">Basic Play</div></a>
-                      <a href="../program/basic-plus.html">
-                        <div class="card card-body">
-                            <div class="justify-content-between d-flex">
-                                <span>Basic Plus</span>
-                                <span class="badge bg-warning rounded-pill text-dark">Best Buy</span>
-                            </div>
-                        </div>
-                      </a>
-                      <a href="../program/basic-private.html"><div class="card card-body">Basic Private</div></a>
-                      <hr/>
-                      <a href="../program/kids-play.html"><div class="card card-body">Kids Play</div></a>
-                      <a href="../program/kids-plus.html"><div class="card card-body">
-                        <div class="justify-content-between d-flex">
-                          <span>Kids Plus </span>
-                          <span class="badge bg-info rounded-pill">New</span>
-                        </div>
-                      </div></a>
-                      <a href="../program/kids-plus.html"><div class="card card-body">Kids Private</div></a>
-                    </div>
+                </a>
+                <div class="collapse" id="training-collapse">
+                  <a href="../training/basic-public.html"><div class="card card-body">Basic Public Speaking</div></a>
+                  <a href="../training/high-impact.html"><div class="card card-body">High Impact Presentation</div></a>
+                  <hr/>
+                  <a href="../training/daily-briefing.html"><div class="card card-body">Daily Briefing</div></a>
+                  <a href="../training/sales-pitch.html"><div class="card card-body">Sales Pitch</div></a>
+                  <a href="../training/handling-complain.html"><div class="card card-body">Handling Complain</div></a>
+                  <a href="../training/hospitality.html"><div class="card card-body">Hospitality</div></a>
+                  <a href="../training/host-live.html"><div class="card card-body">Host Live</div></a>
                 </div>
-              </a>
-              <a href="#program-offline" data-bs-toggle="collapse">
-                <div class="card">
-                  <div class="card-body d-flex justify-content-between">
-                    <span>Offline</span>
-                    <i class='bx bxs-chevron-down bx-tada'></i>
-                  </div>
-                    <div class="collapse" id="program-offline">
-                      <a href="../program/first-class.html">
-                        <div class="card card-body">
-                            <div class="justify-content-between d-flex">
-                                <span>First Class</span>
-                                <span class="badge bg-warning rounded-pill text-dark">Best Buy</span>
-                            </div>
-                        </div>
-                      </a>
-                      <a href="../program/first-kids.html"><div class="card card-body">
-                        <div class="justify-content-between d-flex">
-                          <span>First Kids </span>
-                          <span class="badge bg-info rounded-pill">New</span>
-                        </div>
-                      </div></a>
-                      <hr/>
-                      <a href="../program/first-private.html"><div class="card card-body">First Private</div></a>
-                    </div>
+              </div>
+              <a href="../event/"><div class="card card-body">
+                <div class="justify-content-between d-flex">
+                  <span>Event </span>
+                  <!-- <span class="badge bg-info rounded-pill">New</span> -->
                 </div>
-              </a>
+              </div></a>
+              <a href="../service/" onclick="return false;"><div class="card card-body">
+                <div class="justify-content-between d-flex">
+                  <span>Service </span>
+                  <span class="badge bg-warning rounded-pill">Coming Soon</span>
+                </div>
+              </div></a>
+              <a href="../shop/" onclick="return false;"><div class="card card-body">
+                <div class="justify-content-between d-flex">
+                  <span>Shop </span>
+                  <span class="badge bg-warning rounded-pill">Coming Soon</span>
+                </div>
+              </div></a>
+              <a href="../blog/"><div class="card card-body">Blog</div></a>
             </div>
           </div>
-          <a href="../corporate/"><div class="card card-body">Corporate</div></a>
-          <a href="../event/"><div class="card card-body">
-            <div class="justify-content-between d-flex">
-              <span>Event </span>
-              <!-- <span class="badge bg-info rounded-pill">New</span> -->
-            </div>
-          </div></a>
-          <a href="../service/" onclick="return false;"><div class="card card-body">
-            <div class="justify-content-between d-flex">
-              <span>Service </span>
-              <span class="badge bg-warning rounded-pill">Coming Soon</span>
-            </div>
-          </div></a>
-          <a href="../shop/" onclick="return false;"><div class="card card-body">
-            <div class="justify-content-between d-flex">
-              <span>Shop </span>
-              <span class="badge bg-warning rounded-pill">Coming Soon</span>
-            </div>
-          </div></a>
-          <a href="../blog/"><div class="card card-body">Blog</div></a>
         </div>
-      </div>
-    </div>
-  </nav><!-- End Mobile Nav -->
+      </nav><!-- End Mobile Nav -->
 
     `;
   }

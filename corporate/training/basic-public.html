@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Basic Public Speaking Training untuk Kelas Karyawan Perusahaan | Public Speaking Dialogika</title>
+    <meta name="description"
+        content="Pelatihan, In House Training, Seminar, Workshop untuk Bangun Karyawan Yang Tangguh dan Memiliki Skill untuk menunjang kinerja perusahaan Anda" />
+    <meta name="keywords" content="skill, public speaking, training, kelas, pelatihan, inhouse training" />
+    <meta name="author" content="Dialogika" />
+
+    <!-- Favicons -->
+    <link href="../assets/img/favicon.webp" rel="icon">
+    <link href="../assets/img/apple-touch-icon.webp" rel="apple-touch-icon">
+
+    <!-- OG Meta Tags to share -->
+    <meta property="og:site_name" content="Kelas Public Speaking" />
+    <meta property="og:site" content="www.dialogika.co" />
+    <meta property="og:title" content="Cara Mengatasi Overthinking | Event Dialogika" />
+    <meta property="og:description" content="Event Dialogika" />
+    <meta property="og:image" content="../assets/img/training/basic-public/bg.webp" />
+    <meta property="og:url" content="www.dialogika.co/corporate" />
+    <meta property="og:type" content="page" />
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/2ac952ed2e.js" crossorigin="anonymous"></script>
+
+    <!-- Vendor CSS Files -->
+    <link href="../assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" />
+    <link href="../assets/vendor/animate.css/animate.min.css" rel="stylesheet" />
+    <link href="../assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="../assets/vendor/swiper/swiper-bundle.css" rel="stylesheet" />
+
+
+    <!-- Part CSS Files -->
+    <link href="../assets/part/theme-counter/theme-counter.css" rel="stylesheet" />
+    <link href="../assets/part/testimoni-insurin/testi.css" rel="stylesheet" />
+    <link href="../assets/part/about-append/about.css" rel="stylesheet" />
+    <link href="../assets/part/cta-append/cta.css" rel="stylesheet" />
+    <link href="../assets/part/contact-append/contact.css" rel="stylesheet" />
+    <link href="../assets/part/portfolio-insurin/portfolio.css" rel="stylesheet" />
+    <link href="../assets/part/category/category.css" rel="stylesheet" />
+    <link href="../assets/part/popup-box/popup.css" rel="stylesheet" />
+    <link href="../assets/part/breadcrumbs-banner/banner.css" rel="stylesheet" />
+    <link href="../assets/part/sidebars-echooling/sidebars.css" rel="stylesheet" />
+    <link href="../assets/part/leftbar-echooling/leftbars.css" rel="stylesheet" />
+    <link href="../assets/part/breadcrumb-echooling/breadcrumbs.css" rel="stylesheet" />
+
+
+    <!-- Template Main CSS File -->
+    <link href="../assets/css/style.css" rel="stylesheet" />
+
+    <!--  ========================================================  -->
+    <!-- Spreadsheet API Form Pendaftaran -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script>
+        function HeroForm() {
+            $.ajax({
+                url: "https://api.apispreadsheets.com/data/nFEcActjMjE46FAP/",
+                type: "post",
+                data: $("#heroForm").serializeArray(),
+                headers: {
+                    accessKey: "6df7b75d348bfbdfa9684dfc76ed0053",
+                    secretKey: "68a998592183dc30cdc2b07576759f04"
+                },
+                success: function () {
+                    alert("Anda Telah Mendaftar :)")
+                },
+                error: function () {
+                    alert("There was an error :(")
+                }
+            });
+        }
+
+        function SubForm() {
+            $.ajax({
+                url: "https://api.apispreadsheets.com/data/nFEcActjMjE46FAP/",
+                type: "post",
+                data: $("#myForm").serializeArray(),
+                headers: {
+                    accessKey: "6df7b75d348bfbdfa9684dfc76ed0053",
+                    secretKey: "68a998592183dc30cdc2b07576759f04"
+                },
+                success: function () {
+                    alert("Anda Telah Mendaftar :)")
+                },
+                error: function () {
+                    alert("There was an error :(")
+                }
+            });
+        }
+
+        function Subcription() {
+            $.ajax({
+                url: "https://api.apispreadsheets.com/data/18511/",
+                type: "post",
+                data: $("#subcriptions").serializeArray(),
+                success: function () {
+                    // $('#subcription-modal').modal('show');
+                    // open("https://link.dialogika.co/open-whatsapp-group");
+                    window.location.href = "https://link.dialogika.co/open-whatsapp-group";
+                },
+                error: function () {
+                    alert("There was an error :(")
+                }
+            });
+        }
+    </script>
+    <!-- End Spreadsheet API Form Pendaftaran -->
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '916674555903437');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=916674555903437&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!-- Pixel Quora -->
+    <!-- DO NOT MODIFY -->
+    <!-- Quora Pixel Code (JS Helper) -->
+    <script>
+        !function (q, e, v, n, t, s) { if (q.qp) return; n = q.qp = function () { n.qp ? n.qp.apply(n, arguments) : n.queue.push(arguments); }; n.queue = []; t = document.createElement(e); t.async = !0; t.src = v; s = document.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s); }(window, 'script', 'https://a.quora.com/qevents.js');
+        qp('init', 'cae6711903da464ab62f03df5f66aedc');
+        qp('track', 'ViewContent');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://q.quora.com/_/ad/cae6711903da464ab62f03df5f66aedc/pixel?tag=ViewContent&noscript=1" /></noscript>
+    <!-- End of Quora Pixel Code -->
+    <script>qp('track', 'GenerateLead');</script>
+    <!-- End Pixel Quora -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HV60XT856G"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-148836422-2');
+        gtag('config', 'G-HV60XT856G');
+    </script>
+    <!-- End Global site tag (gtag.js) - Google Analytics -->
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KGK9D6H');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Hotjar Tracking Code for https://dialogika.co -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 2828594, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+    <!-- End Hotjar -->
+    <!--  ========================================================  -->
+</head>
+
+<body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KGK9D6H" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript><!-- End Google Tag Manager (noscript) -->
+
+    <!-- ======= Top Bar, Header, Side Bar ======= -->
+    <main-header></main-header>
+    <!-- ======= Top Bar, Header, Side Bar ======= -->
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+        <div class="container">
+
+            <div class="d-flex justify-content-between align-items-center">
+                <h2>Basic Public Speaking</h2>
+                <ol>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="index.html">Corporate</a></li>
+                    <li><a href="#">Basic Public Speaking</a></li>
+                </ol>
+            </div>
+
+        </div>
+    </section><!-- End Breadcrumbs Section -->
+
+    <main id="main">
+
+        <!--================= Breadcrumbs Section Start Here =================-->
+        <div class="react-breadcrumbs">
+          <div class="breadcrumbs-wrap"
+            style="background: url('../assets/img/training/basic-public/bg.webp') top center;background-size: cover;">
+            <div class="breadcrumbs-inner">
+              <div class="container">
+                <div class="section-title">
+                  <h5 style="text-shadow: 0px 1px 1px #7204cf;">Basic Public Speaking</h5>
+                  <h3 class="text-light" style="text-shadow: 0px 3px 3px #283966;">Atasi Rasa Tidak Percaya Diri <br class="d-md-block d-none"> Berbicara Di Depan Umum</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- End Breadcrumbs -->
+
+        <!-- ======= Training ======= -->
+        <section class="training" id="training">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="course-single-tab">
+                            <ul class="nav nav-tabs" id="back-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link active" id="discriptions" data-bs-toggle="tab"
+                                        href="#discription" role="tab" aria-controls="discription"
+                                        aria-selected="true">Description</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="curriculums" data-bs-toggle="tab" href="#curriculum"
+                                        role="tab" aria-controls="curriculum" aria-selected="false">Material</a>
+                                </li>
+
+                                <!-- <li class="nav-item" role="presentation">
+                                    <a class="nav-link" id="members" data-bs-toggle="tab" href="#member" role="tab"
+                                        aria-controls="member" aria-selected="false">FAQ</a>
+                                </li> -->
+                            </ul>
+                            <div class="tab-content" id="back-tab-content">
+                                <div class="tab-pane fade show active" id="discription" role="tabpanel"
+                                    aria-labelledby="discription">
+                                    <h3>Why Your Employee Need This?</h3>
+                                    <p>Ada beberapa alasan mengapa karyawan perusahaan Anda perlu melatih kemampuan
+                                        sales menjadi lebih
+                                        baik.</p>
+                                        
+                                        <ul>
+                                          <li><b>Komunikasi Efektif:</b> Mengembangkan kemampuan berbicara di depan umum menguatkan <span class="badge bg-primary">kemampuan komunikasi</span>, memungkinkan penyampaian pesan secara jelas dan efektif.</li>
+                                          <li><b>Keyakinan Diri:</b> Keterampilan public speaking yang baik menumbuhkan <span class="badge bg-primary">kepercayaan diri</span> ketika berinteraksi dengan orang lain, baik dalam pertemuan internal maupun eksternal.</li>
+                                          <li><b>Pengaruh dan Persuasi:</b> Kemampuan untuk berbicara dengan baik di depan publik meningkatkan kapasitas <span class="badge bg-primary">pengaruh dan persuasi</span>, krusial dalam negosiasi dan pengambilan keputusan.</li>
+                                          <li><b>Leadership:</b> Karyawan yang mahir dalam public speaking sering dianggap sebagai <span class="badge bg-primary">pemimpin</span> dan dapat memotivasi atau menginspirasi tim mereka.</li>
+                                          <img src="../assets/img/publicspeaking2.webp" class="img-fluid rounded" />
+                                          <li><b>Networking dan Hubungan Profesional:</b> Keterampilan berbicara di depan umum membantu membangun <span class="badge bg-primary">jaringan profesional</span> dan mempertahankan hubungan bisnis.</li>
+                                          <li><b>Promosi dan Pemasaran:</b> Karyawan dengan keterampilan public speaking yang baik berkontribusi dalam <span class="badge bg-primary">promosi</span> dan pemasaran produk atau layanan perusahaan.</li>
+                                          <li><b>Pendidikan dan Pelatihan:</b> Karyawan yang menguasai public speaking dapat berperan dalam <span class="badge bg-primary">pendidikan</span> dan pelatihan internal, meningkatkan keterampilan seluruh tim.</li>
+                                        </ul>
+
+                                </div>
+                                <div class="tab-pane fade" id="curriculum" role="tabpanel" aria-labelledby="curriculum">
+                                    <h3>Material & Practice</h3>
+                                    <p>Berikut ini adalah gambaran materi yang akan kami sampaikan dan perkiraan waktu pelatihan yang akan berikan, khusus untuk seminar kami hanya bisa memberikan beberapa materi terutama untuk di level dasar.</p>
+                                    <!-- Level Beginner -->
+                                    <!-- Sesi 1: Pengenalan Public Speaking -->
+                                    <div class="single-week">
+                                        <ul class="week__top" style="padding-left:0px;">
+                                            <li>Beginner Level</li>
+                                            <li><button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#beg-1">1/5</button></li>
+                                        </ul>
+                                        <h3>Sesi 1: Pengenalan Public Speaking</h3>
+                                        <div class="collapse show" id="beg-1">
+                                            <p>Memahami konsep dasar dan pentingnya public speaking dalam konteks profesional.</p>
+                                            <h3>Materi & Latihan</h3>
+                                            <ul class="course__title">
+                                                <li>
+                                                    <i class="bi bi-camera-video-fill"></i>
+                                                    Materi: Pengertian public speaking, elemen-elemen dasar. <em>30 minutes</em>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-chat-right-text-fill"></i>
+                                                    Latihan: Praktek dasar public speaking. <em class="questions">in house only</em> <em>30 minutes</em>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- Sesi 2: Struktur dan Persiapan Pidato -->
+                                    <div class="single-week">
+                                        <ul class="week__top" style="padding-left:0px;">
+                                            <li>Beginner Level</li>
+                                            <li><button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#beg-2">2/5</button></li>
+                                        </ul>
+                                        <h3>Sesi 2: Struktur dan Persiapan Pidato</h3>
+                                        <div class="collapse" id="beg-2">
+                                            <p>Belajar menyusun pidato yang efektif dengan struktur yang jelas.</p>
+                                            <h3>Materi & Latihan</h3>
+                                            <ul class="course__title">
+                                                <li>
+                                                    <i class="bi bi-camera-video-fill"></i>
+                                                    Materi: Pendahuluan, isi, dan penutup dalam pidato. <em>30 minutes</em>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-chat-right-text-fill"></i>
+                                                    Latihan: Membuat outline pidato. <em class="questions">in house only</em> <em>30 minutes</em>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- Sesi 3: Percaya Diri dan Pengaturan Suara -->
+                                    <div class="single-week">
+                                        <ul class="week__top" style="padding-left:0px;">
+                                            <li>Beginner Level</li>
+                                            <li><button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#beg-3">3/5</button></li>
+                                        </ul>
+                                        <h3>Sesi 3: Percaya Diri dan Pengaturan Suara</h3>
+                                        <div class="collapse" id="beg-3">
+                                            <p>Mengembangkan kepercayaan diri dan penggunaan suara yang efektif.</p>
+                                            <h3>Materi & Latihan</h3>
+                                            <ul class="course__title">
+                                                <li>
+                                                    <i class="bi bi-camera-video-fill"></i>
+                                                    Materi: Latihan percaya diri, teknik vokal. <em>30 minutes</em>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-chat-right-text-fill"></i>
+                                                    Latihan: Pengaturan nada suara. <em class="questions">in house only</em> <em>30 minutes</em>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- Sesi 4: Bahasa Tubuh dalam Public Speaking -->
+                                    <div class="single-week">
+                                        <ul class="week__top" style="padding-left:0px;">
+                                            <li>Beginner Level</li>
+                                            <li><button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#beg-4">4/5</button></li>
+                                        </ul>
+                                        <h3>Sesi 4: Bahasa Tubuh dalam Public Speaking</h3>
+                                        <div class="collapse" id="beg-4">
+                                            <p>Memahami dan mempraktikkan penggunaan bahasa tubuh yang efektif.</p>
+                                            <h3>Materi & Latihan</h3>
+                                            <ul class="course__title">
+                                                <li>
+                                                    <i class="bi bi-camera-video-fill"></i>
+                                                    Materi: Ekspresi wajah, gerakan tangan, postur tubuh. <em>30 minutes</em>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-chat-right-text-fill"></i>
+                                                    Latihan: Praktek bahasa tubuh. <em class="questions">in house only</em> <em>30 minutes</em>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- Sesi 5: Praktik dan Feedback -->
+                                    <div class="single-week">
+                                        <ul class="week__top" style="padding-left:0px;">
+                                            <li>Beginner Level</li>
+                                            <li><button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#beg-5">5/5</button></li>
+                                        </ul>
+                                        <h3>Sesi 5: Praktik dan Feedback</h3>
+                                        <div class="collapse" id="beg-5">
+                                            <p>Menerapkan pengetahuan dan keterampilan yang telah dipelajari.</p>
+                                            <h3>Materi & Latihan</h3>
+                                            <ul class="course__title">
+                                                <li>
+                                                    <i class="bi bi-camera-video-fill"></i>
+                                                    Materi: Sesi praktik pidato. <em>30 minutes</em>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-chat-right-text-fill"></i>
+                                                    Latihan: Umpan balik dari instruktur dan rekan-rekan. <em class="questions">in house only</em> <em>30 minutes</em>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- Level Medium -->
+                                    <!-- Sesi 1: Penyampaian Pesan yang Efektif -->
+                                    <div class="single-week">
+                                        <ul class="week__top" style="padding-left:0px;">
+                                            <li>Medium Level</li>
+                                            <li><button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#med-1">1/5</button></li>
+                                        </ul>
+                                        <h3>Sesi 1: Penyampaian Pesan yang Efektif</h3>
+                                        <div class="collapse" id="med-1">
+                                            <p>Teknik penyampaian pesan yang jelas dan menarik.</p>
+                                            <h3>Materi & Latihan</h3>
+                                            <ul class="course__title">
+                                                <li>
+                                                    <i class="bi bi-camera-video-fill"></i>
+                                                    Materi: Pemilihan kata, membangun argumen, storytelling. <em>30 minutes</em>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-chat-right-text-fill"></i>
+                                                    Latihan: Praktek penyampaian pesan. <em class="questions">in house only</em> <em>30 minutes</em>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- Sesi 2: Mengatasi Kegugupan -->
+                                    <div class="single-week">
+                                        <ul class="week__top" style="padding-left:0px;">
+                                            <li>Medium Level</li>
+                                            <li><button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#med-2">2/5</button></li>
+                                        </ul>
+                                        <h3>Sesi 2: Mengatasi Kegugupan</h3>
+                                        <div class="collapse" id="med-2">
+                                            <p>Strategi mengatasi kegugupan saat berbicara di depan umum.</p>
+                                            <h3>Materi & Latihan</h3>
+                                            <ul class="course__title">
+                                                <li>
+                                                    <i class="bi bi-camera-video-fill"></i>
+                                                    Materi: Latihan pernapasan, visualisasi, teknik relaksasi. <em>30 minutes</em>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-chat-right-text-fill"></i>
+                                                    Latihan: Simulasi mengatasi kegugupan. <em class="questions">in house only</em> <em>30 minutes</em>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- Sesi 3: Penggunaan Alat Bantu Visual -->
+                                    <div class="single-week">
+                                        <ul class="week__top" style="padding-left:0px;">
+                                            <li>Medium Level</li>
+                                            <li><button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#med-3">3/5</button></li>
+                                        </ul>
+                                        <h3>Sesi 3: Penggunaan Alat Bantu Visual</h3>
+                                        <div class="collapse" id="med-3">
+                                            <p>Efektif menggunakan alat bantu visual seperti PowerPoint.</p>
+                                            <h3>Materi & Latihan</h3>
+                                            <ul class="course__title">
+                                                <li>
+                                                    <i class="bi bi-camera-video-fill"></i>
+                                                    Materi: Desain slide, penggunaan grafik. <em>30 minutes</em>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-chat-right-text-fill"></i>
+                                                    Latihan: Membuat presentasi dengan alat bantu visual. <em class="questions">in house only</em> <em>30 minutes</em>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- Sesi 4: Interaksi dengan Audiens -->
+                                    <div class="single-week">
+                                        <ul class="week__top" style="padding-left:0px;">
+                                            <li>Medium Level</li>
+                                            <li><button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#med-4">4/5</button></li>
+                                        </ul>
+                                        <h3>Sesi 4: Interaksi dengan Audiens</h3>
+                                        <div class="collapse" id="med-4">
+                                            <p>Meningkatkan keterampilan interaksi dengan audiens.</p>
+                                            <h3>Materi & Latihan</h3>
+                                            <ul class="course__title">
+                                                <li>
+                                                    <i class="bi bi-camera-video-fill"></i>
+                                                    Materi: Teknik Tanya jawab, mengelola interupsi. <em>30 minutes</em>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-chat-right-text-fill"></i>
+                                                    Latihan: Simulasi interaksi audiens. <em class="questions">in house only</em> <em>30 minutes</em>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- Sesi 5: Latihan dan Simulasi -->
+                                    <div class="single-week">
+                                        <ul class="week__top" style="padding-left:0px;">
+                                            <li>Medium Level</li>
+                                            <li><button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#med-5">5/5</button></li>
+                                        </ul>
+                                        <h3>Sesi 5: Latihan dan Simulasi</h3>
+                                        <div class="collapse" id="med-5">
+                                            <p>Penerapan keterampilan public speaking dalam situasi yang lebih realistis.</p>
+                                            <h3>Materi & Latihan</h3>
+                                            <ul class="course__title">
+                                                <li>
+                                                    <i class="bi bi-camera-video-fill"></i>
+                                                    Materi: Simulasi situasi public speaking. <em>30 minutes</em>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-chat-right-text-fill"></i>
+                                                    Latihan: Sesi tanya jawab dan feedback. <em class="questions">in house only</em> <em>30 minutes</em>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="single-week">
+                                        <ul class="week__top" style="padding-left:0px;">
+                                            <li>Hard Level</li>
+                                            <li><button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#hard-1">1/5</button></li>
+                                        </ul>
+                                        <h3>Sesi 1: Rhetorika dan Persuasi</h3>
+                                        <div class="collapse" id="hard-1">
+                                            <p>Menggunakan teknik retorika untuk mempengaruhi dan meyakinkan audiens.</p>
+                                            <h3>Materi & Latihan</h3>
+                                            <ul class="course__title">
+                                                <li>
+                                                    <i class="bi bi-camera-video-fill"></i>
+                                                    Materi: Prinsip-prinsip retorika, ethos, pathos, dan logos.. <em>30 minutes</em>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-chat-right-text-fill"></i>
+                                                    Latihan: Sesi tanya jawab dan feedback. <em class="questions">in house only</em> <em>30 minutes</em>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="single-week">
+                                        <ul class="week__top" style="padding-left:0px;">
+                                            <li>Hard Level</li>
+                                            <li><button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#hard-2">2/5</button></li>
+                                        </ul>
+                                        <h3>Sesi 2: Public Speaking dalam Konteks Bisnis</h3>
+                                        <div class="collapse" id="hard-2">
+                                            <p>Public speaking untuk keperluan bisnis dan profesional.</p>
+                                            <h3>Materi & Latihan</h3>
+                                            <ul class="course__title">
+                                                <li>
+                                                    <i class="bi bi-camera-video-fill"></i>
+                                                    Materi: Presentasi bisnis, pitching, dan berbicara dalam rapat. <em>30 minutes</em>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-chat-right-text-fill"></i>
+                                                    Latihan: Sesi tanya jawab dan feedback. <em class="questions">in house only</em> <em>30 minutes</em>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="single-week">
+                                        <ul class="week__top" style="padding-left:0px;">
+                                            <li>Hard Level</li>
+                                            <li><button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#hard-3">3/5</button></li>
+                                        </ul>
+                                        <h3>Sesi 3: Public Speaking dalam Berbagai Situasi</h3>
+                                        <div class="collapse" id="hard-3">
+                                            <p>Beradaptasi dengan berbagai jenis audiens dan situasi.</p>
+                                            <h3>Materi & Latihan</h3>
+                                            <ul class="course__title">
+                                                <li>
+                                                    <i class="bi bi-camera-video-fill"></i>
+                                                    Materi: Berbicara di hadapan audiens internasional, webinar, dan konferensi. <em>30 minutes</em>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-chat-right-text-fill"></i>
+                                                    Latihan: Sesi tanya jawab dan feedback. <em class="questions">in house only</em> <em>30 minutes</em>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="single-week">
+                                        <ul class="week__top" style="padding-left:0px;">
+                                            <li>Hard Level</li>
+                                            <li><button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#hard-4">4/5</button></li>
+                                        </ul>
+                                        <h3>Sesi 4: Kritik dan Umpan Balik</h3>
+                                        <div class="collapse" id="hard-4">
+                                            <p>Menerima dan memanfaatkan umpan balik untuk meningkatkan keterampilan.</p>
+                                            <h3>Materi & Latihan</h3>
+                                            <ul class="course__title">
+                                                <li>
+                                                    <i class="bi bi-camera-video-fill"></i>
+                                                    Materi:  Cara menerima kritik, self-reflection, dan continuous improvement. <em>30 minutes</em>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-chat-right-text-fill"></i>
+                                                    Latihan: Sesi tanya jawab dan feedback. <em class="questions">in house only</em> <em>30 minutes</em>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="single-week">
+                                        <ul class="week__top" style="padding-left:0px;">
+                                            <li>Hard Level</li>
+                                            <li><button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#hard-5">5/5</button></li>
+                                        </ul>
+                                        <h3>Sesi 5: Capstone Project</h3>
+                                        <div class="collapse" id="hard-5">
+                                            <p>Penerapan komprehensif semua keterampilan yang telah dipelajari.</p>
+                                            <h3>Materi & Latihan</h3>
+                                            <ul class="course__title">
+                                                <li>
+                                                    <i class="bi bi-camera-video-fill"></i>
+                                                    Materi: Penyusunan dan penyampaian presentasi lengkap dengan umpan balik terstruktur. <em>30 minutes</em>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-chat-right-text-fill"></i>
+                                                    Latihan: Sesi tanya jawab dan feedback. <em class="questions">in house only</em> <em>30 minutes</em>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="tab-pane fade faq" id="member" role="tabpanel" aria-labelledby="member">
+                                    <h3>FAQ</h3>
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    Accordion Item #1
+                                                </button>
+                                            </h2>
+                                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                                data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <strong>This is the first item's accordion body.</strong> It is
+                                                    shown by default, until the
+                                                    collapse plugin adds the appropriate classes that we use to style
+                                                    each element. These classes
+                                                    control the overall appearance, as well as the showing and hiding
+                                                    via CSS transitions. You can
+                                                    modify any of this with custom CSS or overriding our default
+                                                    variables. It's also worth noting
+                                                    that just about any HTML can go within the
+                                                    <code>.accordion-body</code>, though the transition
+                                                    does limit overflow.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                    aria-expanded="false" aria-controls="collapseTwo">
+                                                    Accordion Item #2
+                                                </button>
+                                            </h2>
+                                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <strong>This is the second item's accordion body.</strong> It is
+                                                    hidden by default, until the
+                                                    collapse plugin adds the appropriate classes that we use to style
+                                                    each element. These classes
+                                                    control the overall appearance, as well as the showing and hiding
+                                                    via CSS transitions. You can
+                                                    modify any of this with custom CSS or overriding our default
+                                                    variables. It's also worth noting
+                                                    that just about any HTML can go within the
+                                                    <code>.accordion-body</code>, though the transition
+                                                    does limit overflow.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                    aria-expanded="false" aria-controls="collapseThree">
+                                                    Accordion Item #3
+                                                </button>
+                                            </h2>
+                                            <div id="collapseThree" class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <strong>This is the third item's accordion body.</strong> It is
+                                                    hidden by default, until the
+                                                    collapse plugin adds the appropriate classes that we use to style
+                                                    each element. These classes
+                                                    control the overall appearance, as well as the showing and hiding
+                                                    via CSS transitions. You can
+                                                    modify any of this with custom CSS or overriding our default
+                                                    variables. It's also worth noting
+                                                    that just about any HTML can go within the
+                                                    <code>.accordion-body</code>, though the transition
+                                                    does limit overflow.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="react-sidebar react-back-course2 ml----30">
+                            <div class="widget get-back-course">
+                                <ul class="price justify-content-center">
+                                    <li><sup>Rp</sup> 8579K</li>
+                                    <li><sup>Rp</sup> 16000K </li>
+                                    <li>48% OFF</li>
+                                </ul>
+                                <ul class="price__course">
+                                    <li><i class="bi bi-buildings-fill"></i> Type
+                                        <b><span class="badge bg-success">In House</span></b>
+                                    </li>
+                                    <li><i class="bi bi-airplane-fill"></i> Execution
+                                        <b><span class="badge bg-success">Offline</span></b>
+                                    </li>
+                                    <li><i class="bi bi-person-badge-fill"></i> PAX
+                                        <b><span class="badge bg-primary">7 Person</span></b>
+                                    </li>
+                                    <li><i class="bi bi-stopwatch-fill"></i> Duration
+                                        <b><span class="badge bg-primary">6 Hours</span></b>
+                                    </li>
+                                    <li><i class="bi bi-chat-dots-fill"></i> Practice
+                                        <b><span class="badge bg-success">Included</span></b>
+                                    </li>
+                                    <li><i class="bi bi-flag-fill"></i> Language
+                                        <b><span class="badge bg-primary">Indonesia</span></b>
+                                    </li>
+                                </ul>
+                                <a href="#start-now" data-bs-toggle="modal" class="start-btn">Start Now </a>
+                                <div class="share-course"><a href="https://wa.link/o2tit9" target="_blank">Ask Admin</a></div>
+                            </div><br />
+                            <div class="widget get-back-course">
+                                <ul class="price justify-content-center">
+                                    <li><sup>Rp</sup> 2579K</li>
+                                    <li><sup>Rp</sup> 5000K </li>
+                                    <li>48% OFF</li>
+                                </ul>
+                                <ul class="price__course">
+                                    <li><i class="bi bi-buildings-fill"></i> Type
+                                        <b><span class="badge bg-success">Seminar</span></b>
+                                    </li>
+                                    <li><i class="bi bi-airplane-fill"></i> Execution
+                                        <b><span class="badge bg-warning">Offline/Online</span></b>
+                                    </li>
+                                    <li><i class="bi bi-person-badge-fill"></i> PAX
+                                        <b><span class="badge bg-warning">20 Person</span></b>
+                                    </li>
+                                    <li><i class="bi bi-stopwatch-fill"></i> Duration
+                                        <b><span class="badge bg-warning">2 Hours</span></b>
+                                    </li>
+                                    <li><i class="bi bi-chat-dots-fill"></i> Practice
+                                        <b><span class="badge bg-danger">Excluded</span></b>
+                                    </li>
+                                    <li><i class="bi bi-flag-fill"></i> Language
+                                        <b><span class="badge bg-primary">Indonesia</span></b>
+                                    </li>
+                                </ul>
+                                <a href="#start-now" data-bs-toggle="modal" class="start-btn">Start Now </a>
+                                <div class="share-course"><a href="https://wa.link/90vidb" target="_blank">Ask Admin</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer & Counter Area ======= -->
+    <main-footer></main-footer>
+    <!-- ======= End Footer & Counter Area ======= -->
+
+    <a href="#start-now" data-bs-toggle="modal" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class="bx bxl-whatsapp bx-tada"></i></a>
+
+    <!-- Modal -->
+    <div class="modal popup-box fade" id="start-now" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog popup-box-dialog modal-dialog-centered">
+        <div class="modal-content popup-box-content">
+          <div class="popup-card" style="width:100%">
+            <button type="button" class="btn popup2-btn ms-auto" data-bs-dismiss="modal"><i
+                class="fa-solid fa-xmark"></i></button>
+            <img src="../assets/img/training/basic-public/bg.webp" class="card-img-top" alt=""
+              style="border-top-left-radius: 20px;border-top-right-radius: 20px;border:0px;">
+            <div class="card-body popup-card-body">
+
+            </div>
+            <form action="javascript:void" method="post" id="myForm" enctype="text/plain" class="popup-form">
+              <div class="row gy-3 mb-3">
+                <div class="col-lg-6">
+                  <label for="names" class="form-label">Company</label>
+                  <input type="text" name="Name" class="form-control" id="names" pattern="[a-zA-Z\s]{3,100}" placeholder="Company Names*" required>
+                </div>
+                <div class="col-lg-6">
+                  <label for="locations" class="form-label">Lokasi</label>
+                  <input type="text" class="form-control" name="Location" id="locations" pattern="[a-zA-Z\s]{3,100}" placeholder="Kota*" required>
+                </div>
+                <div class="col-lg-12">
+                    <label for="Ket" class="form-label">Type</label>
+                    <select name="Ket" class="form-select" id="messages">
+                       <option>In House</option>
+                       <option>Seminar</option>
+                   </select>
+                </div>
+                <div class="col-lg-6">
+                  <label for="whatsapps" class="form-label">Whatsapp</label>
+                  <input type="tel" class="form-control" name="Whatsapp" id="whatsapps" pattern="[0-9]{10,15}" placeholder="Whatsapp*" required="">
+                </div>
+                <div class="col-lg-6">
+                  <label for="program" class="form-label">Training</label>
+                  <input type="text" name="Program" class="form-control" id="programs" value="Basic Public Speaking" disabled>
+                </div>
+                <select class="d-none" name="Timestamp">
+                  <option id="timestamp"></option>
+                </select>
+              </div>
+              <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button class="custom-btn2 send_contact" id="submits" onclick="SubForm()">Send Whatsapp</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal 2 -->
+    <div class="modal popup-box fade" id="trial-request" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog popup-box-dialog modal-dialog-centered">
+        <div class="modal-content popup-box-content">
+          <div class="popup-card" style="width:100%">
+            <button type="button" class="btn popup2-btn ms-auto" data-bs-dismiss="modal"><i
+                class="fa-solid fa-xmark"></i></button>
+            <img src="../assets/img/training/basic-public/bg.webp" class="card-img-top" alt=""
+              style="border-top-left-radius: 20px;border-top-right-radius: 20px;border:0px;">
+            <div class="card-body popup-card-body">
+
+            </div>
+            <form action="javascript:void" method="post" id="HeroForms" enctype="text/plain" class="popup-form">
+              <div class="row gy-3 mb-3">
+                <div class="col-lg-6">
+                  <label for="names" class="form-label">Company</label>
+                  <input type="text" name="Name" class="form-control" id="names" pattern="[a-zA-Z\s]{3,100}" placeholder="Company Names*" required>
+                </div>
+                <div class="col-lg-6">
+                  <label for="locations" class="form-label">Lokasi</label>
+                  <input type="text" class="form-control" name="Location" id="locations" pattern="[a-zA-Z\s]{3,100}" placeholder="Kota*" required>
+                </div>
+                <div class="col-lg-6">
+                  <label for="whatsapps" class="form-label">Whatsapp</label>
+                  <input type="tel" class="form-control" name="Whatsapp" id="whatsapps" pattern="[0-9]{10,15}" placeholder="Whatsapp*" required="">
+                </div>
+                <div class="col-lg-6">
+                  <label for="program" class="form-label">Trial Request</label>
+                  <input type="text" name="Event" class="form-control" id="events" value="Trial Basic Public Speaking" disabled>
+                </div>
+                <select class="d-none" name="Timestamp">
+                  <option id="timestamp"></option>
+                </select>
+              </div>
+              <button class="custom-btn2 send_contact" id="submits" onclick="HeroForm()">Send Whatsapp</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vendor JS Files -->
+    <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="../assets/js/headerfooter.js"></script>
+    <script src="../assets/js/timestamp.js"></script>
+    <script src="../assets/js/whatsapp.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+
+</body>
+
+</html>

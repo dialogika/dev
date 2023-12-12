@@ -18,7 +18,7 @@
   <meta property="og:site" content="www.dialogika.co" />
   <meta property="og:title" content="Cara Mengatasi Overthinking | Event Dialogika" />
   <meta property="og:description" content="Event Dialogika" />
-  <meta property="og:image" content="assets/img/hero-bg.webp" />
+  <meta property="og:image" content="../assets/img/training/sales-pitch/bg.webp" />
   <meta property="og:url" content="www.dialogika.co/corporate" />
   <meta property="og:type" content="page" />
 
@@ -63,40 +63,32 @@
     crossorigin="anonymous"></script>
   <script>
     function HeroForm() {
-      $.ajax({
-        url: "https://api.apispreadsheets.com/data/nFEcActjMjE46FAP/",
-        type: "post",
-        data: $("#heroForm").serializeArray(),
-        headers: {
-          accessKey: "6df7b75d348bfbdfa9684dfc76ed0053",
-          secretKey: "68a998592183dc30cdc2b07576759f04"
-        },
-        success: function () {
-          alert("Anda Telah Mendaftar :)")
-        },
-        error: function () {
-          alert("There was an error :(")
-        }
-      });
+        $.ajax({
+            url:"https://api.apispreadsheets.com/data/JYfPTNSLW4GoVohc/",
+            type:"post",
+            data:$("#HeroForm").serializeArray(),
+          success: function(){
+            alert("Anda Telah Mendaftar :)")
+          },
+          error: function(){
+            alert("There was an error :(")
+          }
+        });
     }
 
-    function SubForm() {
-      $.ajax({
-        url: "https://api.apispreadsheets.com/data/nFEcActjMjE46FAP/",
-        type: "post",
-        data: $("#myForm").serializeArray(),
-        headers: {
-          accessKey: "6df7b75d348bfbdfa9684dfc76ed0053",
-          secretKey: "68a998592183dc30cdc2b07576759f04"
-        },
-        success: function () {
-          alert("Anda Telah Mendaftar :)")
-        },
-        error: function () {
-          alert("There was an error :(")
-        }
-      });
-    }
+      function SubForm (){
+        $.ajax({
+            url:"https://api.apispreadsheets.com/data/JYfPTNSLW4GoVohc/",
+            type:"post",
+            data:$("#myForm").serializeArray(),
+          success: function(){
+            alert("Anda Telah Mendaftar :)")
+          },
+          error: function(){
+            alert("There was an error :(")
+          }
+        });
+      }
 
     function Subcription() {
       $.ajax({
@@ -221,12 +213,12 @@
     <!--================= Breadcrumbs Section Start Here =================-->
     <div class="react-breadcrumbs">
       <div class="breadcrumbs-wrap"
-        style="background: url('../assets/img/hero.webp') top center;background-size: cover;">
+        style="background: url('../assets/img/training/sales-pitch/bg.webp') top center;background-size: cover;">
         <div class="breadcrumbs-inner">
           <div class="container">
             <div class="section-title">
-              <h5>Sales Pitch</h5>
-              <h3>Boosting Penjualan <br class="d-md-block d-none"> Dengan Sales Tangguh</h3>
+              <h5 style="text-shadow: 0px 1px 1px #7204cf;">Sales Pitch</h5>
+              <h3 class="text-light" style="text-shadow: 0px 3px 3px #283966;">Boosting Penjualan <br class="d-md-block d-none"> Dengan Sales Tangguh</h3>
             </div>
           </div>
         </div>
@@ -249,10 +241,10 @@
                     aria-controls="curriculum" aria-selected="false">Material</a>
                 </li>
 
-                <li class="nav-item" role="presentation">
+                <!-- <li class="nav-item" role="presentation">
                   <a class="nav-link" id="members" data-bs-toggle="tab" href="#member" role="tab" aria-controls="member"
                     aria-selected="false">FAQ</a>
-                </li>
+                </li> -->
               </ul>
               <div class="tab-content" id="back-tab-content">
                 <div class="tab-pane fade show active" id="discription" role="tabpanel" aria-labelledby="discription">
@@ -754,8 +746,8 @@
                     <b><span class="badge bg-primary">Indonesia</span></b>
                   </li>
                 </ul>
-                <a href="#" class="start-btn">Start Now </a>
-                <div class="share-course">Ask Admin</div>
+                <a href="#start-now" data-bs-toggle="modal" class="start-btn">Start Now </a>
+                <div class="share-course"><a href="https://wa.link/euy60j" target="_blank">Ask Admin</a></div>
               </div><br />
               <div class="widget get-back-course">
                 <ul class="price justify-content-center">
@@ -783,8 +775,8 @@
                     <b><span class="badge bg-primary">Indonesia</span></b>
                   </li>
                 </ul>
-                <a href="#" class="start-btn">Start Now </a>
-                <div class="share-course">Ask Admin</div>
+                <a href="#start-now" data-bs-toggle="modal" class="start-btn">Start Now </a>
+                <div class="share-course"><a href="https://wa.link/c0rw5m" target="_blank">Ask Admin</a></div>
               </div>
             </div>
           </div>
@@ -799,41 +791,87 @@
   <main-footer></main-footer>
   <!-- ======= End Footer & Counter Area ======= -->
 
-  <a href="#exampleModal" data-bs-toggle="modal" class="back-to-top d-flex align-items-center justify-content-center"><i
+  <a href="#start-now" data-bs-toggle="modal" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bx bxl-whatsapp bx-tada"></i></a>
 
-  <!-- Modal 2 -->
-  <div class="modal popup-box fade" id="exampleModal" tabindex="-1" aria-hidden="true">
+  <!-- Modal -->
+  <div class="modal popup-box fade" id="start-now" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog popup-box-dialog modal-dialog-centered">
       <div class="modal-content popup-box-content">
         <div class="popup-card" style="width:100%">
           <button type="button" class="btn popup2-btn ms-auto" data-bs-dismiss="modal"><i
               class="fa-solid fa-xmark"></i></button>
-          <img src="../assets/img/shape/popup.jpg" class="card-img-top" alt=""
+          <img src="../assets/img/training/sales-pitch/bg.webp" class="card-img-top" alt=""
             style="border-top-left-radius: 20px;border-top-right-radius: 20px;border:0px;">
           <div class="card-body popup-card-body">
 
           </div>
-          <form action="javascript:void" method="post" id="heroForm" enctype="text/plain" class="popup-form">
+          <form action="javascript:void" method="post" id="myForm" enctype="text/plain" class="popup-form">
             <div class="row gy-3 mb-3">
               <div class="col-lg-6">
-                <label for="names" class="form-label">Full Name</label>
-                <input type="text" name="Name" class="form-control" id="names" pattern="[a-zA-Z\s]{3,100}"
-                  placeholder="Nama Lengkap*" required>
+                <label for="names" class="form-label">Company</label>
+                <input type="text" name="Name" class="form-control" id="names" pattern="[a-zA-Z\s]{3,100}" placeholder="Company Names*" required>
               </div>
               <div class="col-lg-6">
                 <label for="locations" class="form-label">Lokasi</label>
-                <input type="text" class="form-control" name="Location" id="locations" pattern="[a-zA-Z\s]{3,100}"
-                  placeholder="Kota*" required>
+                <input type="text" class="form-control" name="Location" id="locations" pattern="[a-zA-Z\s]{3,100}" placeholder="Kota*" required>
+              </div>
+              <div class="col-lg-12">
+                  <label for="Ket" class="form-label">Type</label>
+                 <select name="Ket" class="form-select" id="messages">
+                     <option>In House</option>
+                     <option>Seminar</option>
+                 </select>
               </div>
               <div class="col-lg-6">
                 <label for="whatsapps" class="form-label">Whatsapp</label>
-                <input type="tel" class="form-control" name="Whatsapp" id="whatsapps" pattern="[0-9]{10,15}"
-                  placeholder="Whatsapp*" required="">
+                <input type="tel" class="form-control" name="Whatsapp" id="whatsapps" pattern="[0-9]{10,15}" placeholder="Whatsapp*" required="">
               </div>
               <div class="col-lg-6">
-                <label for="events" class="form-label">Needs</label>
-                <input type="text" name="Event" class="form-control" id="events" placeholder="Kebutuhan">
+                <label for="program" class="form-label">Training</label>
+                <input type="text" name="Program" class="form-control" id="programs" value="Sales Pitch" disabled>
+              </div>
+              <select class="d-none" name="Timestamp">
+                <option id="timestamp"></option>
+              </select>
+            </div>
+            <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button class="custom-btn2 send_contact" id="submits" onclick="SubForm()">Send Whatsapp</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal 2 -->
+  <div class="modal popup-box fade" id="trial-request" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog popup-box-dialog modal-dialog-centered">
+      <div class="modal-content popup-box-content">
+        <div class="popup-card" style="width:100%">
+          <button type="button" class="btn popup2-btn ms-auto" data-bs-dismiss="modal"><i
+              class="fa-solid fa-xmark"></i></button>
+          <img src="../assets/img/training/sales-pitch/bg.webp" class="card-img-top" alt=""
+            style="border-top-left-radius: 20px;border-top-right-radius: 20px;border:0px;">
+          <div class="card-body popup-card-body">
+
+          </div>
+          <form action="javascript:void" method="post" id="HeroForms" enctype="text/plain" class="popup-form">
+            <div class="row gy-3 mb-3">
+              <div class="col-lg-6">
+                <label for="names" class="form-label">Company</label>
+                <input type="text" name="Name" class="form-control" id="names" pattern="[a-zA-Z\s]{3,100}" placeholder="Company Names*" required>
+              </div>
+              <div class="col-lg-6">
+                <label for="locations" class="form-label">Lokasi</label>
+                <input type="text" class="form-control" name="Location" id="locations" pattern="[a-zA-Z\s]{3,100}" placeholder="Kota*" required>
+              </div>
+              <div class="col-lg-6">
+                <label for="whatsapps" class="form-label">Whatsapp</label>
+                <input type="tel" class="form-control" name="Whatsapp" id="whatsapps" pattern="[0-9]{10,15}" placeholder="Whatsapp*" required="">
+              </div>
+              <div class="col-lg-6">
+                <label for="program" class="form-label">Trial Request</label>
+                <input type="text" name="Event" class="form-control" id="events" value="Trial Sales Pitch" disabled>
               </div>
               <select class="d-none" name="Timestamp">
                 <option id="timestamp"></option>
