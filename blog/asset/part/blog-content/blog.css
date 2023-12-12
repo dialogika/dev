@@ -49,9 +49,13 @@
     right: 13px;
 }
 
-.blog-details .content .card-body {
+.blog-details .content .card.card-body.key-take {
     border: 0px;
     box-shadow: 0px 9px 16px -6px rgba(11, 43, 106, 1);
+}
+
+.blog-details .content .card.card-body.link-content {
+    margin-bottom:20px;
 }
 
 .blog-details .content .card-body .list-group {
