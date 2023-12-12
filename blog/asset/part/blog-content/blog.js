@@ -3,6 +3,10 @@ var mySwiper = new Swiper('.sidebar-widget-class', {
   effect: 'cube',
   grabCursor: true,
   loop: true,
+      autoplay: {
+      delay: 2000,
+      disableOnInteraction: false
+    },
   cubeEffect: {
     shadow: true,
     slideShadows: true,
@@ -21,7 +25,11 @@ var mySwiper = new Swiper('.sidebar-widget-class', {
 var mySwiper2 = new Swiper('.sidebar-widget-profile', {
   effect: 'cube',
   grabCursor: true,
-    loop: true,
+  loop: true,
+  autoplay: {
+      delay: 1000,
+      disableOnInteraction: false
+    },
   cubeEffect: {
     shadow: true,
     slideShadows: true,

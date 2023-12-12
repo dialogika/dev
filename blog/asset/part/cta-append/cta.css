@@ -4,10 +4,12 @@
   --default-color: #ffffff;
   --background-color: #000000;
   --background-color-rgb: 0, 0, 0;
-  padding: 80px 0;
+  padding: 40px 0;
   position: relative;
   -webkit-clip-path: inset(0);
   clip-path: inset(0);
+  margin-left:-30px;
+  margin-right:-30px;
 }
 
 .call-to-action img {
@@ -31,6 +33,11 @@
 }
 
 .call-to-action .container {
+  position: relative;
+  z-index: 3;
+}
+
+.call-to-action .container-fluid {
   position: relative;
   z-index: 3;
 }
