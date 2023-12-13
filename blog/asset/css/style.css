@@ -203,7 +203,7 @@ h6 {
 .appointment-btn {
   margin-left: 25px;
   color: #fff;
-  border-radius: 50px;
+  border-radius: 7px;
   padding: 8px 25px;
   white-space: nowrap;
   transition: 0.3s;
@@ -2489,7 +2489,7 @@ section {
   background: #fff;
   padding: 6px 10px;
   position: relative;
-  border-radius: 50px;
+  border-radius: 7px;
   text-align: left;
   border: 1px solid #bfdcf7;
 }
@@ -2508,7 +2508,7 @@ section {
   border: 0;
   transition: 0.3s;
   background-color: #0f61a8;
-  border-radius: 50px;
+  border-radius: 7px;
   display: inline-block;
   cursor: pointer;
   color: #ffffff;

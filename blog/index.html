@@ -41,10 +41,10 @@
   <link href="asset/part/counting-down/count.css" rel="stylesheet"/>
   <link href="asset/part/contact-append/contact.css" rel="stylesheet"/>
   <link href="asset/part/popup-box/popup.css" rel="stylesheet"/>
-  <link href="asset/part/video-sec/video.css" rel="stylesheet"/>
   <link href="asset/part/blog-content/blog.css" rel="stylesheet"/>
   <link href="asset/part/cse-google/cse.css" rel="stylesheet"/>
-  <link href="asset/part/cta-append/cta.css" rel="stylesheet">
+  <link href="asset/part/cta-append/cta.css" rel="stylesheet"/>
+  <link href="asset/part/cta-echooling/cta.css" rel="stylesheet"/>
       
   <script src="https://kit.fontawesome.com/cdde75dea2.js" crossorigin="anonymous"></script>
   
@@ -60,35 +60,17 @@
         <script>
           function HeroForm() {
             $.ajax({
-              url:"https://api.apispreadsheets.com/data/nFEcActjMjE46FAP/",
+              url:"https://api.apispreadsheets.com/data/V67SEkSOUdvoeJQn/",
               type:"post",
-              data:$("#heroForm").serializeArray(),
-              headers:{
-                accessKey: "6df7b75d348bfbdfa9684dfc76ed0053",
-                secretKey: "68a998592183dc30cdc2b07576759f04"},
+              data:$("#rate-us").serializeArray(),
               success: function(){
-                alert("Anda Telah Mendaftar :)")
+                alert("Thank You For Your Rating")
               },
               error: function(){
                 alert("There was an error :(")
               }
             });
           }
-
-            function SubForm (){
-              $.ajax({
-                url:"https://api.apispreadsheets.com/data/qBMNmHWNwLnA3S2s/",
-                type:"post",
-                data:$("#myForm").serializeArray(),
-                success: function(){
-                  alert("Form Data Submitted :)")
-                },
-                error: function(){
-                  alert("There was an error :(")
-                }
-              });
-              
-            }
 
           function Subcription() {
             $.ajax({
@@ -105,6 +87,21 @@
               }
             });
           }
+        </script>
+        <script>
+            function SubForm (){
+                $.ajax({
+                    url:"https://api.apispreadsheets.com/data/JYfPTNSLW4GoVohc/",
+                    type:"post",
+                    data:$("#myForm").serializeArray(),
+                    success: function(){
+                        alert("Thank You For Asking :)")
+                    },
+                    error: function(){
+                        alert("You Will Redirect to Whatsapp :)")
+                    }
+                });
+            }
         </script>
         <!-- End Spreadsheet API Form Pendaftaran -->
 
@@ -214,7 +211,7 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
           
         <div class="row ">
-          <div class="col-lg-1 ">
+          <div class="col-lg-1 mt-4">
               <div class="blog-details-social">
                 <ul class="list-wrap">
                   <li><a href="https://facebook.com/dialogika.co" target="__blank"><i class="fab fa-facebook-f"></i></a>
@@ -228,10 +225,10 @@
                 </ul>
               </div>
           </div>
-          <div class="col-lg-7 ">
+          <div class="col-lg-7 mt-4">
             <article class="article">
               <div class="post-img">
-                <img src="https://placehold.co/1200x600" alt="" class="img-fluid">
+                <img src="https://placehold.co/1200x600" alt="XXXKEYWORD" class="img-fluid">
               </div>
 
               <h1 class="title">Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia</h1>
@@ -247,7 +244,7 @@
                   <div class="row">
                       <div class="col-lg-7 mt-4">
                           <p><span class="fw-lighter">XXXKEYWORD - </span> Nam consequuntur ad non maxime aliquam quas. Quibusdam animi praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta.
-                            Et eveniet enim. Qui velit est ea dolorem doloremque deleniti aperiam unde soluta. Est cum et quod quos aut ut et sit sunt. Voluptate porro consequatur assumenda perferendis dolore.</p>
+                            Et eveniet enim. Qui velit est ea dolorem doloremque deleniti aperiam unde soluta. <span class="badge bg-primary">Est cum</span> et quod quos aut ut et sit sunt. Voluptate porro consequatur assumenda perferendis dolore.</p>
                           
                           <p>Sit repellat hic cupiditate hic ut nemo. Quis nihil sunt non reiciendis. Sequi in accusamus harum vel aspernatur. Excepturi numquam nihil cumque odio. Et voluptate cupiditate.</p>
                       </div>
@@ -264,43 +261,52 @@
                       </div>
                   </div>
                   
-                  <div class="img-control mt-4">
-                      <img src="https://placehold.co/700x1200" class="img-fluid rounded" alt=""/>
-                      <img src="asset/img/logo.webp" class="img-logo-image" alt=""/>
-                      <a href="https://wa.link/3rwk8y" target="_blank">
-                          <span class="badge bg-success"><i class="bi bi-whatsapp"></i> +62 851 6299 2597</span>
-                      </a>
-                      <span class="badge bg-primary"><i class="bi bi-instagram"></i> @dialogika.co</span>
-                  </div>
+                <div class="img-control mt-4">
+                 <a href="https://placehold.co/700x1200" class="glightbox">
+                    <img src="https://placehold.co/700x1200" class="img-fluid rounded" alt="XXXKEYWORD"/>
+                    <img src="asset/img/logo.webp" class="img-logo-image" alt="XXXKEYWORD"/>
+                    <a href="https://wa.link/3rwk8y" target="_blank">
+                        <span class="badge bg-success"><i class="bi bi-whatsapp"></i> +62 851 6299 2597</span>
+                    </a>
+                    <span class="badge bg-primary"><i class="bi bi-instagram"></i> @dialogika.co</span>
+                 </a>
+                </div>
                 <p>Sed quo laboriosam qui architecto. Occaecati repellendus omnis dicta inventore tempore provident voluptas mollitia aliquid. Id repellendus quia. Asperiores nihil magni dicta est suscipit perspiciatis. Voluptate ex rerum assumenda dolores nihil quaerat.
-                  Dolor porro tempora et quibusdam voluptas. Beatae aut at ad qui tempore corrupti velit quisquam rerum. Omnis dolorum exercitationem harum qui qui blanditiis neque.
+                  Dolor porro tempora et quibusdam voluptas. Beatae aut at ad qui tempore corrupti velit quisquam rerum. <mark class="yellow">Omnis dolorum exercitationem harum qui qui</mark> blanditiis neque.
                   Iusto autem itaque. Repudiandae hic quae aspernatur ea neque qui. Architecto voluptatem magni. Vel magnam quod et tempora deleniti error rerum nihil tempora.</p>
                   
 
-                <h3>Et quae iure vel ut odit alias.</h3>
+                <h2>Et quae iure vel ut odit alias.</h2>
                 <p>
-                  Officiis animi maxime nulla quo et harum eum quis a. Sit hic in qui quos fugit ut rerum atque. Optio provident dolores atque voluptatem rem excepturi molestiae qui. Voluptatem laborum omnis ullam quibusdam perspiciatis nulla nostrum. Voluptatum est libero eum nesciunt aliquid qui.</p>
+                  Officiis animi <code>maxime nulla</code> quo et harum eum quis a. Sit hic in qui quos fugit ut rerum atque. Optio provident dolores atque voluptatem <i>rem excepturi molestiae qui.</i> Voluptatem <ins>laborum omnis ullam</ins> quibusdam perspiciatis <del>Sint harum eveniet</del> nulla nostrum. Voluptatum est libero eum nesciunt aliquid qui.</p>
                   <div class="img-control">
-                      <img src="https://placehold.co/700x400" class="img-fluid rounded" alt=""/>
-                      <img src="asset/img/logo.webp" class="img-logo-image" alt=""/>
+                      <img src="https://placehold.co/700x400" class="img-fluid rounded" alt="XXXKEYWORD"/>
+                      <img src="asset/img/logo.webp" class="img-logo-image" alt="XXXKEYWORD"/>
                       <a href="https://wa.link/3rwk8y" target="_blank">
                           <span class="badge bg-success"><i class="bi bi-whatsapp"></i> +62 851 6299 2597</span>
                       </a>
                       <span class="badge bg-primary"><i class="bi bi-instagram"></i> @dialogika.co</span>
                   </div>
                   <p>
-                  Quia et suscipit non sequi. Maxime sed odit. Beatae nesciunt nesciunt accusamus quia aut ratione aspernatur dolor. Sint harum eveniet dicta exercitationem minima. Exercitationem omnis asperiores natus aperiam dolor consequatur id ex sed. Quibusdam rerum dolores sint consequatur quidem ea.
+                  Quia et suscipit non sequi. Maxime sed odit. Beatae nesciunt nesciunt accusamus quia aut ratione aspernatur dolor. Dicta exercitationem minima. Exercitationem omnis asperiores natus aperiam dolor consequatur id ex sed. Quibusdam rerum dolores sint consequatur quidem ea.</p>
+                  <div class="card card-body link-content d-flex">
+                      <a href="" class="align-items-center">
+                          <i class="fa-solid fa-link"></i>
+                          Baca Juga: <b>Cara Percaya Diri Walau Jelek - Primacy Effect</b>
+                      </a>
+                  </div>
+                  <p>
                   Beatae minima sunt libero soluta sapiente in rem assumenda. Et qui odit voluptatem. Cum quibusdam voluptatem voluptatem accusamus mollitia aut atque aut.
                 </p>
                 
                 <div id="call-to-action" class="call-to-action">
-                  <img src="https://michaelhyatt.com/wp-content/uploads/2013/08/iStock_000022230045Medium.jpg" alt="Kelas Public Speaking Online">
+                  <img src="https://img.freepik.com/free-photo/woman-asking-questions-podcast_23-2149029335.jpg?w=2000&t=st=1702424624~exp=1702425224~hmac=8ef22a8fb4c913b576a1fefecfe57e6e9f84a118e0f24b78674d7e4105d2d7b1" alt="Kelas Public Speaking Online">
 
                   <div class="container-fluid">
                     <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
                       <div class="col-xl-12">
                         <div class="text-center">
-                          <h3>Tanya Aja Dulu</h3>
+                          <h3 style="color: #f1f7fd;">Tanya Aja Dulu</h3>
                           <p>Susah dan Gugup Ngomong di Depan Umum? Konsul Aja Dulu</p>
                           <a class="cta-btn title-change-consultation" href="" target="_blank">Tanya Admin</a>
                         </div>
@@ -316,20 +322,41 @@
                 <p>
                   Consectetur quasi id et optio praesentium aut asperiores eaque aut. Explicabo omnis quibusdam esse. Ex libero illum iusto totam et ut aut blanditiis. Veritatis numquam ut illum ut a quam vitae.
                 </p>
-                <blockquote><p>
-                    Et vero doloremque tempore voluptatem ratione vel aut. Deleniti sunt animi aut. Aut eos aliquam doloribus minus autem quos.
-                </p></blockquote>
+                <blockquote>
+                 <p>
+                  <figcaption class="blockquote-footer">
+                    Someone famous in <cite title="Source Title">Source Title</cite>
+                  </figcaption>
+                  Et vero doloremque tempore voluptatem ratione vel aut. Deleniti sunt animi aut. Aut eos aliquam doloribus minus autem quos.
+                 </p>
+                </blockquote>
                 <p>
                   Alias quia non aliquid. Eos et ea velit. Voluptatem maxime enim omnis ipsa voluptas incidunt. Nulla sit eaque mollitia nisi asperiores est veniam.
                 </p>
+                
+                <div id="react-footer" class="react-footer react-footer-two pt---120">
+                    <div class="container-fluid">
+                        <div class="footer-top-cta">
+                            <div class="row">
+                                <div class="col-lg-7 text-lg-start text-center">
+                                    <h4>Download</h4>
+                                    <h3>Cheatsheet</h3>
+                                </div>
+                                <div class="col-lg-5 text-lg-right text-center">
+                                    <a href="#download-cheatsheet" data-bs-toggle="modal">Download</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- CTA Section End Here -->
                 
                 
                 <h3>Ut repellat blanditiis est dolore sunt dolorum quae.</h3>
                 <p>
                   Rerum ea est assumenda pariatur quasi et quam. Facilis nam porro amet nostrum. In assumenda quia quae a id praesentium. Quos deleniti libero sed occaecati aut porro autem. Consectetur sed excepturi sint non placeat quia repellat incidunt labore. Autem facilis hic dolorum dolores vel.
                   <div class="img-control">
-                      <img src="https://placehold.co/700x400" class="img-fluid rounded" alt=""/>
-                      <img src="asset/img/logo.webp" class="img-logo-image" alt=""/>
+                      <img src="https://placehold.co/700x400" class="img-fluid rounded" alt="XXXKEYWORD"/>
+                      <img src="asset/img/logo.webp" class="img-logo-image" alt="XXXKEYWORD"/>
                       <a href="https://wa.link/3rwk8y" target="_blank">
                           <span class="badge bg-success"><i class="bi bi-whatsapp"></i> +62 851 6299 2597</span>
                       </a>
@@ -339,7 +366,7 @@
                 </p>
                 <div class="card card-body link-content d-flex">
                     <a href="" class="align-items-center">
-                        <i class="bi bi-link-45deg"></i>
+                        <i class="fa-solid fa-link"></i>
                         Baca Juga: <b>Cara Percaya Diri Walau Jelek - Primacy Effect</b>
                     </a>
                 </div>
@@ -379,47 +406,61 @@
                   <div class="col-xl-6 col-md-5">
                     <div class="blog-details-share">
                       <h6 class="share-title">Rate This Article:</h6>
-                      <div class="rate">
-                          <input type="radio" id="star5" name="rate" value="5" />
+                        <form class="rate" id="rate-us" onclick="HeroForm()">
+                          <input type="radio" id="star5" name="Rating" value="5" />
                           <label for="star5" title="text">5 stars</label>
-                          <input type="radio" id="star4" name="rate" value="4" />
+                          <input type="radio" id="star4" name="Rating" value="4" />
                           <label for="star4" title="text">4 stars</label>
-                          <input type="radio" id="star3" name="rate" value="3" />
+                          <input type="radio" id="star3" name="Rating" value="3" />
                           <label for="star3" title="text">3 stars</label>
-                          <input type="radio" id="star2" name="rate" value="2" />
+                          <input type="radio" id="star2" name="Rating" value="2" />
                           <label for="star2" title="text">2 stars</label>
-                          <input type="radio" id="star1" name="rate" value="1" />
+                          <input type="radio" id="star1" name="Rating" value="1" />
                           <label for="star1" title="text">1 star</label>
-                      </div>
-                      
+                          <input name="Keyword" class="d-none" value="XXXKEYWORD"/>
+                        </form>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-
-            <div class="blog-author d-flex align-items-center">
-              <img src="https://placehold.co/120x120" class="rounded-circle flex-shrink-0" alt="">
-              <div>
+            
+            <div class="blog-author d-md-flex align-items-center ">
+              <img src="https://placehold.co/120x120" class="rounded-circle flex-shrink-0 mt-4" alt="XXXKEYWORD">
+              <div class="mt-4">
                 <h4>Jane Smith</h4>
                 <div class="social-links">
-                  <a href="https://twitters.com/#"><i class="bi bi-twitter"></i></a>
-                  <a href="https://facebook.com/#"><i class="bi bi-facebook"></i></a>
-                  <a href="https://instagram.com/#"><i class="biu bi-instagram"></i></a>
+                  <i class="fa-solid fa-feather"></i>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  About <b>Writer</b>
                 </div>
                 <p>
                   Itaque quidem optio quia voluptatibus dolorem dolor. Modi eum sed possimus accusantium. Quas repellat voluptatem officia numquam sint aspernatur voluptas. Esse et accusantium ut unde voluptas.
                 </p>
               </div>
             </div><!-- End post author -->
-
+            <div class="blog-author d-md-flex align-items-center">
+              <img src="https://placehold.co/120x120" class="rounded-circle flex-shrink-0 mt-4" alt="XXXKEYWORD">
+              <div class="mt-4">
+                <h4>Jane Smith</h4>
+                <div class="social-links">
+                  <i class="fa-solid fa-laptop-code"></i>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                  About <b>Developer</b>
+                </div>
+                <p>
+                  Itaque quidem optio quia voluptatibus dolorem dolor. Modi eum sed possimus accusantium. Quas repellat voluptatem officia numquam sint aspernatur voluptas. Esse et accusantium ut unde voluptas.
+                </p>
+              </div>
+            </div><!-- End post author -->
+                
             <div class="comments">
 
               <h4 class="comments-count">Writer Notes</h4>
 
               <div id="comment-2" class="comment">
                 <div class="d-flex">
-                  <div class="comment-img"><img src="asset/img/intern/eni.jpg" alt="" class="rounded"></div>
+                  <div class="comment-img"><img src="asset/img/intern/eni.jpg" alt="XXXKEYWORD" class="rounded"></div>
                   <div>
                     <h5><a href="">Nama Penulis</a> <a href="#" class="reply"><i class="bi bi-card-heading"></i> Notes</a></h5>
                     <time datetime="2020-01-01">01 Jan,2022</time>
@@ -433,32 +474,37 @@
 
               <div class="reply-form">
 
-                <h4>Leave a Reply</h4>
-                <p>Your email address will not be published. Required fields are marked * </p>
-                <form action="">
+                <h4>Asking About Us</h4>
+                <p>Jika kamu penasaran mengenai program, kelas, in house, hingga internship dan career di Dialogika silahkan masukkan pertanyaan dibawah ini</p>
+                <form id="myForm" role="form">
                   <div class="row">
-                    <div class="col-md-6 form-group">
-                      <input name="name" type="text" class="form-control" placeholder="Your Name*">
-                    </div>
-                    <div class="col-md-6 form-group">
-                      <input name="email" type="text" class="form-control" placeholder="Your Email*">
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col form-group">
-                      <input name="website" type="text" class="form-control" placeholder="Your Website">
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col form-group">
-                      <textarea name="comment" class="form-control" placeholder="Your Comment*"></textarea>
-                    </div>
-                  </div>
 
-                  <div class="text-center">
-                    <button type="submit" class="btn btn-primary">Post Comment</button>
-                  </div>
+                    <div class="col-md-12 form-group">
+                      <input type="text" name="Name" class="form-control" placeholder="Nama Lengkap*" id="names" required/>
+                    </div>
 
+                    <div class="col-md-6 form-group">
+                      <input type="tel" class="form-control" name="Whatsapp" placeholder="Whatsapp*" required/>
+                    </div>
+
+                    <div class="col-md-6 form-group">
+                      <input type="text" class="form-control" name="Location" placeholder="Domisili*" id="domisilis" required/>
+                    </div>
+
+                    <select class="d-none" name="Timestamp">
+                      <option id="timestamp"></option>
+                    </select>
+                    <input class="d-none" name="Program" value="XXXKEYWORD"  />
+
+                    <div class="col-md-12">
+                      <textarea class="form-control" name="Ket" id="messages" rows="17" placeholder="Yang ingin ditanyakan?"></textarea>
+                    </div>
+
+                    <div class="col-md-12 text-center">
+                      <button type="submit" onclick='SubForm()' class="btn-primary send_contact" >Send Whatsapp</button>
+                    </div>
+
+                  </div>
                 </form>
 
               </div>
@@ -466,67 +512,29 @@
             </div><!-- End blog comments -->
 
           </div>
-          <div class="col-lg-4 ">
+          <div class="col-lg-4 mt-4">
               
-              <div class="widget sidebar-widget-profile swiper order-3 order-md-1">
-                  <div class="swiper-wrapper">
-                   <div class="tgAbout-me swiper-slide">
-                    <div class="tgAbout-thumb">
-                      <img src="https://dialogika.co/blog/assets/img/intern/eni.jpg" class="img-thumbnail"
-                        alt="Gabriel Angeline">
-                    </div>
-                    <div class="tgAbout-info">
-                      <p class="intro">Penulis <b>Eni Irnawati</b></p>
-                      <span class="designation">Content Writer - Dialogika</span>
-                    </div>
-                    <div class="tgAbout-social">
-                      <a href="https://instagram.com/dialogika.co"><i class="fab fa-instagram"></i></a>
-                      <a href="https://twitter.com/dialogika_co"><i class="fab fa-twitter"></i></a>
-                      <a href="https://facebook.com/dialgika.co"><i class="fab fa-facebook-f"></i></a>
-                      <a href="https://youtube.com/@dialogika_co"><i class="fab fa-youtube"></i></a>
-                    </div>
-                  </div>
-                   <div class="tgAbout-me swiper-slide">
-                    <div class="tgAbout-thumb">
-                      <img src="https://dialogika.co/blog/assets/img/intern/azmi.jpg" class="img-thumbnail"
-                        alt="Azmi">
-                    </div>
-                    <div class="tgAbout-info">
-                      <p class="intro">Penulis <b>Azmi Ananda</b></p>
-                      <span class="designation">Developer Writer - Dialogika</span>
-                    </div>
-                    <div class="tgAbout-social">
-                      <a href="https://instagram.com/dialogika.co"><i class="fab fa-instagram"></i></a>
-                      <a href="https://twitter.com/dialogika_co"><i class="fab fa-twitter"></i></a>
-                      <a href="https://facebook.com/dialgika.co"><i class="fab fa-facebook-f"></i></a>
-                      <a href="https://youtube.com/@dialogika_co"><i class="fab fa-youtube"></i></a>
-                    </div>
-                  </div>
-                  </div>
+              <div class="widget sidebar-widget-profile">
+                  <div class="tgAbout-me ">
+                   <div class="tgAbout-thumb">
+                     <img src="https://dialogika.co/blog/assets/img/intern/eni.jpg" class="img-thumbnail"
+                       alt="XXXKEYWORDS">
+                   </div>
+                   <div class="tgAbout-info">
+                     <p class="intro">Penulis <b>Eni Irnawati</b></p>
+                     <span class="designation">Content Writer - Dialogika</span>
+                   </div>
+                   <div class="tgAbout-social">
+                     <a href="https://instagram.com/dialogika.co"><i class="fab fa-instagram"></i></a>
+                     <a href="https://twitter.com/dialogika_co"><i class="fab fa-twitter"></i></a>
+                     <a href="https://facebook.com/dialgika.co"><i class="fab fa-facebook-f"></i></a>
+                     <a href="https://youtube.com/@dialogika_co"><i class="fab fa-youtube"></i></a>
+                   </div>
+                 </div>
               </div>
 
               <div class="sidebar mt-4 order-2 order-md-2">
-                <div class="sidebar-item search-form mt-4">
-                  <h3 class="sidebar-title">Search</h3>
-                  <form action="" class="mt-3">
-                    <!-- <input type="text">
-                    <button type="submit"><i class="bi bi-search"></i></button> -->
-                    <script async src="https://cse.google.com/cse.js?cx=a16802496328a44ee">
-                    </script>
-                    <div class="gcse-search"></div>
-                  </form>
-                </div><!-- End sidebar search form-->
-                <div class="sidebar-item categories mt-4">
-                  <h3 class="sidebar-title">Categories</h3>
-                  <ul class="mt-3">
-                    <li><a href="#">General <span>(25)</span></a></li>
-                    <li><a href="#">Lifestyle <span>(12)</span></a></li>
-                    <li><a href="#">Travel <span>(5)</span></a></li>
-                    <li><a href="#">Design <span>(22)</span></a></li>
-                    <li><a href="#">Creative <span>(8)</span></a></li>
-                    <li><a href="#">Educaion <span>(14)</span></a></li>
-                  </ul>
-                </div><!-- End sidebar categories-->
+                <main-category></main-category>
                 <div class="sidebar-item tags mt-4">
                   <h3 class="sidebar-title">Tags</h3>
                   <ul class="mt-3">
@@ -545,33 +553,7 @@
                 </div><!-- End sidebar tags-->
               </div><!-- End Sidebar -->
               
-              <div class="widget sidebar-widget-class swiper mt-4 order-1 order-md-3">
-                  <h3 class="sidebar-title">Recommendation</h3>
-                <div class="sidePost-active swiper-wrapper">
-                    
-                  <div class="sidePost__item swiper-slide first-item">
-                    <div class="sidePost__content" style="">
-                      <a href="#" class="tag">Online Class</a>
-                      <h5 class="title tgcommon__hover"><a href="../program/basic-plus.html"
-                          target="__blank">Basic Public Speaking</a></h5>
-                    </div>
-                  </div>
-                  <div class="sidePost__item swiper-slide second-item">
-                    <div class="sidePost__content">
-                      <a href="#" class="tag">Offline Class</a>
-                      <h5 class="title tgcommon__hover"><a href="../program/first-class.html"
-                          target="__blank">First Class Public Speaking</a></h5>
-                    </div>
-                  </div>
-                  <div class="sidePost__item swiper-slide third-item">
-                    <div class="sidePost__content">
-                      <a href="#" class="tag">Kelas Anak</a>
-                      <h5 class="title tgcommon__hover"><a href="../program/kids-plus.html"
-                          target="__blank">Kids Class Public Speaking</a></h5>
-                    </div>
-                  </div>
-                  
-                </div>
+              <main-classes></main-classes>
             </div>
                 
           </div>
@@ -591,64 +573,40 @@
   <a href="#hero" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   
   <!-- Modal 2 -->
-  <div class="modal popup-box fade" id="exampleModal" tabindex="-1" aria-hidden="true">
+  <div class="modal popup-box fade" id="download-cheatsheet" tabindex="-1" aria-hidden="true">
      <div class="modal-dialog popup-box-dialog modal-dialog-centered">
         <div class="modal-content popup-box-content">
            <div class="popup-card" style="width:100%">
               <button type="button" class="btn popup2-btn ms-auto" data-bs-dismiss="modal"><i
                     class="fa-solid fa-xmark"></i></button>
-              <img src="https://i.ytimg.com/vi/1hJKq6QAb48/maxresdefault.jpg" class="card-img-top" alt="" style="border-top-left-radius: 20px;border-top-right-radius: 20px;border:0px;">
+              <img src="https://img.freepik.com/premium-photo/minimal-progress-bar-part-symbol-with-bright-glowing-futuristic-blue-neon-lights-black-background_989822-3875.jpg?size=626&ext=jpg&ga=GA1.1.1527285527.1702255139&semt=sph" class="card-img-top" alt="XXXKEYWORD" style="border-top-left-radius: 7px;border-top-right-radius: 7px;border:0px;max-height: 200px;">
               <div class="card-body popup-card-body">
                  <div class="popup-title-area">
-                    <p class="popup-sub">Isikan Sekarang</p>
-                    <h5 class="card-title popup-title">Form Pendaftaran Internship</h5>
+                    <p class="popup-sub">Free Download</p>
+                    <h5 class="card-title popup-title"><strong>Cheatsheet Files</strong></h5>
                  </div>
-                 <a href="#" class="btn popup-play" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
+                 <a href="https://www.youtube.com/watch?v=-oeLrO7nHv0" class="btn popup-play glightbox"><i
                        class="fa-solid fa-play"></i></a>
               </div>
               <form action="javascript:void" method="post" id="heroForm" enctype="text/plain" class="popup-form">
                  <div class="row gy-3 mb-3">
-                    <div class="col-lg-6">
+                    <div class="col-lg-12">
                        <label for="names" class="form-label">Full Name</label>
                        <input type="text" name="Name" class="form-control" id="names" pattern="[a-zA-Z\s]{3,100}" placeholder="Nama Lengkap*" required>
                     </div>
                     <div class="col-lg-6">
-                       <label for="locations" class="form-label">Domisili</label>
-                       <input type="text" class="form-control" name="Location" id="locations" pattern="[a-zA-Z\s]{3,100}" placeholder="Domisili*" required>
+                       <label for="work" class="form-label">Profesi</label>
+                       <input type="text" class="form-control" name="Work" id="works" pattern="[a-zA-Z\s]{3,100}" placeholder="Profesi*" required>
                     </div>
                     <div class="col-lg-6">
                        <label for="whatsapps" class="form-label">Whatsapp</label>
                        <input type="tel" class="form-control" name="Whatsapp" id="whatsapps" pattern="[0-9]{10,15}" placeholder="Whatsapp*" required="">
                     </div>
-                    <div class="col-lg-6">
-                       <label for="events" class="form-label">Position</label>
-                       <select name="Program" id="programs" class="form-control" required>
-                         <option value="" selected disabled value="">Choose Program</option>
-                         <optgroup label="General Manager">
-                           <option>Client Manager</option>
-                           <option>Video Editing</option>
-                         </optgroup>
-                         <optgroup label="Marketing">
-                           <option>Deal Maker</option>
-                           <option>Digital Marketing</option>
-                         </optgroup>
-                         <optgroup label="Human Resource">
-                           <option>Recruiter</option>
-                           <option>People Development</option>
-                         </optgroup>
-                         <optgroup label="Social Media Manager">
-                           <option>Content Writer</option>
-                           <option>Design Specialist</option>
-                           <option>Model Talent</option>
-                           <option>HTML Writing</option>
-                         </optgroup>
-                       </select>
-                    </div>
                     <select class="d-none" name="Timestamp">
                       <option id="timestamp"></option>
                     </select>
                  </div>
-                 <button class="custom-btn2 send_contact" id="submits" onclick="HeroForm()">Daftar Sekarang</button>
+                 <button class="custom-btn2" id="submits" onclick="HeroForm()">Download File</button>
               </form>
            </div>
         </div>
@@ -663,7 +621,6 @@
    <script src="asset/vendor/php-email-form/validate.js"></script>
 
    <!-- Template Main JS File -->
-   <script src="asset/js/headerfooter.js"></script>
    <script src="asset/js/timestamp.js"></script>
    <script src="asset/js/whatsapp.js"></script>
    <script src="asset/js/main.js"></script>
@@ -672,6 +629,11 @@
    <script src="asset/part/counting-down/count.js"></script>
    <script src="asset/part/cse-google/cse.js"></script>
    <script src="asset/part/blog-content/blog.js"></script>
+   
+   <!-- Element -->
+   <script src="asset/js/headerfooter.js"></script>
+   <script src="asset/js/category.js"></script>
+   <script src="asset/js/classes.js"></script>
 
 </body>
 

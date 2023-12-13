@@ -1,6 +1,6 @@
 /* popup-modal-2 start */
 .popup-box-content {
-  border-radius: 20px;
+  border-radius: 7px;
   -webkit-box-shadow: 0px 40px 70px rgba(11, 43, 106, 0.75);
           box-shadow: 0px 40px 70px rgba(11, 43, 106, 0.75);
 }
@@ -17,7 +17,7 @@
 .popup-form .custom-btn2 {
   margin-top: 20px;
   background-color: #0f61a8;
-  border-radius: 50px;
+  border-radius: 7px;
   border:0px;
   display: inline-block;
   cursor: pointer;
