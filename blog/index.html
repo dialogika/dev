@@ -102,6 +102,18 @@
                     }
                 });
             }
+            function downloadForm(){
+                $.ajax({
+                    url:"https://api.apispreadsheets.com/data/11004/",
+                    type:"post",
+                    data:$("#cheatsheets").serializeArray(),
+                    success: function(){
+                        window.location.href = "asset/pdf/cheatsheet-contoh-public-speaking-yang-baik.pdf";
+                    },
+                    error: function(){
+                        window.location.href = "asset/pdf/cheatsheet-contoh-public-speaking-yang-baik.pdf";
+                    }
+                });
         </script>
         <!-- End Spreadsheet API Form Pendaftaran -->
 
@@ -271,122 +283,21 @@
                     <span class="badge bg-primary"><i class="bi bi-instagram"></i> @dialogika.co</span>
                  </a>
                 </div>
-                <p>Sed quo laboriosam qui architecto. Occaecati repellendus omnis dicta inventore tempore provident voluptas mollitia aliquid. Id repellendus quia. Asperiores nihil magni dicta est suscipit perspiciatis. Voluptate ex rerum assumenda dolores nihil quaerat.
-                  Dolor porro tempora et quibusdam voluptas. Beatae aut at ad qui tempore corrupti velit quisquam rerum. <mark class="yellow">Omnis dolorum exercitationem harum qui qui</mark> blanditiis neque.
-                  Iusto autem itaque. Repudiandae hic quae aspernatur ea neque qui. Architecto voluptatem magni. Vel magnam quod et tempora deleniti error rerum nihil tempora.</p>
-                  
-
-                <h2>Et quae iure vel ut odit alias.</h2>
-                <p>
-                  Officiis animi <code>maxime nulla</code> quo et harum eum quis a. Sit hic in qui quos fugit ut rerum atque. Optio provident dolores atque voluptatem <i>rem excepturi molestiae qui.</i> Voluptatem <ins>laborum omnis ullam</ins> quibusdam perspiciatis <del>Sint harum eveniet</del> nulla nostrum. Voluptatum est libero eum nesciunt aliquid qui.</p>
-                  <div class="img-control">
-                      <img src="https://placehold.co/700x400" class="img-fluid rounded" alt="XXXKEYWORD"/>
-                      <img src="asset/img/logo.webp" class="img-logo-image" alt="XXXKEYWORD"/>
-                      <a href="https://wa.link/3rwk8y" target="_blank">
-                          <span class="badge bg-success"><i class="bi bi-whatsapp"></i> +62 851 6299 2597</span>
-                      </a>
-                      <span class="badge bg-primary"><i class="bi bi-instagram"></i> @dialogika.co</span>
-                  </div>
-                  <p>
-                  Quia et suscipit non sequi. Maxime sed odit. Beatae nesciunt nesciunt accusamus quia aut ratione aspernatur dolor. Dicta exercitationem minima. Exercitationem omnis asperiores natus aperiam dolor consequatur id ex sed. Quibusdam rerum dolores sint consequatur quidem ea.</p>
-                  <div class="card card-body link-content d-flex">
-                      <a href="" class="align-items-center">
-                          <i class="fa-solid fa-link"></i>
-                          Baca Juga: <b>Cara Percaya Diri Walau Jelek - Primacy Effect</b>
-                      </a>
-                  </div>
-                  <p>
-                  Beatae minima sunt libero soluta sapiente in rem assumenda. Et qui odit voluptatem. Cum quibusdam voluptatem voluptatem accusamus mollitia aut atque aut.
-                </p>
                 
-                <div id="call-to-action" class="call-to-action">
-                  <img src="https://img.freepik.com/free-photo/woman-asking-questions-podcast_23-2149029335.jpg?w=2000&t=st=1702424624~exp=1702425224~hmac=8ef22a8fb4c913b576a1fefecfe57e6e9f84a118e0f24b78674d7e4105d2d7b1" alt="Kelas Public Speaking Online">
-
-                  <div class="container-fluid">
-                    <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
-                      <div class="col-xl-12">
-                        <div class="text-center">
-                          <h3 style="color: #f1f7fd;">Tanya Aja Dulu</h3>
-                          <p>Susah dan Gugup Ngomong di Depan Umum? Konsul Aja Dulu</p>
-                          <a class="cta-btn title-change-consultation" href="" target="_blank">Tanya Admin</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-
-                <h3>Ut repellat blanditiis est dolore sunt dolorum quae.</h3>
-                <p>
-                  Rerum ea est assumenda pariatur quasi et quam. Facilis nam porro amet nostrum. In assumenda quia quae a id praesentium. Quos deleniti libero sed occaecati aut porro autem. Consectetur sed excepturi sint non placeat quia repellat incidunt labore. Autem facilis hic dolorum dolores vel.</p>
-                <p>
-                  Consectetur quasi id et optio praesentium aut asperiores eaque aut. Explicabo omnis quibusdam esse. Ex libero illum iusto totam et ut aut blanditiis. Veritatis numquam ut illum ut a quam vitae.
-                </p>
-                <blockquote>
-                 <p>
-                  <figcaption class="blockquote-footer">
-                    Someone famous in <cite title="Source Title">Source Title</cite>
-                  </figcaption>
-                  Et vero doloremque tempore voluptatem ratione vel aut. Deleniti sunt animi aut. Aut eos aliquam doloribus minus autem quos.
-                 </p>
-                </blockquote>
-                <p>
-                  Alias quia non aliquid. Eos et ea velit. Voluptatem maxime enim omnis ipsa voluptas incidunt. Nulla sit eaque mollitia nisi asperiores est veniam.
-                </p>
-                
-                <div id="react-footer" class="react-footer react-footer-two pt---120">
-                    <div class="container-fluid">
-                        <div class="footer-top-cta">
-                            <div class="row">
-                                <div class="col-lg-7 text-lg-start text-center">
-                                    <h4>Download</h4>
-                                    <h3>Cheatsheet</h3>
-                                </div>
-                                <div class="col-lg-5 text-lg-right text-center">
-                                    <a href="#download-cheatsheet" data-bs-toggle="modal">Download</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- CTA Section End Here -->
-                
-                
-                <h3>Ut repellat blanditiis est dolore sunt dolorum quae.</h3>
-                <p>
-                  Rerum ea est assumenda pariatur quasi et quam. Facilis nam porro amet nostrum. In assumenda quia quae a id praesentium. Quos deleniti libero sed occaecati aut porro autem. Consectetur sed excepturi sint non placeat quia repellat incidunt labore. Autem facilis hic dolorum dolores vel.
-                  <div class="img-control">
-                      <img src="https://placehold.co/700x400" class="img-fluid rounded" alt="XXXKEYWORD"/>
-                      <img src="asset/img/logo.webp" class="img-logo-image" alt="XXXKEYWORD"/>
-                      <a href="https://wa.link/3rwk8y" target="_blank">
-                          <span class="badge bg-success"><i class="bi bi-whatsapp"></i> +62 851 6299 2597</span>
-                      </a>
-                      <span class="badge bg-primary"><i class="bi bi-instagram"></i> @dialogika.co</span>
-                  </div>
-                  Consectetur quasi id et optio praesentium aut asperiores eaque aut. Explicabo omnis quibusdam esse. Ex libero illum iusto totam et ut aut blanditiis. Veritatis numquam ut illum ut a quam vitae.
-                </p>
-                <div class="card card-body link-content d-flex">
-                    <a href="" class="align-items-center">
-                        <i class="fa-solid fa-link"></i>
-                        Baca Juga: <b>Cara Percaya Diri Walau Jelek - Primacy Effect</b>
-                    </a>
-                </div>
-                <p>
-                  Alias quia non aliquid. Eos et ea velit. Voluptatem maxime enim omnis ipsa voluptas incidunt. Nulla sit eaque mollitia nisi asperiores est veniam.
-                </p>
 
               </div><!-- End post content -->
 
               <div class="meta-bottom">
                 <i class="bi bi-folder"></i>
                 <ul class="cats">
-                  <li><a href="#">Business</a></li>
+                  <li><a target="_blank" href="#">Business</a></li>
                 </ul>
 
                 <i class="bi bi-link-45deg"></i>
                 <ul class="tags" id="tagging-up">
-                  <li><a href="#">Link 1</a></li>
-                  <li><a href="#">Link 2</a></li>
-                  <li><a href="#">Link 3</a></li>
+                  <li><a target="_blank" href="#">Link 1</a></li>
+                  <li><a target="_blank" href="#">Link 2</a></li>
+                  <li><a target="_blank" href="#">Link 3</a></li>
                 </ul>
               </div><!-- End meta bottom -->
 
@@ -517,7 +428,7 @@
               <div class="widget sidebar-widget-profile ">
                   <div class="tgAbout-me swiper-slider">
                    <div class="tgAbout-thumb">
-                     <img src="https://dialogika.co/blog/assets/img/intern/eni.jpg" class="img-thumbnail"
+                     <img src="asset/img/intern/eni.jpg" class="img-thumbnail"
                        alt="XXXKEYWORDS">
                    </div>
                    <div class="tgAbout-info">
@@ -533,7 +444,7 @@
                  </div>
                   <div class="tgAbout-me swiper-slider mt-4">
                    <div class="tgAbout-thumb">
-                     <img src="https://dialogika.co/blog/assets/img/intern/eni.jpg" class="img-thumbnail"
+                     <img src="asset/img/intern/eni.jpg" class="img-thumbnail"
                        alt="XXXKEYWORDS">
                    </div>
                    <div class="tgAbout-info">
@@ -595,7 +506,7 @@
            <div class="popup-card" style="width:100%">
               <button type="button" class="btn popup2-btn ms-auto" data-bs-dismiss="modal"><i
                     class="fa-solid fa-xmark"></i></button>
-              <img src="https://img.freepik.com/premium-photo/minimal-progress-bar-part-symbol-with-bright-glowing-futuristic-blue-neon-lights-black-background_989822-3875.jpg?size=626&ext=jpg&ga=GA1.1.1527285527.1702255139&semt=sph" class="card-img-top" alt="XXXKEYWORD" style="border-top-left-radius: 7px;border-top-right-radius: 7px;border:0px;max-height: 200px;">
+              <img src="https://img.freepik.com/premium-photo/minimal-progress-bar-part-symbol-with-bright-glowing-futuristic-blue-neon-lights-black-background_989822-3875.jpg?size=626&ext=jpg&ga=GA1.1.1527285527.1702255139&semt=sph" class="card-img-top" alt="Contoh Public Speaking yang Baik" style="border-top-left-radius: 7px;border-top-right-radius: 7px;border:0px;max-height: 200px;">
               <div class="card-body popup-card-body">
                  <div class="popup-title-area">
                     <p class="popup-sub">Free Download</p>
@@ -604,25 +515,23 @@
                  <a href="https://www.youtube.com/watch?v=-oeLrO7nHv0" class="btn popup-play glightbox"><i
                        class="fa-solid fa-play"></i></a>
               </div>
-              <form action="javascript:void" method="post" id="heroForm" enctype="text/plain" class="popup-form">
+              <form method="post" id="cheatsheets" class="popup-form" onsubmit="downloadForm()">
                  <div class="row gy-3 mb-3">
                     <div class="col-lg-12">
-                       <label for="names" class="form-label">Full Name</label>
-                       <input type="text" name="Name" class="form-control" id="names" pattern="[a-zA-Z\s]{3,100}" placeholder="Nama Lengkap*" required>
+                       <label for="name" class="form-label">Full Name</label>
+                       <input type="text" name="Name" class="form-control"  pattern="[a-zA-Z\s]{3,100}" placeholder="Nama Lengkap*" required>
                     </div>
                     <div class="col-lg-6">
                        <label for="work" class="form-label">Profesi</label>
-                       <input type="text" class="form-control" name="Work" id="works" pattern="[a-zA-Z\s]{3,100}" placeholder="Profesi*" required>
+                       <input type="text" class="form-control" name="Job" pattern="[a-zA-Z\s]{3,100}" placeholder="Profesi*" required>
                     </div>
                     <div class="col-lg-6">
                        <label for="whatsapps" class="form-label">Whatsapp</label>
-                       <input type="tel" class="form-control" name="Whatsapp" id="whatsapps" pattern="[0-9]{10,15}" placeholder="Whatsapp*" required="">
+                       <input type="tel" class="form-control" name="Whatsapp" pattern="[0-9]{10,15}" placeholder="Whatsapp*" required="">
                     </div>
-                    <select class="d-none" name="Timestamp">
-                      <option id="timestamp"></option>
-                    </select>
+                    
                  </div>
-                 <button class="custom-btn2" id="submits" onclick="HeroForm()">Download File</button>
+                 <button class="custom-btn2" type="submit">Download File</button>
               </form>
            </div>
         </div>

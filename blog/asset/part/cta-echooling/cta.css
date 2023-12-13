@@ -3,25 +3,31 @@
   position: relative;
   color: #fff;
   align-items: center;
- 
-}
-
-.react-footer .footer-top-cta {
+  justify-content: center;
   background: url('../../img/cta.jpg') no-repeat center top;
   background-size: cover;
   border-radius: 10px;
-  padding: 55px;
+  box-shadow: 0px 7px 5px 0px rgba(102, 74, 144, 1);
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.react-footer:hover {
+  box-shadow: 0px 0px 4px 2px rgba(102, 74, 144, 1);
+}
+
+.react-footer .footer-top-cta {
+  padding: 50px;
   width: 100%;
   top: -17%;
   max-width: 1300px;
-  z-index: 1;
+  
   margin-bottom:0px;
-  box-shadow: 0px 7px 5px 0px rgba(102, 74, 144, 1);
-  transition: all 0.3s ease-in-out;
+  
 }
 
-.react-footer .footer-top-cta:hover {
-  box-shadow: 0px 0px 4px 2px rgba(102, 74, 144, 1);
+.react-footer .footer-top-cta {
+  
 }
 
 .react-footer .footer-top-cta .row {
