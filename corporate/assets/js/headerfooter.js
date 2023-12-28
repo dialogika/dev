@@ -27,9 +27,9 @@ class Header extends HTMLElement {
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-       <a href="../index.html" class="logo me-auto"><img src="../assets/img/logo.webp" alt="" class="img-fluid"></a>
+      <a href="../index.html" class="logo me-auto"><img src="../assets/img/logo.webp" alt="" class="img-fluid"></a>
 
-       <nav id="navbar" class="navbar order-last order-lg-0">
+      <nav id="navbar" class="navbar order-last order-lg-0">
         <ul class="navbar-desktop-list">
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li class="dropdown"><a href="#"><span>Program</span> <i class="bi bi-chevron-down"></i></a>
@@ -84,7 +84,7 @@ class Header extends HTMLElement {
           <li><a class="nav-link scrollto" href="../blog/">Blog</a></li>
         </ul>
         <i class="bi bi-list d-block d-md-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"></i>
-       </nav><!-- .navbar -->
+      </nav><!-- .navbar -->
 
       <a href="#trial-request" data-bs-toggle="modal" class="appointment-btn"><span class="d-none d-md-inline">Request</span> Trial</a>
 
